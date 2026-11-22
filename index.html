@@ -699,7 +699,7 @@ dialog.lightbox[open]{display:block;margin:auto}
 <svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-ondas"/></svg>
 <section class="secao" id="pessoas" aria-labelledby="t-pessoas">
   <h2 id="t-pessoas">Pessoas</h2>
-  <p>Famílias do livro, em ordem de geração. Quem pode estar vivo aparece só com nome e papel. Onde falta confirmação, a página diz.</p>
+  <p>Famílias do livro, em ordem de geração. Onde falta confirmação, a página diz.</p>
   <div class="busca"><label class="so-leitor" for="busca">Buscar pessoa</label><input id="busca" type="search" placeholder="Buscar pessoa pelo nome" autocomplete="off"><button class="botao botao--vazado" id="exp" type="button">Expandir tudo</button><button class="botao botao--vazado" id="rec" type="button">Recolher tudo</button></div>
   <p id="busca-res" role="status" class="nota-ig"></p>
   <div class="filtros" id="f-ramo" role="group" aria-label="Filtrar por ramo"></div>
@@ -716,7 +716,7 @@ dialog.lightbox[open]{display:block;margin:auto}
   <h2 id="t-fotos">Fotos</h2>
   <p>Cada foto leva o crédito de quem a publicou. Postagens e legendas de vídeo são indícios (nível D); o livro traz a memória do autor (nível P).</p>
   <div class="filtros" id="f-fotos" role="group" aria-label="Filtrar fotos por origem"></div>
-  <p><button class="botao botao--vazado" id="vivos-toggle" type="button" aria-pressed="false"></button></p>
+  <p hidden><button class="botao botao--vazado" id="vivos-toggle" type="button" aria-pressed="false"></button></p>
   <ul class="galeria" id="galeria"></ul>
   <div class="mais"><button class="botao botao--vazado" id="mais-fotos" type="button">Mostrar mais fotos</button></div>
 </section>
@@ -748,7 +748,7 @@ dialog.lightbox[open]{display:block;margin:auto}
 </main>
 <footer class="rodape conteudo">
   <svg class="rosa" aria-hidden="true"><use href="#orn-rosa"/></svg>
-  <p>Página privada da família. Não é para divulgação. Pessoas que podem estar vivas aparecem só com nome e papel, e as fotos de grupos com elas ficam ocultas até você pedir para vê-las.</p>
+  <p>Página privada da família. Não é para divulgação. Reúne a história da família.</p>
 </footer>
 
 <dialog class="lightbox" id="lb" aria-label="Foto ampliada">
@@ -827,7 +827,7 @@ window.addEventListener('lugar-selecionado',function(e){painelLugar(e.detail.lug
 var VISTO={};
 function pessoaLi(p,nivel){
  var viva=p.possivelmente_vivo;var kids=(p.filhos||[]).map(function(i){return D.pById[i]}).filter(Boolean);
- var nm='<button class="nome" type="button" data-p="'+esc(p.id)+'">'+esc(p.nome)+'</button>'+(viva?' <span class="ref">(só nome e papel)</span>':'')+(p.aconfirmar?' <span class="mao" style="font-size:1.1rem">a confirmar</span>':'');
+ var nm='<button class="nome" type="button" data-p="'+esc(p.id)+'">'+esc(p.nome)+'</button>'+''+(p.aconfirmar?' <span class="mao" style="font-size:1.1rem">a confirmar</span>':'');
  if(VISTO[p.id])return '<li data-ramo="'+p.ramo+'"><div class="row"><span class="espaco"></span>'+nm+' <span class="ref">(já aparece acima)</span></div></li>';
  VISTO[p.id]=1;
  if(!kids.length)return '<li data-ramo="'+p.ramo+'" data-id="'+esc(p.id)+'"><div class="row"><span class="espaco"></span>'+nm+'</div></li>';

@@ -1,4 +1,5 @@
 import json,re,pathlib
+PRIV=False  # decisão do Nilson (22/11, 18:20): não retirar informações de pessoas vivas; página privada da família
 R=pathlib.Path('/home/claude/historia-e-sabores-avila-site')
 O=R/'src/dados-orig'; D=R/'dados'
 L=lambda n:json.load(open(O/(n+'.json')))
@@ -10,7 +11,8 @@ P=L('pessoas');I=L('imagens');REL=L('relacoes');REC=L('receitas');LUG=L('lugares
 UNFLAG_P={'juvenal'}
 for p in P:
     if p['id'] in UNFLAG_P: p['possivelmente_vivo']=False
-vivos={p['id'] for p in P if p.get('possivelmente_vivo')}
+    if not PRIV: p['possivelmente_vivo']=False
+vivos={p['id'] for p in P if p.get('possivelmente_vivo')} if PRIV else set()
 KEY=['Maria Amâncio','Antonieta','Zaida','Lacir','Joaquina Rita','Ivone','Walter','Walma','Dinor']
 for p in P:
     if p['id'] in vivos:
@@ -19,7 +21,7 @@ for p in P:
         else: p['resumo']='Autor(a) de receita(s) do livro.' if p.get('receitas') else 'Citado(a) no livro.'
         for k in('nascimento','morte','lugar','conjuge','foto','nascimento_detalhe','morte_detalhe','nota_confirmar'): p[k]=None
         p['conjuges']=[];p['divergencias']=[]
-    else:
+    elif PRIV:
         parts=re.split(r'(?<=[.;])\s+',p.get('resumo') or '')
         p['resumo']=' '.join(x for x in parts if not any(k in x for k in KEY)) or 'Citado(a) no livro.'
         r_=p['resumo'].strip().rstrip(';, ').strip()
@@ -32,8 +34,9 @@ for p in P:
 EXTRA=('vid-lanc-30','ig-20201117-132529-f3','livro-p125-106','ig-20210125-132044-f2')
 fl={f['id'] for f in REL['fotos'] if f.get('contem_possivelmente_vivos')}
 fl={x for x in fl if not x.startswith('livro-p085-064')}
+if not PRIV: fl=set()
 for i in I:
-    if i['id'].startswith(EXTRA): fl.add(i['id'])
+    if PRIV and i['id'].startswith(EXTRA): fl.add(i['id'])
 n=0
 for i in I:
     i['possivelmente_vivos']=i['id'] in fl
@@ -43,6 +46,8 @@ for i in I:
 for f in REL['fotos']:
     if f['id'] in fl: f['pessoas_ids']=[];f['contem_possivelmente_vivos']=True
     else: f['contem_possivelmente_vivos']=False
+if not PRIV:
+    for f in REL['fotos']: f['contem_possivelmente_vivos']=False
 REL['arestas']=[a for a in REL['arestas'] if not(a.get('tipo')=='conjuge' and(a['de'] in vivos or a['para'] in vivos))]
 for e in T: e['pessoas_ids']=[x for x in e.get('pessoas_ids',[]) if x not in vivos]
 for name,obj in [('pessoas',P),('imagens',I),('relacoes',REL),('receitas',REC),('lugares',LUG),('linha_do_tempo',T)]:
