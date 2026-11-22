@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>História e Sabores Ávila</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%231E3F94%27/%3E%3Cpath d=%27M16 6l8 10-8 10-8-10z%27 fill=%27%23fff%27/%3E%3C/svg%3E">
+<meta name="description" content="300 anos da família Ávila, da Ilha do Pico a Brasília: rota, linha do tempo, pessoas, fotos e receitas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: cabeçalho fixo, herói em 2 colunas, rota com painel, linha do tempo, árvore e cartões, galeria, receitas. */
+{{CSS}}
+/* ---- extras da página ---- */
+.heroi h1{margin-bottom:var(--s3)}
+.heroi .sub{font-size:var(--t-1);color:var(--tinta-2);max-width:40ch}
+.heroi .dedica{margin-top:var(--s4)}
+.heroi__ilha svg.pico{width:100%;max-width:26rem;margin-inline:auto;color:var(--tinta)}
+.heroi__ilha .selo{width:7rem;height:7rem;color:var(--mar);margin:var(--s3) auto 0}
+@keyframes emerge{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes sobe{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.heroi__ilha svg.pico{animation:emerge .7s var(--ease) both}
+.heroi h1{animation:sobe .6s var(--ease) .5s both}
+.rota{display:grid;gap:var(--s4)}
+@media(min-width:52rem){.rota{grid-template-columns:2fr 1fr;align-items:start}.painel{position:sticky;top:5rem}}
+.painel{background:var(--papel);border:1px solid var(--linha);border-radius:var(--raio);padding:var(--s3);box-shadow:var(--sombra)}
+.painel h3{font-size:var(--t-2)}
+.painel ul{padding-left:1.1rem;margin:.25rem 0 var(--s3)}
+.mini-fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem;list-style:none;padding:0;margin:var(--s2) 0}
+.mini-fotos button{all:unset;display:block;cursor:zoom-in;border-radius:4px;min-height:44px}
+.mini-fotos img{aspect-ratio:1;object-fit:cover;width:100%;border:1px solid var(--linha)}
+.filtros{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 var(--s4)}
+.filtros button,.chip{border:2px solid var(--linha);background:var(--papel);color:var(--tinta);border-radius:999px;padding:.4rem .9rem;font:700 var(--t-p)/1 var(--f-texto);cursor:pointer}
+.filtros button[aria-pressed="true"]{background:var(--mar);color:var(--sobre-mar);border-color:var(--mar)}
+.tempo-wrap{overflow-x:auto}
+.marco .selo-evidencia{margin-top:.4rem}
+.marco__nota{font-family:var(--f-mao);font-size:1.15rem;color:var(--barro);margin:.3rem 0 0}
+.arv ul{list-style:none;margin:0;padding-left:1.1rem;border-left:2px solid var(--linha)}
+.arv>ul{border-left:0;padding-left:0}
+.arv li{margin:.15rem 0}
+.arv details>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:.5rem;list-style:none}
+.arv details>summary::-webkit-details-marker{display:none}
+.arv details>summary::before{content:"+";display:grid;place-items:center;width:1.4rem;height:1.4rem;border:1.5px solid var(--mar);border-radius:4px;color:var(--mar);font-weight:700}
+.arv details[open]>summary::before{content:"\2212"}
+.arv .folha{min-height:44px;display:flex;align-items:center;gap:.5rem;padding-left:1.9rem}
+.arv button.nome{all:unset;cursor:pointer;color:var(--tinta);text-decoration:underline;text-decoration-color:var(--ramo,var(--mar));text-decoration-thickness:3px;text-underline-offset:.2em}
+.arv button.nome:focus-visible{outline:3px solid var(--mar);outline-offset:2px}
+.arv [data-ramo=acores]{--ramo:var(--mar)}.arv [data-ramo=minas]{--ramo:var(--barro)}.arv [data-ramo=goias]{--ramo:var(--cerrado)}
+.arv .ref{color:var(--tinta-2);font-size:var(--t-p)}
+.pessoa-painel{margin-top:var(--s4)}
+.busca{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:var(--s3)}
+.busca input{font:inherit;min-height:44px;padding:.4rem .8rem;border:2px solid var(--linha);border-radius:var(--raio);background:var(--papel);color:var(--tinta);flex:1 1 14rem}
+.mais{margin-top:var(--s4);display:flex;justify-content:center}
+.receitas{display:grid;gap:var(--s4);grid-template-columns:repeat(auto-fill,minmax(min(100%,19rem),1fr))}
+.rec{background:var(--papel);border:1px solid var(--linha);border-radius:var(--raio);padding:var(--s3);box-shadow:var(--sombra);display:grid;gap:.4rem;align-content:start}
+.rec h3{font-size:var(--t-1);margin:0}
+.rec .cat{font-family:var(--f-mao);font-size:1.25rem;color:var(--barro);margin:0}
+.rec ul{margin:0;padding-left:1.1rem;font-size:.95rem}
+.nota-ig{font-size:var(--t-p);color:var(--tinta-2);margin:0}
+.legenda-niveis{display:grid;gap:var(--s2);list-style:none;padding:0;margin:var(--s3) 0}
+.legenda-niveis li{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
+.rodape{padding-block:var(--s6);border-top:1px solid var(--linha);display:grid;gap:var(--s3)}
+.rodape svg.rosa{width:64px;height:64px;color:var(--mar)}
+.tema-btn{background:none;border:2px solid var(--linha);color:var(--tinta);border-radius:var(--raio);cursor:pointer;padding:0 .8rem;font:700 var(--t-p)/1 var(--f-texto)}
+.carregando{color:var(--tinta-2)}
+.mini-fotos button:focus-visible,.arv button.nome:focus-visible{outline:3px solid var(--mar);outline-offset:2px}
+[data-theme="dark"] .mini-fotos button:focus-visible{outline-color:var(--barro)}
+.arv button.nome{min-height:44px;display:inline-flex;align-items:center}
+.cabecalho__marca{min-height:44px}
+.painel h4{margin-top:var(--s3)}
+.rota>*{min-width:0}
+.mapa-rolagem{overflow-x:auto}
+.mapa-rolagem>svg{min-width:640px}
+.lugares-lista{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:var(--s2) 0 0}
+.lugares-lista button{border:2px solid var(--linha);background:var(--papel);color:var(--tinta);border-radius:999px;padding:.4rem .9rem;min-height:44px;font:700 var(--t-p)/1 var(--f-texto);cursor:pointer}
+.lugares-lista button[aria-pressed="true"]{background:var(--mar);color:var(--sobre-mar);border-color:var(--mar)}
+.arv .tog{all:unset;box-sizing:border-box;cursor:pointer;display:grid;place-items:center;width:44px;height:44px;flex:none;color:var(--mar);font-weight:700;font-size:1.2rem}
+.arv .tog:focus-visible{outline:3px solid var(--mar);outline-offset:-3px}
+.arv .row{display:flex;align-items:center;gap:.25rem;flex-wrap:wrap}
+.arv .espaco{width:44px;flex:none}
+.monograma{width:64px;height:64px;display:grid;place-items:center;background:var(--mar-suave);border:2px solid var(--ramo,var(--mar));transform:rotate(45deg);margin:.4rem 0 .6rem .6rem}
+.monograma span{transform:rotate(-45deg);font:400 1.3rem/1 var(--f-display);color:var(--tinta)}
+.nenhum{color:var(--tinta-2)}
+.tempo-wrap{position:relative}
+.dica{font-size:var(--t-p);color:var(--tinta-2);margin:0 0 var(--s2)}
+.tempo-wrap:focus-visible,#tempo-lista:focus-visible{outline:3px solid var(--mar);outline-offset:3px}
+dialog.lightbox[open]{display:block;margin:auto}
+</style>
+</head>
+<body>
+{{SPRITE}}
+<a class="pular" href="#main">Pular para o conteúdo</a>
+<header class="cabecalho">
+  <div class="cabecalho__in">
+    <a class="cabecalho__marca" href="#topo"><svg aria-hidden="true"><use href="#orn-marca"/></svg><span>Ávila</span></a>
+    <nav aria-label="Seções"><ul class="nav">
+      <li><a href="#rota">Rota</a></li><li><a href="#tempo">Linha do tempo</a></li><li><a href="#pessoas">Pessoas</a></li><li><a href="#fotos">Fotos</a></li><li><a href="#receitas">Receitas</a></li><li><a href="#fontes">Fontes</a></li>
+    </ul></nav>
+    <div style="display:flex;gap:.5rem">
+      <button class="tema-btn" id="tema" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-painel" aria-label="Abrir menu">&#9776;</button>
+    </div>
+  </div>
+  <div class="menu-painel" id="menu-painel" hidden>
+    <a href="#rota">Rota</a><a href="#tempo">Linha do tempo</a><a href="#pessoas">Pessoas</a><a href="#fotos">Fotos</a><a href="#receitas">Receitas</a><a href="#fontes">Fontes</a>
+  </div>
+</header>
+<main id="main">
+<section class="heroi" id="topo" aria-labelledby="t-heroi">
+  <div class="heroi__grade">
+    <div>
+      <p class="etiqueta">Livro, vídeos e acervo da família</p>
+      <h1 id="t-heroi">História e Sabores: Ávila</h1>
+      <p class="sub">300 anos, da Ilha do Pico, nos Açores, a Minas Gerais e a Brasília. Aqui “Ávila” são os antepassados.</p>
+      <p><a class="botao" href="#rota">Começar pela rota</a> <a class="botao botao--vazado" href="#receitas">Ir às receitas</a></p>
+      <p class="mao dedica">Para a Duda: guarde o que for nosso e pergunte o que ainda não sabemos.</p>
+    </div>
+    <div class="heroi__ilha" aria-hidden="true">
+      <svg class="pico" viewBox="0 0 400 220"><use href="#orn-pico"/></svg>
+      <svg class="ondas" viewBox="0 0 600 24" preserveAspectRatio="none" style="width:100%;height:24px;color:var(--mar);margin-top:-6px"><use href="#orn-divisor-ondas"/></svg>
+      <svg class="selo" viewBox="0 0 120 120"><use href="#orn-selo"/></svg>
+    </div>
+  </div>
+</section>
+<div class="azulejo-faixa" aria-hidden="true"><svg><rect width="100%" height="100%" fill="url(#pat-azulejo)"/></svg></div>
+
+<div class="conteudo">
+<section class="secao" id="rota" aria-labelledby="t-rota">
+  <h2 id="t-rota">A rota</h2>
+  <p>Mapa esquemático, fora de escala. Toque em um ponto para ver o lugar, as pessoas e as fotos ligadas a ele.</p>
+  <div class="rota">
+    <div><div class="mapa"><div class="mapa-rolagem" tabindex="0" role="region" aria-label="Mapa da rota, role para o lado no celular">{{MAPA}}</div></div><ul class="lugares-lista" id="lugares-lista" aria-label="Lugares da rota"></ul></div>
+    <aside class="painel" id="painel-lugar" aria-live="polite"><p class="carregando">Escolha um ponto no mapa.</p></aside>
+  </div>
+</section>
+
+<svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-ondas"/></svg>
+<section class="secao" id="tempo" aria-labelledby="t-tempo">
+  <h2 id="t-tempo">Linha do tempo</h2>
+  <div class="filtros" id="f-tempo" role="group" aria-label="Filtrar por região"></div>
+  <p class="dica">Role para o lado para ver os marcos seguintes.</p>
+  <div class="tempo-wrap" role="region" aria-label="Linha do tempo"><ol class="linha-tempo linha-tempo--h" id="tempo-lista" tabindex="0" aria-label="Linha do tempo, role para o lado"><li class="carregando">Carregando…</li></ol></div>
+</section>
+
+<svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-ondas"/></svg>
+<section class="secao" id="pessoas" aria-labelledby="t-pessoas">
+  <h2 id="t-pessoas">Pessoas</h2>
+  <p>Famílias do livro, em ordem de geração. Quem pode estar vivo aparece só com nome e papel. Onde falta confirmação, a página diz.</p>
+  <div class="busca"><label class="so-leitor" for="busca">Buscar pessoa</label><input id="busca" type="search" placeholder="Buscar pessoa pelo nome" autocomplete="off"><button class="botao botao--vazado" id="exp" type="button">Expandir tudo</button><button class="botao botao--vazado" id="rec" type="button">Recolher tudo</button></div>
+  <p id="busca-res" role="status" class="nota-ig"></p>
+  <div class="filtros" id="f-ramo" role="group" aria-label="Filtrar por ramo"></div>
+  <div class="arv" id="arvore" aria-label="Árvore de pessoas"></div>
+  <div class="pessoa-painel" id="pessoa-painel" aria-live="polite"></div>
+  <h3 style="margin-top:var(--s5)">Cartões</h3>
+  <ul class="pessoas" id="cartoes"></ul>
+  <div class="mais"><button class="botao botao--vazado" id="mais-pessoas" type="button">Mostrar mais pessoas</button></div>
+</section>
+
+<svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-renda"/></svg>
+
+<section class="secao" id="fotos" aria-labelledby="t-fotos">
+  <h2 id="t-fotos">Fotos</h2>
+  <p>Cada foto leva o crédito de quem a publicou. Postagens e legendas de vídeo são indícios (nível D); o livro traz a memória do autor (nível P).</p>
+  <div class="filtros" id="f-fotos" role="group" aria-label="Filtrar fotos por origem"></div>
+  <p><button class="botao botao--vazado" id="vivos-toggle" type="button" aria-pressed="false"></button></p>
+  <ul class="galeria" id="galeria"></ul>
+  <div class="mais"><button class="botao botao--vazado" id="mais-fotos" type="button">Mostrar mais fotos</button></div>
+</section>
+
+<svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-ondas"/></svg>
+<section class="secao" id="receitas" aria-labelledby="t-rec">
+  <h2 id="t-rec">Livro de receitas</h2>
+  <p>As 76 receitas do livro, com quem as guarda e os ingredientes citados. As quantidades e o modo de fazer ficam no livro impresso.</p>
+  <div class="filtros" id="f-rec" role="group" aria-label="Filtrar receitas por tipo"></div>
+  <div class="receitas" id="rec-lista"></div>
+</section>
+
+<svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-ondas"/></svg>
+<section class="secao" id="fontes" aria-labelledby="t-fontes">
+  <h2 id="t-fontes">Fontes e níveis de evidência</h2>
+  <ul class="legenda-niveis">
+    <li><span class="selo-evidencia" data-nivel="A">A</span> meta-análise ou revisão sistemática</li>
+    <li><span class="selo-evidencia" data-nivel="B">B</span> estudo revisado por pares ou documento de organismo oficial</li>
+    <li><span class="selo-evidencia" data-nivel="C">C</span> especialista ou documento de época sem conferência do original</li>
+    <li><span class="selo-evidencia" data-nivel="D">D</span> imprensa, redes sociais, legendas de vídeo</li>
+    <li><span class="selo-evidencia" data-nivel="P">P</span> memória ou narrativa pessoal, como a do autor do livro</li>
+    <li><span class="selo-evidencia" data-nivel="controverso">controverso</span> fontes em conflito</li>
+  </ul>
+  <div class="aviso-confirmar"><svg aria-hidden="true"><use href="#orn-confirmar"/></svg><div><strong>a confirmar pela família</strong><p>Nomes, datas e identificações de fotos marcados assim dependem de quem viveu a história. Se você sabe, conte.</p></div></div>
+  <details><summary>Divergências em aberto</summary><ul id="diverg"></ul></details>
+  <p>Livro: <em>Avila: 300 anos de História &amp; Sabores</em>, de Fabricio de Avila Ferreira. Imagens do livro (© Fabricio de Avila Ferreira), de postagens de @fabriciodeavila e @jornal.interacao e de vídeos do canal Antonio Joaquim (YouTube), reproduzidas sem fins comerciais, só para uso privado da família. Os direitos são dos titulares; os fotógrafos originais, em geral, não são conhecidos. Não republique. Retiramos qualquer imagem a pedido.</p>
+</section>
+</div>
+</main>
+<footer class="rodape conteudo">
+  <svg class="rosa" aria-hidden="true"><use href="#orn-rosa"/></svg>
+  <p>Página privada da família. Não é para divulgação. Pessoas que podem estar vivas aparecem só com nome e papel, e as fotos de grupos com elas ficam ocultas até você pedir para vê-las.</p>
+</footer>
+
+<dialog class="lightbox" id="lb" aria-label="Foto ampliada">
+  <div class="lightbox__corpo">
+    <img class="lightbox__img" id="lb-img" alt="">
+    <p class="lightbox__legenda" id="lb-leg"></p>
+    <div class="lightbox__barra"><button class="botao botao--vazado" id="lb-ant" type="button">Anterior</button><button class="botao botao--vazado" id="lb-prox" type="button">Próxima</button><button class="botao" id="lb-fecha" type="button">Fechar</button></div>
+  </div>
+</dialog>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,r){return (r||document).querySelector(s)};
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var NIVEIS={A:'A',B:'B',C:'C',D:'D',P:'P',controverso:'controverso'};
+var selo=function(n){n=NIVEIS[n]?n:'D';return '<span class="selo-evidencia" data-nivel="'+n+'">'+(n==='controverso'?'controverso':'nível '+n)+'</span>'};
+var aviso=function(t){return '<div class="aviso-confirmar"><svg aria-hidden="true"><use href="#orn-confirmar"/></svg><div><strong>a confirmar pela família</strong><p>'+esc(t||'Informação ainda sem confirmação.')+'</p></div></div>'};
+var regiao=function(l){return (l==='pico'||l==='faial'||l==='angra')?'acores':(l==='goias'||l==='brasilia')?'goias':'minas'};
+var RAMO={acores:'Açores',minas:'Minas Gerais',goias:'Goiás'};
+var D={};
+// tema e menu
+var root=document.documentElement;
+$('#tema').addEventListener('click',function(){var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);root.setAttribute('data-theme',dark?'light':'dark');this.setAttribute('aria-pressed',String(!dark))});
+var mb=$('#menu-btn'),mp=$('#menu-painel');
+mb.addEventListener('click',function(){var o=mp.hidden;mp.hidden=!o;mb.setAttribute('aria-expanded',String(o))});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!mp.hidden){mp.hidden=true;mb.setAttribute('aria-expanded','false');mb.focus()}});
+mp.addEventListener('click',function(e){if(e.target.tagName==='A'){mp.hidden=true;mb.setAttribute('aria-expanded','false')}});
+// lightbox
+var lbList=[],lbI=0,lb=$('#lb'),lastBtn=null;
+function lbShow(i){lbI=(i+lbList.length)%lbList.length;var f=lbList[lbI];$('#lb-img').src=f.arquivo;$('#lb-img').alt=f.alt||f.legenda_curta||'';
+ var cit=(f.possivelmente_vivos||!(f.pessoas_citadas&&f.pessoas_citadas.length))?'':' Citados: '+f.pessoas_citadas.join(', ')+'.';
+ $('#lb-leg').innerHTML=esc(f.legenda_curta)+'. <br><span class="etiqueta">Crédito: '+esc(f.credito)+(f.data?' · '+esc(f.data):'')+' · '+esc(f.origem)+'</span>'+esc(cit)+' '+selo(f.nivel_evidencia)+(f.nota?'<br><span class="mao">'+esc(f.nota)+'</span>':'')}
+function lbOpen(list,i,btn){lbList=list;lastBtn=btn||null;lbShow(i);if(!lb.open)lb.showModal()}
+$('#lb-fecha').addEventListener('click',function(){lb.close()});
+lb.addEventListener('close',function(){if(lastBtn)lastBtn.focus()});
+lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+$('#lb-ant').addEventListener('click',function(){lbShow(lbI-1)});
+$('#lb-prox').addEventListener('click',function(){lbShow(lbI+1)});
+lb.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')lbShow(lbI-1);if(e.key==='ArrowRight')lbShow(lbI+1)});
+function fotoBtn(f,list,i,cls){return '<button type="button" data-lb="'+i+'" aria-label="Ampliar: '+esc(f.legenda_curta)+'"'+(cls?' class="'+cls+'"':'')+'>'}
+function bindLb(cont,list){cont.addEventListener('click',function(e){var b=e.target.closest('[data-lb]');if(b)lbOpen(list,+b.getAttribute('data-lb'),b)})}
+function filtros(el,itens,atual,fn){el.innerHTML=itens.map(function(i){return '<button type="button" data-v="'+esc(i[0])+'" aria-pressed="'+(i[0]===atual)+'">'+esc(i[1])+'</button>'}).join('');
+ el.onclick=function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(el.querySelectorAll('button'),function(x){x.setAttribute('aria-pressed',String(x===b))});fn(b.getAttribute('data-v'))}}
+Promise.all(['pessoas','linha_do_tempo','lugares','receitas','relacoes','imagens'].map(function(n){return fetch('dados/'+n+'.json').then(function(r){if(!r.ok)throw new Error(n);return r.json()})}))
+.then(function(r){D.pessoas=r[0];D.tempo=r[1];D.lugares=r[2];D.rec=r[3];D.rel=r[4];D.img=r[5];init()})
+.catch(function(e){$('#tempo-lista').innerHTML='<li>Não foi possível carregar os dados ('+esc(e.message)+'). Recarregue a página.</li>'});
+function init(){
+ D.pById={};D.pessoas.forEach(function(p){D.pById[p.id]=p});
+ D.lById={};D.lugares.forEach(function(l){D.lById[l.id]=l});
+ D.vivoFoto={};D.rel.fotos.forEach(function(f){D.vivoFoto[f.id]=f});
+ D.imgs=D.img.map(function(f){var r=D.vivoFoto[f.id]||{};f.mini=f.arquivo;f.possivelmente_vivos=!!f.possivelmente_vivos;f.lugar_id=r.lugar_id;return f});
+ D.iById={};D.imgs.forEach(function(f){D.iById[f.id]=f});
+ lugaresLista();tempo();arvore();cartoes();galeria();receitas();divergencias();painelLugar('pico',true);
+}
+function tempo(){
+ var cur='todos';
+ function draw(){var ev=D.tempo.filter(function(e){return cur==='todos'||regiao(e.lugar_id)===cur});
+  $('#tempo-lista').innerHTML=ev.map(function(e){return '<li class="marco" data-regiao="'+regiao(e.lugar_id)+'"><p class="marco__ano">'+esc(e.ano)+'</p><p class="marco__titulo">'+esc(e.titulo)+'</p><p class="marco__texto">'+esc(e.texto)+'</p>'+selo(e.nivel)+(e.nota?'<p class="marco__nota">'+esc(String(e.nota).replace(/\[referência não verificada\]/g,'(referência ainda por verificar)'))+'</p>':'')+'</li>'}).join('')}
+ filtros($('#f-tempo'),[['todos','Tudo'],['acores','Açores'],['minas','Minas Gerais'],['goias','Goiás e Brasília']],cur,function(v){cur=v;draw()});draw()}
+function lugaresLista(){var ids=['pico','borda-do-campo','morro-alto','araxa','goias','brasilia'];$('#lugares-lista').innerHTML=ids.filter(function(i){return D.lById[i]}).map(function(i){return '<li><button type="button" data-lg="'+i+'" aria-pressed="false">'+esc(D.lById[i].nome.split(' (')[0])+'</button></li>'}).join('');$('#lugares-lista').addEventListener('click',function(e){var b=e.target.closest('[data-lg]');if(b)painelLugar(b.getAttribute('data-lg'))})}
+function marcaLugar(id){[].forEach.call(document.querySelectorAll('#lugares-lista button'),function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-lg')===id))});[].forEach.call(document.querySelectorAll('#mapa-rota [data-lugar]'),function(g){g.setAttribute('aria-pressed',String(g.getAttribute('data-lugar')===id))})}
+function painelLugar(id,silencioso){
+ var l=D.lById[id];if(!l)return;
+ var pes=D.pessoas.filter(function(p){return p.lugar===id&&!p.possivelmente_vivo}).slice(0,8);
+ var fs=D.imgs.filter(function(f){return f.lugar_id===id&&!f.possivelmente_vivos}).slice(0,6);
+ var evs=D.tempo.filter(function(e){return e.lugar_id===id}).slice(0,4);
+ var h='<h3>'+esc(l.nome)+'</h3><p>'+esc(l.descricao||'')+'</p>'+selo(l.nivel_evidencia);
+ if(l.lat==null)h+='<p class="nota-ig">Coordenadas não verificadas nas fontes. O ponto do mapa é esquemático.</p>';
+ if(evs.length)h+='<h4>Na linha do tempo</h4><ul>'+evs.map(function(e){return '<li>'+esc(e.ano)+': '+esc(e.titulo)+'</li>'}).join('')+'</ul>';
+ if(pes.length)h+='<h4>Pessoas</h4><ul>'+pes.map(function(p){return '<li>'+esc(p.nome)+'</li>'}).join('')+'</ul>';
+ if(fs.length)h+='<h4>Fotos</h4><ul class="mini-fotos">'+fs.map(function(f,i){return '<li>'+fotoBtn(f,fs,i)+'<img loading="lazy" src="'+esc(f.mini)+'" alt="'+esc(f.alt||f.legenda_curta)+'"></button></li>'}).join('')+'</ul>';
+ var el=$('#painel-lugar');el.innerHTML=h;bindLb(el,fs);marcaLugar(silencioso?'':id)}
+window.addEventListener('lugar-selecionado',function(e){painelLugar(e.detail.lugar)});
+// pessoas
+var VISTO={};
+function pessoaLi(p,nivel){
+ var viva=p.possivelmente_vivo;var kids=(p.filhos||[]).map(function(i){return D.pById[i]}).filter(Boolean);
+ var nm='<button class="nome" type="button" data-p="'+esc(p.id)+'">'+esc(p.nome)+'</button>'+(viva?' <span class="ref">(só nome e papel)</span>':'')+(p.aconfirmar?' <span class="mao" style="font-size:1.1rem">a confirmar</span>':'');
+ if(VISTO[p.id])return '<li data-ramo="'+p.ramo+'"><div class="row"><span class="espaco"></span>'+nm+' <span class="ref">(já aparece acima)</span></div></li>';
+ VISTO[p.id]=1;
+ if(!kids.length)return '<li data-ramo="'+p.ramo+'" data-id="'+esc(p.id)+'"><div class="row"><span class="espaco"></span>'+nm+'</div></li>';
+ var open=nivel<1,uid='k-'+p.id;
+ return '<li data-ramo="'+p.ramo+'" data-id="'+esc(p.id)+'"><div class="row"><button class="tog" type="button" aria-expanded="'+open+'" aria-controls="'+esc(uid)+'" aria-label="'+(open?'Recolher':'Expandir')+' filhos de '+esc(p.nome)+'">'+(open?'\u2212':'+')+'</button>'+nm+'</div><ul id="'+esc(uid)+'"'+(open?'':' hidden')+'>'+kids.map(function(k){return pessoaLi(k,nivel+1)}).join('')+'</ul></li>'}
+function togg(btn,open){var ul=document.getElementById(btn.getAttribute('aria-controls'));if(!ul)return;ul.hidden=!open;btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'\u2212':'+';btn.setAttribute('aria-label',(open?'Recolher':'Expandir')+btn.getAttribute('aria-label').replace(/^(Recolher|Expandir)/,''))}
+function arvore(){
+ var roots=D.pessoas.filter(function(p){return !(p.pais||[]).some(function(i){return D.pById[i]})});
+ // ordena raízes: quem tem descendentes primeiro
+ roots.sort(function(a,b){return (b.filhos||[]).length-(a.filhos||[]).length});
+ VISTO={};
+ var com=roots.filter(function(p){return (p.filhos||[]).length}),sem=roots.filter(function(p){return !(p.filhos||[]).length});
+ var h='<ul>'+com.map(function(p){return pessoaLi(p,0)}).join('')+'</ul>';
+ if(sem.length)h+='<h3>Outras pessoas citadas</h3><ul>'+sem.map(function(p){return pessoaLi(p,0)}).join('')+'</ul>';
+ $('#arvore').innerHTML=h;
+ $('#arvore').addEventListener('click',function(e){var t=e.target.closest('.tog');if(t){togg(t,t.getAttribute('aria-expanded')!=='true');return}var b=e.target.closest('[data-p]');if(b){detalhe(b.getAttribute('data-p'))}});
+ $('#exp').onclick=function(){[].forEach.call(document.querySelectorAll('#arvore .tog'),function(t){togg(t,true)})};
+ $('#rec').onclick=function(){[].forEach.call(document.querySelectorAll('#arvore .tog'),function(t){togg(t,false)})};
+ $('#busca').addEventListener('input',function(){var q=this.value.trim().toLowerCase();var lis=document.querySelectorAll('#arvore li');var out=$('#busca-res');
+  if(!q){[].forEach.call(lis,function(l){l.hidden=false});out.textContent='';return}
+  [].forEach.call(lis,function(l){l.hidden=true});var n=0;
+  D.pessoas.forEach(function(p){if(p.nome.toLowerCase().indexOf(q)<0)return;var li=document.querySelector('#arvore li[data-id="'+p.id+'"]');if(li)n++;
+   while(li){li.hidden=false;var ul=li.parentElement;if(ul&&ul.id&&ul.hidden){var t=document.querySelector('[aria-controls="'+ul.id+'"]');if(t)togg(t,true)}li=li.parentElement.closest('li')}});
+  out.textContent=n?n+' pessoa(s) encontrada(s).':'Nenhuma pessoa encontrada.'});
+ filtros($('#f-ramo'),[['todos','Todos os ramos'],['acores','Açores'],['minas','Minas Gerais'],['goias','Goiás']],'todos',function(v){cardRamo=v;cardN=24;cartoes()});
+}
+function detalhe(id){
+ var p=D.pById[id];if(!p)return;var viva=p.possivelmente_vivo;
+ var f=p.foto&&D.iById[p.foto];if(f&&f.possivelmente_vivos)f=null;var pais=(p.pais||[]).map(function(i){return D.pById[i]}).filter(Boolean).map(function(x){return esc(x.nome)}).join(' e ');
+ var fil=(p.filhos||[]).map(function(i){return D.pById[i]}).filter(Boolean).map(function(x){return esc(x.nome)}).join(', ');
+ var h='<article class="painel"><h3>'+esc(p.nome)+'</h3>';
+ if(viva){h+='<p>Pode estar viva. Por isso a página guarda só o nome e o papel na família.</p>'+(p.resumo?'<p>'+esc(p.resumo)+'</p>':'')+(pais?'<p>Filho(a) de '+pais+'.</p>':'')}
+ else{var d=[p.nascimento,p.morte].filter(Boolean).join(' – ');h+=(d?'<p class="pessoa__datas">'+esc(d)+'</p>':'')+(p.lugar&&D.lById[p.lugar]?'<p class="pessoa__lugar">'+esc(D.lById[p.lugar].nome)+'</p>':'')+'<p>'+esc(p.resumo)+'</p>'+(pais?'<p>Filho(a) de '+pais+'.</p>':'')+(fil?'<p>Filhos: '+fil+'.</p>':'')+(f?'<p><img loading="lazy" style="max-width:16rem" src="'+esc(f.mini)+'" alt="'+esc(f.alt||f.legenda_curta)+'"><span class="nota-ig">'+esc(f.credito)+'</span></p>':'')}
+ h+=selo(p.evidencia)+(p.aconfirmar||p.nota_confirmar?aviso(p.nota_confirmar):'')+(p.encontrado_por_este_estudo?'<p class="nota-ig">Encontrada por este estudo, a partir de uma legenda de rede social (nível D).</p>':'')+'</article>';
+ var el=$('#pessoa-painel');el.innerHTML=h;el.scrollIntoView({block:'nearest',behavior:'smooth'})}
+var cardRamo='todos',cardN=24;
+function cartoes(){
+ var ps=D.pessoas.filter(function(p){return cardRamo==='todos'||p.ramo===cardRamo});
+ var vis=ps.slice(0,cardN);
+ $('#cartoes').innerHTML=vis.map(function(p){var viva=p.possivelmente_vivo;var f=!viva&&p.foto&&D.iById[p.foto];if(f&&f.possivelmente_vivos)f=null;
+  return '<li class="pessoa" data-ramo="'+p.ramo+'">'+(f?'<img class="pessoa__retrato" loading="lazy" src="'+esc(f.mini)+'" alt="'+esc(f.alt||f.legenda_curta)+'">':'')+(!f?'<div class="monograma" aria-hidden="true"><span>'+esc(p.nome.replace(/^(Tia|Tio|Vó|Vô|Dona|Capitão|Major|Padre)\s+/,'').charAt(0))+'</span></div>':'')+'<h4 class="pessoa__nome">'+esc(p.nome)+'</h4>'+(!viva&&(p.nascimento||p.morte)?'<p class="pessoa__datas">'+esc([p.nascimento,p.morte].filter(Boolean).join(' – '))+'</p>':'')+(!viva&&p.lugar&&D.lById[p.lugar]?'<p class="pessoa__lugar">'+esc(D.lById[p.lugar].nome)+'</p>':'')+'<p class="pessoa__resumo">'+esc(viva?(p.resumo||''):(p.resumo||'').slice(0,220)+((p.resumo||'').length>220?'…':''))+'</p>'+selo(p.evidencia)+(p.aconfirmar?'<span class="mao">a confirmar pela família</span>':'')+'<button class="pessoa__link botao--vazado" type="button" data-p="'+esc(p.id)+'" style="background:none;border:0;color:var(--mar);text-align:left;cursor:pointer;padding:0">Ver mais</button></li>'}).join('');
+ $('#mais-pessoas').hidden=cardN>=ps.length}
+$('#cartoes').addEventListener('click',function(e){var b=e.target.closest('[data-p]');if(b)detalhe(b.getAttribute('data-p'))});
+$('#mais-pessoas').addEventListener('click',function(){cardN+=24;cartoes()});
+// galeria
+var gOri='todos',gN=36,gVivos=false;
+function galeria(){
+ filtros($('#f-fotos'),[['todos','Todas'],['livro','Do livro'],['instagram','Instagram'],['video','Vídeo do lançamento']],'todos',function(v){gOri=v;gN=36;draw()});
+ function draw(){var nOc=D.imgs.filter(function(f){return f.possivelmente_vivos}).length;var tg=$('#vivos-toggle');tg.textContent=gVivos?'Ocultar fotos de grupos com pessoas possivelmente vivas':'Mostrar fotos de grupos com pessoas possivelmente vivas ('+nOc+')';tg.setAttribute('aria-pressed',String(gVivos));
+  var l=D.imgs.filter(function(f){return (gOri==='todos'||f.origem===gOri)&&(gVivos||!f.possivelmente_vivos)});var vis=l.slice(0,gN);
+  $('#galeria').innerHTML=vis.map(function(f,i){return '<li class="foto">'+fotoBtn(f,vis,i,'foto__botao')+'<div class="moldura"><img loading="lazy" src="'+esc(f.mini)+'" alt="'+esc(f.alt||f.legenda_curta)+'" width="'+esc(f.largura)+'" height="'+esc(f.altura)+'"></div></button><figcaption>'+esc(f.legenda_curta)+'<br><span class="nota-ig">'+esc(f.credito)+'</span></figcaption></li>'}).join('');
+  $('#mais-fotos').hidden=gN>=l.length;$('#galeria').__l=vis}
+ bindLb2();draw();$('#vivos-toggle').addEventListener('click',function(){gVivos=!gVivos;gN=36;draw()});$('#mais-fotos').addEventListener('click',function(){gN+=36;draw()})}
+function bindLb2(){$('#galeria').addEventListener('click',function(e){var b=e.target.closest('[data-lb]');if(b)lbOpen(this.__l,+b.getAttribute('data-lb'),b)})}
+// receitas
+function receitas(){
+ var cats=['todos'].concat(Object.keys(D.rec.reduce(function(a,r){a[r.categoria]=1;return a},{})).sort());var cur='todos';
+ function draw(){$('#rec-lista').innerHTML=D.rec.filter(function(r){return cur==='todos'||r.categoria===cur}).map(function(r){
+  var q=r.quem_cita||{};var pp=q.pessoa_id&&D.pById[q.pessoa_id];var quem=q.nome_no_livro||(pp&&!pp.possivelmente_vivo?pp.nome:null);
+  var ig=(r.instagram||[]).filter(function(i){return i.vinculo==='Confirmado'||i.vinculo==='Provável'});
+  return '<article class="rec"><svg aria-hidden="true" style="width:36px;height:36px;color:var(--barro)"><use href="#orn-'+(r.categoria==='rosca'?'rosca':r.categoria==='bolo'||r.categoria==='doce'?'colher':'panela')+'"/></svg><h3>'+esc(r.numero+'. '+r.nome)+'</h3><p class="cat">'+esc(r.categoria)+(quem?' · de '+esc(quem):'')+'</p><ul>'+(r.ingredientes_resumo||[]).map(function(i){return '<li>'+esc(i)+'</li>'}).join('')+'</ul><p class="nota-ig">Livro, p. '+esc(r.pagina_impressa||'?')+'</p>'+(ig.length?'<p class="nota-ig">Há postagem do autor ligada a esta receita (indício, nível D).</p>':'')+selo(r.nivel_evidencia)+'</article>'}).join('')}
+ filtros($('#f-rec'),cats.map(function(c){return [c,c==='todos'?'Todas':c]}),cur,function(v){cur=v;draw()});draw()}
+function divergencias(){
+ var d=[['Foto da família de Zico e Adélia','1927 (livro e vídeo) ou 1928 (comentário do autor).'],['Lourival','“Lorico” no livro, “Lourico” nas postagens.'],['Antonio Luiz Leite','Com ou sem “da Silva” no nome.'],['Maria Célia e Malvina','Aparecem só numa legenda de foto, sem filiação.'],['Francisco Antônio','Mais de um homônimo; o vídeo não distingue.'],['Rua das Flores e Rua Capitão José Porfírio','Provavelmente a mesma casa, não confirmado.'],['Os Portella','Três pessoas Portella impressas no livro como ascendência direta estão na árvore com aviso; aguardam decisão da família.']];
+ $('#diverg').innerHTML=d.map(function(x){return '<li><strong>'+esc(x[0])+'.</strong> '+esc(x[1])+'</li>'}).join('')}
+})();
+</script>
+</body>
+</html>

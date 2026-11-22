@@ -1,0 +1,5315 @@
+[
+ {
+  "id": "joao-de-avila-raposo",
+  "nome": "Capitão João de Avila Raposo",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "pico",
+  "ramo": "acores",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "maria-do-rosario",
+  "filhos": [
+   "joao-de-avila-da-silveira"
+  ],
+  "foto": null,
+  "resumo": "Pai de João de Avila da Silveira; segundo o livro, lavrador e proprietário de vinhas e algumas reses na Ilha do Pico. O brasão de 1665 atribuído a ele (carta de brasão em Angra) não foi localizado fora do livro.",
+  "linha": "origem-pico",
+  "apelidos": [],
+  "conjuges": [
+   "maria-do-rosario"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "033",
+    "trecho": "filho legítimo do Capitão João de Avila Raposo"
+   },
+   {
+    "arquivo": "estudos/00-capa-e-sumario.md",
+    "pagina_pdf": "005",
+    "trecho": "brasão concedido em 15 de junho de 1665"
+   }
+  ],
+  "evidencia_detalhe": "Identificação por narrativa do autor; assento de 1757 transcrito cita-o como pai (já defunto). Brasão e batismo de 1709 não localizados online (pesquisa/verificacao/README.md).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Confirmar em registros paroquiais do Pico/arquivo de Angra."
+ },
+ {
+  "id": "maria-do-rosario",
+  "nome": "Dona Maria do Rosário",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "pico",
+  "ramo": "acores",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "joao-de-avila-raposo",
+  "filhos": [
+   "joao-de-avila-da-silveira"
+  ],
+  "foto": null,
+  "resumo": "Mãe de João de Avila da Silveira, natural da freguesia de Santa Luzia, Ilha do Pico. O livro insere, sem ligá-lo expressamente a ela, um assento de batismo de 1678 de uma Maria do Rosário, filha do Capitão Jorge Gomes d'Ávila e Catarina da Silveira.",
+  "linha": "origem-pico",
+  "apelidos": [],
+  "conjuges": [
+   "joao-de-avila-raposo"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "033",
+    "trecho": "Dona Maria do Rosário, pacatos lavradores"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "034",
+    "trecho": "assento de Santa Luisa; Catarina filha de Willem van der Haegen"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "O livro não diz se a Maria do Rosário batizada em 1678 é a mãe de João; a identificação é inferência a confirmar."
+ },
+ {
+  "id": "joao-de-avila-da-silveira",
+  "nome": "João de Avila da Silveira",
+  "nascimento": "1709-04-10",
+  "morte": "1788-03-23",
+  "lugar": "borda-do-campo",
+  "ramo": "acores",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joao-de-avila-raposo",
+   "maria-do-rosario"
+  ],
+  "conjuge": "francisca-da-conceicao",
+  "filhos": [
+   "antonio-joaquim-de-avila"
+  ],
+  "foto": null,
+  "resumo": "Imigrante açoriano, tronco de todos os Avila do livro: nascido na freguesia de Nossa Senhora da Piedade, Ilha do Pico, veio para o Brasil com a primeira esposa e fixou-se na Borda do Campo (Barbacena). Casou de novo em 1757 e morreu em 1788.",
+  "linha": "origem-pico",
+  "apelidos": [],
+  "conjuges": [
+   "francisca-da-conceicao",
+   "antonia-maria-de-jesus"
+  ],
+  "nascimento_detalhe": {
+   "data": "1709-04-10",
+   "precisao": "dia",
+   "lugar_id": "pico",
+   "nota": "Batismo de 1709 não localizado fora do livro."
+  },
+  "morte_detalhe": {
+   "data": "1788-03-23",
+   "precisao": "dia",
+   "lugar_id": "borda-do-campo",
+   "nota": "Sepultado no adro da Matriz de N. Sra. da Piedade (Barbacena), segundo assento transcrito."
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "033",
+    "trecho": "nasceu no dia 10 de abril de 1709"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "034",
+    "trecho": "assento de casamento 1757 e óbito 1788"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "030",
+    "trecho": "em 1748 ... emigraram 461 pessoas"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo. Nascimento (1709) sem documento localizado; ano de chegada (1748) diverge do contexto histórico.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D08-1748-erupcoes",
+   "D09-461"
+  ],
+  "nota_confirmar": "Ano de chegada e causa da emigração (1748 x erupções de 1718/1720) a confirmar com o autor e registros."
+ },
+ {
+  "id": "francisca-da-conceicao",
+  "nome": "Francisca da Conceição",
+  "nascimento": null,
+  "morte": "1756",
+  "lugar": "borda-do-campo",
+  "ramo": "acores",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "joao-de-avila-da-silveira",
+  "filhos": [],
+  "foto": null,
+  "resumo": "Primeira esposa de João de Avila da Silveira; o livro diz que ele foi seu terceiro marido. Mãe de Gertrudes da Encarnação, Joana e João (nascidos em Portugal) e de Francisca (nascida em Barbacena); sepultada na matriz de N. Sra. da Piedade, em Barbacena.",
+  "linha": "origem-pico",
+  "apelidos": [],
+  "conjuges": [
+   "joao-de-avila-da-silveira"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": {
+   "data": "1756",
+   "precisao": "ano",
+   "lugar_id": "borda-do-campo",
+   "nota": "Ano da viuvez de João, segundo o livro; data exata não informada."
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "033"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "034",
+    "trecho": "viúvo da primeira mulher Francisca da Conceição"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "antonia-maria-de-jesus",
+  "nome": "Antonia Maria de Jesus",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "faial",
+  "ramo": "acores",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "joao-de-avila-da-silveira",
+  "filhos": [
+   "antonio-joaquim-de-avila"
+  ],
+  "foto": null,
+  "resumo": "Segunda esposa de João de Avila da Silveira (casamento registrado em 12/09/1757), natural da freguesia de N. Sra. das Angústias, Ilha do Faial. Mãe de dez filhos, entre eles Antonio Joaquim de Avila, o primogênito.",
+  "linha": "origem-pico",
+  "apelidos": [],
+  "conjuges": [
+   "joao-de-avila-da-silveira"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "034",
+    "trecho": "Antonia Maria de Jesus, natural de N. Sra. das Angustias da Ilha do Faial"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "035",
+    "trecho": "lista dos filhos"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "antonio-joaquim-de-avila",
+  "nome": "Capitão Antonio Joaquim de Avila (o primogênito, 1758)",
+  "nascimento": "1758-09-04",
+  "morte": null,
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joao-de-avila-da-silveira",
+   "antonia-maria-de-jesus"
+  ],
+  "conjuge": "marianna-joaquina-das-neves",
+  "filhos": [
+   "elias-antonio-de-avila",
+   "marianno-joaquim-de-avila",
+   "francisco-antonio-de-avila-pentavo"
+  ],
+  "foto": null,
+  "resumo": "Primogênito de João e Antonia, nascido em Barbacena. Garimpeiro e mercador, depois mudou-se para Araxá (sesmaria \"Pederneiras\", 1802, segundo o livro), foi Fabriqueiro da Matriz de São Domingos e deixou testamento em 1820. É o pai de Marianno (linha Três Cruzes) e de Francisco Antonio (linha Morro Alto).",
+  "linha": "antonio-joaquim",
+  "apelidos": [
+   "Capitão Antonio Joaquim"
+  ],
+  "conjuges": [
+   "marianna-joaquina-das-neves",
+   "ana-rosa-goncalves"
+  ],
+  "nascimento_detalhe": {
+   "data": "1758-09-04",
+   "precisao": "dia",
+   "lugar_id": "borda-do-campo",
+   "nota": null
+  },
+  "morte_detalhe": {
+   "data": null,
+   "precisao": "desconhecida",
+   "lugar_id": "araxa",
+   "nota": "Testamento de 28/01/1820; óbito não datado no livro (inventário posterior)."
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "034",
+    "trecho": "nascido aos 04-09 (batizado 25-09-1758)"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "035",
+    "trecho": "casamento 1784"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "038",
+    "trecho": "sesmaria no ano de 1802, \"Pederneiras\""
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "041",
+    "trecho": "testamento de 28/01/1820"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo. A sesmaria de 1802 não foi encontrada em fonte independente (pesquisa/verificacao/README.md).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D10-pederneiras"
+  ],
+  "nota_confirmar": "Sesmaria \"Pederneiras\" e cotas do testamento/inventário a confirmar. Há homônimos: o filho de Francisco Antonio e \"Tonico\" (ver ids)."
+ },
+ {
+  "id": "marianna-joaquina-das-neves",
+  "nome": "Marianna Joaquina das Neves",
+  "nascimento": "1754-05-27",
+  "morte": null,
+  "lugar": "borda-do-campo",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "martinho-de-faria-moreira",
+   "luzia-garcia-fontoura"
+  ],
+  "conjuge": "antonio-joaquim-de-avila",
+  "filhos": [
+   "marianno-joaquim-de-avila",
+   "francisco-antonio-de-avila-pentavo"
+  ],
+  "foto": null,
+  "resumo": "Primeira esposa de Antonio Joaquim (casamento em 28/01/1784, Capela da Ajuda, Borda do Campo); batizada em 1754. Mãe de Marianno, Francisco Antonio, Maria e Florianna.",
+  "linha": "antonio-joaquim",
+  "apelidos": [],
+  "conjuges": [
+   "antonio-joaquim-de-avila"
+  ],
+  "nascimento_detalhe": {
+   "data": "1754-05-27",
+   "precisao": "dia",
+   "lugar_id": "borda-do-campo",
+   "nota": "Data do assento de batismo transcrito (27-05-1754)."
+  },
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "035",
+    "trecho": "casou-se, em 1784, com Marianna Joaquina das Neves"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "martinho-de-faria-moreira",
+  "nome": "Martinho de Faria Moreira",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "luzia-garcia-fontoura",
+  "filhos": [
+   "marianna-joaquina-das-neves"
+  ],
+  "foto": null,
+  "resumo": "Natural da vila de Mogi (bispado de São Paulo), pai de Marianna Joaquina das Neves; neto de Antonio de Faria Moreira (Santos) e Ignes Ribeira.",
+  "linha": "antonio-joaquim",
+  "apelidos": [],
+  "conjuges": [
+   "luzia-garcia-fontoura"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "035"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "055",
+    "trecho": "árvore: Casal 4"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "luzia-garcia-fontoura",
+  "nome": "Luzia Garcia Fontoura",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "martinho-de-faria-moreira",
+  "filhos": [
+   "marianna-joaquina-das-neves"
+  ],
+  "foto": null,
+  "resumo": "Natural da freguesia de Barbacena, mãe de Marianna Joaquina das Neves; filha de Lourenço Garcia de Fontoura e Izabel Ribeiro de Lima.",
+  "linha": "antonio-joaquim",
+  "apelidos": [],
+  "conjuges": [
+   "martinho-de-faria-moreira"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "035"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "055",
+    "trecho": "árvore: Casal 5"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "ana-rosa-goncalves",
+  "nome": "Ana Rosa Gonçalves",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "antonio-joaquim-de-avila",
+  "filhos": [
+   "elias-antonio-de-avila"
+  ],
+  "foto": null,
+  "resumo": "Segunda esposa de Antonio Joaquim, com quem teve o filho Elias Antonio de Avila.",
+  "linha": "antonio-joaquim",
+  "apelidos": [],
+  "conjuges": [
+   "antonio-joaquim-de-avila"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "038"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "043"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "elias-antonio-de-avila",
+  "nome": "Elias Antonio de Avila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "antonio-joaquim-de-avila",
+   "ana-rosa-goncalves"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho caçula de Antonio Joaquim e Ana Rosa Gonçalves; no inventário tinha 8 anos. O livro reproduz uma foto sua com Francisca de Paiva e Silva (ramo colateral, não seguido pelo autor).",
+  "linha": "antonio-joaquim",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "047",
+    "trecho": "Elias, de idade de oito anos"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "038",
+    "trecho": "foto: Francisca de Paiva e Silva e Elias Antônio de Avila"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Ramo colateral; o autor deixou-o para trabalho futuro."
+ },
+ {
+  "id": "marianno-joaquim-de-avila",
+  "nome": "Coronel Marianno Joaquim de Avila",
+  "nascimento": null,
+  "morte": "1863-01-11",
+  "lugar": "tres-cruzes",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "antonio-joaquim-de-avila",
+   "marianna-joaquina-das-neves"
+  ],
+  "conjuge": "escolastica-maria-de-jesus",
+  "filhos": [
+   "anna-angelica-da-assumpcao",
+   "maria-perpetua-da-trindade",
+   "maria-thereza-de-jesus-avila",
+   "tiburcio-de-avila-menino",
+   "carlos-joaquim-de-avila"
+  ],
+  "foto": "livro-p129-113-casarao-da-rua-alexandre-gondim-constr",
+  "resumo": "Filho de Antonio Joaquim, formado em Coimbra segundo o livro, foi o primeiro presidente da Câmara de Araxá (posse em 07/01/1833) e líder do Partido Conservador. Morava na Fazenda das Três Cruzes e construiu o casarão da Rua Alexandre Gondim (1850); morreu em janeiro de 1863.",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Mariano (grafia da postagem de 2023)",
+   "Marianno Joaquim de Ávila"
+  ],
+  "conjuges": [
+   "escolastica-maria-de-jesus"
+  ],
+  "nascimento_detalhe": {
+   "data": null,
+   "precisao": "desconhecida",
+   "lugar_id": null,
+   "nota": "Inventário do pai (c. 1820) registra-o \"solteiro, 36 anos\", embora o livro o dê casado com Escolástica: ver divergência."
+  },
+  "morte_detalhe": {
+   "data": "1863-01-11",
+   "precisao": "dia",
+   "lugar_id": "araxa",
+   "nota": "Dia 11/01/1863 conforme recibo de funeral transcrito."
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "093",
+    "trecho": "Foi o 1º Presidente da Câmara de Araxá, com ato de posse em 7 de janeiro de 1833"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "094",
+    "trecho": "Ficou viúvo no dia 23 de setembro de 1846"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "095",
+    "trecho": "recibos do funeral, 11 de Janeiro de 1863"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "129",
+    "trecho": "casarão ... construído por Marianno de Avila em 1850"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D16-vila-araxa",
+   "D18-marianno-solteiro",
+   "D19-casamento-escolastica"
+  ],
+  "nota_confirmar": "Grafia \"Mariano\" e datas da vila/câmara (1831 x 1833) divergem entre postagem e livro."
+ },
+ {
+  "id": "escolastica-maria-de-jesus",
+  "nome": "Escolástica Maria de Jesus",
+  "nascimento": null,
+  "morte": "1846-09-23",
+  "lugar": "tres-cruzes",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "marianno-joaquim-de-avila",
+  "filhos": [
+   "anna-angelica-da-assumpcao",
+   "maria-perpetua-da-trindade",
+   "maria-thereza-de-jesus-avila",
+   "tiburcio-de-avila-menino",
+   "carlos-joaquim-de-avila"
+  ],
+  "foto": null,
+  "resumo": "Esposa de Marianno; mãe de Anna Angélica, Maria Perpétua, Maria Thereza, Tibúrcio (morto aos 8 anos) e Carlos Joaquim. Marianno ficou viúvo em 23/09/1846.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "marianno-joaquim-de-avila"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": {
+   "data": "1846-09-23",
+   "precisao": "dia",
+   "lugar_id": null,
+   "nota": "Data da viuvez de Marianno, segundo o livro."
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "093"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "094"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "anna-angelica-da-assumpcao",
+  "nome": "Anna Angélica da Assumpção",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "serra-do-salitre",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "marianno-joaquim-de-avila",
+   "escolastica-maria-de-jesus"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Marianno; casou primeiro com João Pereira de Avila e depois com José Martins Borges. Pertenceu a ela a Fazenda Bom Jardim (ruínas do sobrado em Serra do Salitre).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "093"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "096"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "maria-perpetua-da-trindade",
+  "nome": "Maria Perpétua da Trindade",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "marianno-joaquim-de-avila",
+   "escolastica-maria-de-jesus"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Marianno, casada com Joaquim Henrique de Menezes.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "093"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "maria-thereza-de-jesus-avila",
+  "nome": "Maria Thereza de Jesus",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "marianno-joaquim-de-avila",
+   "escolastica-maria-de-jesus"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Marianno, casada com José Antonio de Faria Menezes.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "094"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "tiburcio-de-avila-menino",
+  "nome": "Tibúrcio de Avila (o menino)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "marianno-joaquim-de-avila",
+   "escolastica-maria-de-jesus"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho de Marianno falecido aos oito anos; seu nome foi dado em homenagem a dois filhos de Carlos (Tibúrcio Joaquim e Tibúrcio Germano).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "094"
+   },
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "145"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "carlos-joaquim-de-avila",
+  "nome": "Capitão Carlos Joaquim de Avila",
+  "nascimento": "1833-10-21",
+  "morte": null,
+  "lugar": "tres-cruzes",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "marianno-joaquim-de-avila",
+   "escolastica-maria-de-jesus"
+  ],
+  "conjuge": "ana-candida-de-oliveira",
+  "filhos": [
+   "possidonia-ana-dabadia",
+   "tiburcio-germano-de-avila",
+   "tiburcio-joaquim-de-avila"
+  ],
+  "foto": "livro-p099-076-carta-patente-de-alferes-de-carlos-joa",
+  "resumo": "Filho de Marianno, nascido em 21/10/1833 e batizado na Fazenda da Água Fina. Alferes e depois Tenente da Guarda Nacional, casou em 1858 com Anna Candida de Oliveira, que faleceu em 1862. Teve também dois filhos \"naturais\" com Carlota Ana D'Abadia, que alforriou e legitimou. Era o \"Vovô Dindinho\".",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Vovô Dindinho"
+  ],
+  "conjuges": [
+   "ana-candida-de-oliveira",
+   "carlota-ana-dabadia"
+  ],
+  "nascimento_detalhe": {
+   "data": "1833-10-21",
+   "precisao": "dia",
+   "lugar_id": "fazenda-agua-fina",
+   "nota": null
+  },
+  "morte_detalhe": {
+   "data": null,
+   "precisao": "desconhecida",
+   "lugar_id": null,
+   "nota": "O livro situa a morte antes de 1911 (filho Tibúrcio morreu em 1904); data não informada."
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "100",
+    "trecho": "nascido a 21 de outubro do corrente anno; batizado 10/12/1833"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "099",
+    "trecho": "patentes de Alferes e Tenente"
+   },
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "144",
+    "trecho": "filhos naturais"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Data da morte não consta no trecho lido do livro."
+ },
+ {
+  "id": "ana-candida-de-oliveira",
+  "nome": "Anna Candida de Oliveira",
+  "nascimento": null,
+  "morte": "1862-11-24",
+  "lugar": "fazenda-dos-veados",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "nicolao-alves-portella-de-oliveira",
+   "maria-do-carmo-de-oliveira"
+  ],
+  "conjuge": "carlos-joaquim-de-avila",
+  "filhos": [
+   "tiburcio-joaquim-de-avila"
+  ],
+  "foto": null,
+  "resumo": "Esposa de Carlos (casamento em 1858), prima em grau de parentesco com ele pela ascendência Portella/Avila; morreu de tuberculose em 24/11/1862 na Fazenda dos Veados (Santa Juliana), tratada pelo pai farmacêutico. Mãe de Tibúrcio Joaquim.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "carlos-joaquim-de-avila"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": {
+   "data": "1862-11-24",
+   "precisao": "dia",
+   "lugar_id": "fazenda-dos-veados",
+   "nota": "Carta de 26/11/1862 diz \"dia 24 do corrente\"."
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "100",
+    "trecho": "casou-se em 1858 com Anna Candida de Oliveira"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "101",
+    "trecho": "carta de Nicolao: dia 24 do corrente, 26 de 9bro de 1862"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D15-portella"
+  ],
+  "nota_confirmar": "Ver D15: o livro faz de Maria do Carmo (filha de Francisco Antonio) a mãe de Ana Candida, ligando as linhas Três Cruzes e Morro Alto."
+ },
+ {
+  "id": "carlota-ana-dabadia",
+  "nome": "Carlota Ana D'Abadia",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "bagagem",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "carlos-joaquim-de-avila",
+  "filhos": [
+   "possidonia-ana-dabadia",
+   "tiburcio-germano-de-avila"
+  ],
+  "foto": null,
+  "resumo": "Mulher escravizada (parda) de Carlos Joaquim de Avila e mãe de Possidônia e Tibúrcio Germano; ela e os filhos receberam alforria.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "carlos-joaquim-de-avila"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "144",
+    "trecho": "escrava parda Carlota Ana D'Abadia"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "possidonia-ana-dabadia",
+  "nome": "Possidônia Ana D'Abadia",
+  "nascimento": "1855",
+  "morte": "1947",
+  "lugar": "bagagem",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "carlos-joaquim-de-avila",
+   "carlota-ana-dabadia"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha \"natural\" de Carlos e Carlota, nascida em 1855 e falecida em 1947 aos 92 anos; casou aos 13 anos com Misael Jerônimo de Oliveira e recebeu terras na Fazenda Bôa Vista (Bagagem). Teve cinco filhos.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": {
+   "data": "1855",
+   "precisao": "ano",
+   "lugar_id": null,
+   "nota": null
+  },
+  "morte_detalhe": {
+   "data": "1947",
+   "precisao": "ano",
+   "lugar_id": null,
+   "nota": null
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "145"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "tiburcio-germano-de-avila",
+  "nome": "Tibúrcio Germano de Avila",
+  "nascimento": "1857-12-01",
+  "morte": "1930",
+  "lugar": "ibia",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "carlos-joaquim-de-avila",
+   "carlota-ana-dabadia"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho \"natural\" de Carlos e Carlota, nascido em 01/12/1857 (nove meses antes de Tibúrcio Joaquim); casou com Joaquina Severina de Araújo, morou em São Pedro de Alcântara (Ibiá) e morreu em Cascalho Rico em 1930.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": {
+   "data": "1857-12-01",
+   "precisao": "dia",
+   "lugar_id": null,
+   "nota": null
+  },
+  "morte_detalhe": {
+   "data": "1930",
+   "precisao": "ano",
+   "lugar_id": null,
+   "nota": null
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "145"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "nicolao-alves-portella-de-oliveira",
+  "nome": "Nicolao Alves Portella de Oliveira",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "fazenda-dos-veados",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "maria-do-carmo-de-oliveira",
+  "filhos": [
+   "ana-candida-de-oliveira"
+  ],
+  "foto": null,
+  "resumo": "Farmacêutico com fazenda em Santa Juliana, casado com sua sobrinha Maria do Carmo; avô materno de Tibúrcio Joaquim. Escreveu a Carlos a carta que comunica a morte de Anna Candida.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "maria-do-carmo-de-oliveira"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "100"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "101"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "060",
+    "trecho": "Maria do Carmo ... casada com seu tio materno Nicolao Alves Portella de Oliveira"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D15-portella"
+  ],
+  "nota_confirmar": "Escopo: o ramo Portella/Ferreira de Aguiar da coluna do Jornal Interação está arquivado e não entra; entra apenas o Portella que o livro traz como ascendente direto de Tibúrcio Joaquim. Se o Nilson entender que isso viola a exclusão, remover este nó e o de Maria do Carmo."
+ },
+ {
+  "id": "maria-do-carmo-de-oliveira",
+  "nome": "Maria do Carmo de Oliveira",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "francisco-antonio-de-avila-pentavo",
+   "ana-rosa-de-jesus"
+  ],
+  "conjuge": "nicolao-alves-portella-de-oliveira",
+  "filhos": [
+   "ana-candida-de-oliveira"
+  ],
+  "foto": null,
+  "resumo": "Filha de Francisco Antonio de Avila e Ana Rosa de Jesus, irmã do Major Manoel Francisco; casou com o tio materno Nicolao Alves Portella de Oliveira. Mãe de Anna Candida de Oliveira.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "nicolao-alves-portella-de-oliveira"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "060"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "100",
+    "trecho": "filha de seu tio Francisco Antonio de Avila e irmã de Manoel Francisco de Avila"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D15-portella"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "tiburcio-joaquim-de-avila",
+  "nome": "Tibúrcio Joaquim de Avila",
+  "nascimento": "1858-08-31",
+  "morte": "1904-07-31",
+  "lugar": "tres-cruzes",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "carlos-joaquim-de-avila",
+   "ana-candida-de-oliveira"
+  ],
+  "conjuge": "thereza-thomazia-teixeira",
+  "filhos": [
+   "ana-candida-candinha",
+   "olinto-de-avila",
+   "carlos-de-avila-netto-carico",
+   "antonio-de-avila-sinho",
+   "jose-de-avila-zeca",
+   "lourival-de-avila-lorico",
+   "mariana-de-avila-fiica",
+   "tiburcia-de-avila-tiburcinha"
+  ],
+  "foto": "livro-p104-080-tiburcio-joaquim-de-avila-e-thereza-th",
+  "resumo": "Filho de Carlos e Anna Candida, nascido em 31/08/1858 e criado enfermo e franzino na Fazenda das Três Cruzes. Casou em 18/01/1882 com Thereza Thomázia Teixeira e anotou em sua bíblia os nascimentos dos oito filhos. Morreu em 31/07/1904, deixando a esposa grávida da caçula.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "thereza-thomazia-teixeira"
+  ],
+  "nascimento_detalhe": {
+   "data": "1858-08-31",
+   "precisao": "dia",
+   "lugar_id": "tres-cruzes",
+   "nota": null
+  },
+  "morte_detalhe": {
+   "data": "1904-07-31",
+   "precisao": "dia",
+   "lugar_id": "tres-cruzes",
+   "nota": null
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "100",
+    "trecho": "nasceu seu filho ... 31 de agosto de 1858"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "104",
+    "trecho": "Casou-se em 18 de janeiro de 1882"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "114",
+    "trecho": "faleceu aos 31 de julho de 1904"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "108",
+    "trecho": "registros da bíblia particular"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "thereza-thomazia-teixeira",
+  "nome": "Thereza Thomázia Teixeira (Vovó Thereza)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "tres-cruzes",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "antonio-affonso-teixeira",
+   "mariana-de-paula-carneiro"
+  ],
+  "conjuge": "tiburcio-joaquim-de-avila",
+  "filhos": [
+   "ana-candida-candinha",
+   "olinto-de-avila",
+   "carlos-de-avila-netto-carico",
+   "antonio-de-avila-sinho",
+   "jose-de-avila-zeca",
+   "lourival-de-avila-lorico",
+   "mariana-de-avila-fiica",
+   "tiburcia-de-avila-tiburcinha"
+  ],
+  "foto": "livro-p104-080-tiburcio-joaquim-de-avila-e-thereza-th",
+  "resumo": "Esposa de Tibúrcio (casamento em 18/01/1882), filha de Antonio Affonso Teixeira (\"Antonio do Marcelino\") e Mariana de Paula Carneiro. Mãe de oito filhos; autora de receitas do livro (biscoito de queijo doce, bolo de milho verde). Aparece como \"Thereza Thomázia de Jesus\" na bíblia de Tibúrcio.",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Vovó Thereza",
+   "Thereza Thomázia de Jesus"
+  ],
+  "conjuges": [
+   "tiburcio-joaquim-de-avila"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-14",
+   "rec-30"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "104"
+   },
+   {
+    "arquivo": "estudos/receitas/14-biscoito-de-queijo-doce-da-vovo-thereza.md",
+    "pagina_pdf": "182",
+    "trecho": "etiqueta: Vovó Thereza"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P); legenda de Instagram (D) cita a gripe de 1919 na casa dela.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D20-thereza-sobrenome"
+  ],
+  "nota_confirmar": "Datas de nascimento e morte não constam no livro."
+ },
+ {
+  "id": "antonio-affonso-teixeira",
+  "nome": "Antonio Affonso Teixeira (\"Antonio do Marcelino\")",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "mariana-de-paula-carneiro",
+  "filhos": [
+   "thereza-thomazia-teixeira"
+  ],
+  "foto": null,
+  "resumo": "Pai de Thereza Thomázia; padrinho de Mariana (Fiíca) em 1902, segundo a bíblia de Tibúrcio.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "mariana-de-paula-carneiro"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "104"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "112"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Há outro \"Antonio Affonso Teixeira\" (Tonico), tio de Candinha: identidade a confirmar."
+ },
+ {
+  "id": "mariana-de-paula-carneiro",
+  "nome": "Mariana de Paula Carneiro",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "antonio-affonso-teixeira",
+  "filhos": [
+   "thereza-thomazia-teixeira"
+  ],
+  "foto": null,
+  "resumo": "Mãe de Thereza Thomázia; descendente dos Carneiros de Mendonça, segundo o livro. Deu o nome a Mariana (Fiíca).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "antonio-affonso-teixeira"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "104"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "127"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "francisco-antonio-de-avila-pentavo",
+  "nome": "Francisco Antonio de Avila (filho de Antonio Joaquim)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "antonio-joaquim-de-avila",
+   "marianna-joaquina-das-neves"
+  ],
+  "conjuge": "ana-rosa-de-jesus",
+  "filhos": [
+   "maria-do-carmo-de-oliveira",
+   "manoel-francisco-de-avila"
+  ],
+  "foto": "livro-p060-028-francisco-antonio-de-avila",
+  "resumo": "Filho de Antonio Joaquim e Marianna; casou com Ana Rosa de Jesus (de Santo Antonio da Casa Branca) e foi pai do Major Manoel Francisco, de Antonio Joaquim e de Maria do Carmo. Executor do testamento do pai. O autor o chama de pentavô materno.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "ana-rosa-de-jesus"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "037",
+    "trecho": "Francisco Antonio de Avila, casado com Ana Rosa de Jesus"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "060"
+   },
+   {
+    "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
+    "pagina_pdf": "054",
+    "trecho": "pentavôs materno e paterno"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D05-francisco-antonio"
+  ],
+  "nota_confirmar": "Há dois \"Francisco Antonio de Avila\" (este e Chico do Muro) e um \"Francisco Antonio de Avilla\" em documento do APM (1819) sem parentesco demonstrado."
+ },
+ {
+  "id": "ana-rosa-de-jesus",
+  "nome": "Ana Rosa de Jesus",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "francisco-antonio-de-avila-pentavo",
+  "filhos": [
+   "maria-do-carmo-de-oliveira",
+   "manoel-francisco-de-avila"
+  ],
+  "foto": null,
+  "resumo": "Esposa de Francisco Antonio, natural de Santo Antonio da Casa Branca (bispado de Mariana), filha de Nicolao Alves Portella e Maria Josefa Rodrigues de Oliveira.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "francisco-antonio-de-avila-pentavo"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "060"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D15-portella"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "manoel-francisco-de-avila",
+  "nome": "Major Manoel Francisco de Avila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "francisco-antonio-de-avila-pentavo",
+   "ana-rosa-de-jesus"
+  ],
+  "conjuge": "ana-sabina-dos-santos",
+  "filhos": [
+   "francisco-antonio-de-avila-chico-do-muro",
+   "manoel-esteves-de-avila",
+   "ana-apolinaria-dos-santos",
+   "joaquim-esteves-de-avila"
+  ],
+  "foto": "livro-p062-029-manoel-francisco-de-avila",
+  "resumo": "Nascido em Araxá, fazendeiro (Fazenda do Morro Alto), vereador e presidente da Câmara em períodos de 1854 a 1876. Em testamento de 15/01/1880 deixou dez contos de réis para um hospital, origem da Santa Casa de Misericórdia de Araxá (fundada em 1885).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "ana-sabina-dos-santos"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": {
+   "data": null,
+   "precisao": "desconhecida",
+   "lugar_id": "morro-alto",
+   "nota": "Falecido após 15/01/1880 (data do testamento); data não informada."
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "063",
+    "trecho": "testamento"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "067",
+    "trecho": "legado que deu origem à Santa Casa"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "068",
+    "trecho": "vereador e presidente da Câmara"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo. Homenagem de 2025 (Instagram, D) confirma o legado.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Data de nascimento e morte não constam."
+ },
+ {
+  "id": "ana-sabina-dos-santos",
+  "nome": "Ana Sabina dos Santos",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "manoel-francisco-de-avila",
+  "filhos": [
+   "francisco-antonio-de-avila-chico-do-muro",
+   "manoel-esteves-de-avila",
+   "ana-apolinaria-dos-santos",
+   "joaquim-esteves-de-avila"
+  ],
+  "foto": null,
+  "resumo": "Esposa do Major Manoel Francisco; mãe de Ana Apolinária, Francisco Antonio (Chico do Muro), Manoel Esteves e Joaquim Esteves.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "manoel-francisco-de-avila"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "060"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "068"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "cassiano-barbosa-de-affonseca-e-silva",
+  "nome": "Cônego Cassiano Barbosa d'Affonseca e Silva",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p068-036-conego-cassiano-barbosa-d-affonseca-e",
+  "resumo": "Vigário que escreveu o testamento do Major a rogo e promoveu a fundação da Irmandade da Santa Casa de Araxá (1885); batizou Ana Cândida (1884) e recebeu os impostos paroquiais do funeral de Marianno.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "064"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "067"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "108"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "francisco-antonio-de-avila-chico-do-muro",
+  "nome": "Francisco Antonio de Avila (Chico do Muro)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "manoel-francisco-de-avila",
+   "ana-sabina-dos-santos"
+  ],
+  "conjuge": "maria-rita-de-paiva",
+  "filhos": [
+   "orlelimda-rita-de-avila"
+  ],
+  "foto": null,
+  "resumo": "Filho do Major Manoel Francisco, casado com Maria Rita de Paiva; pai de Orlelimda Rita (Tia Linda).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "maria-rita-de-paiva"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "068"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "069"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D05-francisco-antonio"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "maria-rita-de-paiva",
+  "nome": "Maria Rita de Paiva",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "francisco-antonio-de-avila-chico-do-muro",
+  "filhos": [
+   "orlelimda-rita-de-avila"
+  ],
+  "foto": null,
+  "resumo": "Esposa de Chico do Muro (Paiva por casamento no livro; o ramo Paiva de Carrancas está arquivado e não entra).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "francisco-antonio-de-avila-chico-do-muro"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "069"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "manoel-esteves-de-avila",
+  "nome": "Manoel Esteves de Avila (Manoel dos Patos)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "manoel-francisco-de-avila",
+   "ana-sabina-dos-santos"
+  ],
+  "conjuge": "hipolita-cassiana-lemos",
+  "filhos": [],
+  "foto": "livro-p069-039-hipolita-cassiana-lemos-e-manoel-estev",
+  "resumo": "Filho do Major, casado com Hipólita Cassiana Lemos.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "hipolita-cassiana-lemos"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "068"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "069"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "hipolita-cassiana-lemos",
+  "nome": "Hipólita Cassiana Lemos",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "manoel-esteves-de-avila",
+  "filhos": [],
+  "foto": "livro-p069-039-hipolita-cassiana-lemos-e-manoel-estev",
+  "resumo": "Esposa de Manoel dos Patos.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "manoel-esteves-de-avila"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "069"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "ana-apolinaria-dos-santos",
+  "nome": "Ana Apolinária dos Santos",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "manoel-francisco-de-avila",
+   "ana-sabina-dos-santos"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha do Major, casada com José Esteves dos Santos.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "063"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "068"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "joaquim-esteves-de-avila",
+  "nome": "Joaquim Esteves de Avila (Joaquim do Morro Alto)",
+  "nascimento": "1857",
+  "morte": "1940-10-02",
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "manoel-francisco-de-avila",
+   "ana-sabina-dos-santos"
+  ],
+  "conjuge": "joaquina-candida-da-conceicao",
+  "filhos": [
+   "joaquim-antonio-de-avila-zico",
+   "manoel-antonio-de-avila-lico",
+   "jose-antonio-de-avila",
+   "alcides-joaquim-de-avila",
+   "maria-candida-da-conceicao-nica",
+   "ana-candida-de-avila-donana",
+   "antonio-joaquim-de-avila-tonico",
+   "agenor-joaquim-de-avila",
+   "adhemar-antonio-de-avila",
+   "jose-de-avila-juca"
+  ],
+  "foto": "livro-p070-041-joaquim-esteves-de-avila-e-joaquina-ca",
+  "resumo": "Caçula do Major, nascido em 1857, herdou a sede da Fazenda do Morro Alto e atuava como fazendeiro-curador (consultava o Chernoviz). Casou por volta de 1885 com Joaquina Cândida da Conceição; morreu em 02/10/1940, aos 82 anos, em Araxá.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "joaquina-candida-da-conceicao"
+  ],
+  "nascimento_detalhe": {
+   "data": "1857",
+   "precisao": "ano",
+   "lugar_id": "morro-alto",
+   "nota": null
+  },
+  "morte_detalhe": {
+   "data": "1940-10-02",
+   "precisao": "dia",
+   "lugar_id": "araxa",
+   "nota": "Causa: uremia, segundo registro da matriz."
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "070",
+    "trecho": "nasceu em 1857"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "074",
+    "trecho": "casou-se por volta de 1885"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "076",
+    "trecho": "óbito em 02/10/1940, 82 anos"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D21-1857-82anos"
+  ],
+  "nota_confirmar": "Nascido em 1857 e falecido em 1940 \"com 82 anos\": diferença de contagem a conferir. Postagem de 2024 (D) diz que o casal de tetravós morreu de gripe em 1919; refere-se aos pais de Joaquina, não a ele."
+ },
+ {
+  "id": "joaquina-candida-da-conceicao",
+  "nome": "Joaquina Cândida da Conceição (Sá Joaquina)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "antonio-luiz-leite",
+   "candida-da-conceicao"
+  ],
+  "conjuge": "joaquim-esteves-de-avila",
+  "filhos": [
+   "joaquim-antonio-de-avila-zico",
+   "manoel-antonio-de-avila-lico",
+   "jose-antonio-de-avila",
+   "alcides-joaquim-de-avila",
+   "maria-candida-da-conceicao-nica",
+   "ana-candida-de-avila-donana",
+   "antonio-joaquim-de-avila-tonico",
+   "agenor-joaquim-de-avila",
+   "adhemar-antonio-de-avila",
+   "jose-de-avila-juca"
+  ],
+  "foto": "livro-p070-041-joaquim-esteves-de-avila-e-joaquina-ca",
+  "resumo": "Esposa de Joaquim Esteves, tinha 78 anos em 1940; filha de Antonio Luiz Leite e Cândida da Conceição e neta do Capitão Luiz Manoel Leite de Alcobaça, fundador de Serra do Salitre. Mestra de quitandas do Morro Alto.",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Sá Joaquina"
+  ],
+  "conjuges": [
+   "joaquim-esteves-de-avila"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-06",
+   "rec-35"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "074"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075"
+   },
+   {
+    "arquivo": "estudos/receitas/06-biscoito-de-fuba-e-polvilho-da-sa-joaquina.md",
+    "pagina_pdf": "174",
+    "trecho": "etiqueta: Sá Joaquina"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Legenda de Instagram (D, 2024) a chama de trisavó.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D03-leite"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "antonio-luiz-leite",
+  "nome": "Antonio Luiz Leite",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "candida-da-conceicao",
+  "filhos": [
+   "joaquina-candida-da-conceicao"
+  ],
+  "foto": null,
+  "resumo": "Pai de Joaquina Cândida; a legenda de Instagram de 2024 o chama \"Antonio Luiz da Silva Leite\". Filho de (ou ligado a) Capitão Luiz Manoel Leite de Alcobaça.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "candida-da-conceicao"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "074"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "074"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D03-leite"
+  ],
+  "nota_confirmar": "Grafia do nome: com ou sem \"da Silva\"."
+ },
+ {
+  "id": "candida-da-conceicao",
+  "nome": "Cândida da Conceição",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "antonio-luiz-leite",
+  "filhos": [
+   "joaquina-candida-da-conceicao"
+  ],
+  "foto": null,
+  "resumo": "Mãe de Joaquina Cândida da Conceição.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [
+   "antonio-luiz-leite"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/06-biscoito-de-fuba-e-polvilho-da-sa-joaquina.md",
+    "pagina_pdf": "174"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "joaquim-antonio-de-avila-zico",
+  "nome": "Joaquim Antonio de Avila (Zico do Morro Alto)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joaquim-esteves-de-avila",
+   "joaquina-candida-da-conceicao"
+  ],
+  "conjuge": "adelia-benevides-jacob",
+  "filhos": [
+   "joao-benevides-de-avila",
+   "iracema-benevides-de-avila",
+   "joaquim-benevides-de-avila",
+   "doraci-benevides-de-avila",
+   "jose-benevides-de-avila-ze-zico",
+   "jenusval-benevides-de-avila",
+   "maria-benevides-dias",
+   "manoel-benevides-de-avila",
+   "adelia-benevides-de-avila-delica",
+   "eugelia-de-avila-gelica",
+   "renato-benevides-de-avila",
+   "dinorah-benevides-de-avila"
+  ],
+  "foto": "livro-p077-049-joaquim-antonio-de-avila-zico",
+  "resumo": "Primogênito de Joaquim Esteves, tinha 54 anos em 1940 (viúvo de Adélia). Casado com Adélia Benevides Jacob, teve doze filhos e viveu na Fazenda Morro Alto. Bisavô materno do autor.",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Zico",
+   "Sô Zico"
+  ],
+  "conjuges": [
+   "adelia-benevides-jacob"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "081"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D01-1927-1928"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "manoel-antonio-de-avila-lico",
+  "nome": "Manoel Antonio de Avila (Lico)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joaquim-esteves-de-avila",
+   "joaquina-candida-da-conceicao"
+  ],
+  "conjuge": "orlelimda-rita-de-avila",
+  "filhos": [
+   "lacir-rita-de-avila",
+   "joaquina-rita-de-avila",
+   "ivone-avila-oliveira"
+  ],
+  "foto": "livro-p077-048-manoel-antonio-de-avila-lico",
+  "resumo": "Filho de Joaquim Esteves, casado com Orlelimda Rita de Avila (Tia Linda); pai de Lacir, Joaquina Rita e Ivone. Residia em Perdizes em 1940. Etiquetas de receita o chamam \"Manoel Joaquim\".",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Lico"
+  ],
+  "conjuges": [
+   "orlelimda-rita-de-avila"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "077"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D07-lico"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "jose-antonio-de-avila",
+  "nome": "José Antonio de Avila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "ibia",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-esteves-de-avila",
+   "joaquina-candida-da-conceicao"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p077-050-jose-antonio-de-avila",
+  "resumo": "Filho de Joaquim Esteves, \"desquitado\", 50 anos em 1940, residente em Ibiá. Não confundir com José de Avila (Juca).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "077"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "alcides-joaquim-de-avila",
+  "nome": "Alcides Joaquim de Avila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "ibia",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-esteves-de-avila",
+   "joaquina-candida-da-conceicao"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p078-053-alcides-joaquim-de-avila",
+  "resumo": "Filho de Joaquim Esteves, casado com Francisca da Costa, residente em Ibiá em 1940.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "078"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "maria-candida-da-conceicao-nica",
+  "nome": "Maria Cândida da Conceição (Tia Nica)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "ibia",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joaquim-esteves-de-avila",
+   "joaquina-candida-da-conceicao"
+  ],
+  "conjuge": null,
+  "filhos": [
+   "zaida-jacob"
+  ],
+  "foto": "livro-p078-055-maria-candida-da-conceicao-nica",
+  "resumo": "Filha de Joaquim Esteves, casada com Ilmovir (Hilmovir) Jacob de Rezende; autora do pudim de laranja (receita 60). O livro a grafa também \"Maria Cândida de Avila\". Mãe de Zaida Jacob.",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Nica",
+   "Tia Nica"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-60"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "078"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D22-nica-nome"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "ana-candida-de-avila-donana",
+  "nome": "Ana Cândida de Avila (Tia Donana)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "ibia",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joaquim-esteves-de-avila",
+   "joaquina-candida-da-conceicao"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p077-051-ana-candida-de-avila-donana",
+  "resumo": "Filha de Joaquim Esteves, casada com Abraão Ferreira da Silva; lembrada pelo biscoito de polvilho (receita 9) e por emprestar romances às sobrinhas. Não confundir com Ana Cândida (Candinha), filha de Tibúrcio.",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Donana"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-09"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "077"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D14-ana-candida"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "antonio-joaquim-de-avila-tonico",
+  "nome": "Antonio Joaquim de Avila (Tonico)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "ibia",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-esteves-de-avila",
+   "joaquina-candida-da-conceicao"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p079-057-antonio-joaquim-de-avila-tonico",
+  "resumo": "Filho de Joaquim Esteves, casado com Antonieta Lemos de Avila (viúva de Adhemar). Não confundir com o Capitão Antonio Joaquim (1758).",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Tonico"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "079"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "agenor-joaquim-de-avila",
+  "nome": "Agenor Joaquim de Avila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-esteves-de-avila",
+   "joaquina-candida-da-conceicao"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p078-054-agenor-joaquim-de-avila",
+  "resumo": "Filho de Joaquim Esteves, casado com Izaura Cortes; as terras do sítio de seus pais ficavam em propriedade dele em Ibiá (1940).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "078"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "adhemar-antonio-de-avila",
+  "nome": "Adhemar Antonio de Avila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-esteves-de-avila",
+   "joaquina-candida-da-conceicao"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p078-052-adhemar-antonio-de-avila",
+  "resumo": "Filho de Joaquim Esteves, já falecido em 1940, representado pelos filhos Walter e Walma; primeiro marido de Antonieta Lemos.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "078"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "jose-de-avila-juca",
+  "nome": "José de Avila (Juca)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-esteves-de-avila",
+   "joaquina-candida-da-conceicao"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p079-056-jose-de-avila-juca",
+  "resumo": "Filho de Joaquim Esteves, solteiro e falecido em 1940.",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Juca"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "inventário de 1940"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "079"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "adelia-benevides-jacob",
+  "nome": "Adélia Benevides Jacob (Vovó Adélia)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joao-jacob",
+   "maria-custodia-de-oliveira-naves"
+  ],
+  "conjuge": "joaquim-antonio-de-avila-zico",
+  "filhos": [
+   "joao-benevides-de-avila",
+   "iracema-benevides-de-avila",
+   "joaquim-benevides-de-avila",
+   "doraci-benevides-de-avila",
+   "jose-benevides-de-avila-ze-zico",
+   "jenusval-benevides-de-avila",
+   "maria-benevides-dias",
+   "manoel-benevides-de-avila",
+   "adelia-benevides-de-avila-delica",
+   "eugelia-de-avila-gelica",
+   "renato-benevides-de-avila",
+   "dinorah-benevides-de-avila"
+  ],
+  "foto": "livro-p080-058-joaquim-antonio-de-avila-e-adelia-bene",
+  "resumo": "Esposa de Zico, natural da freguesia de São Miguel da Ponte Nova; filha de João Jacob e Maria Custódia de Oliveira Naves. Mãe de doze filhos; faleceu antes de 1940. Receita da broinha de fubá com queijo (38).",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Vovó Adélia"
+  ],
+  "conjuges": [
+   "joaquim-antonio-de-avila-zico"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-38"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "081",
+    "trecho": "Adélia Benevides Jacob, natural da Freguesia de São Miguel da Ponte Nova"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "075",
+    "trecho": "Joaquim Antonio, viúvo de Adélia"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Nascimento e morte não constam."
+ },
+ {
+  "id": "joao-jacob",
+  "nome": "João Jacob",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "maria-custodia-de-oliveira-naves",
+  "filhos": [
+   "adelia-benevides-jacob"
+  ],
+  "foto": null,
+  "resumo": "Pai de Adélia Benevides Jacob; filho de Jacob Gonçalves Cardozo e Anna Luciana de Rezende.",
+  "linha": "jacob-naves",
+  "apelidos": [],
+  "conjuges": [
+   "maria-custodia-de-oliveira-naves"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "081"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "maria-custodia-de-oliveira-naves",
+  "nome": "Maria Custódia de Oliveira Naves",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "joao-jacob",
+  "filhos": [
+   "adelia-benevides-jacob"
+  ],
+  "foto": null,
+  "resumo": "Mãe de Adélia Benevides Jacob; filha de Manuel Prudêncio Naves e Isabella Cândida de Oliveira, moradores da Freguesia de Água Suja.",
+  "linha": "jacob-naves",
+  "apelidos": [],
+  "conjuges": [
+   "joao-jacob"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "081"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "joao-benevides-de-avila",
+  "nome": "João Benevides de Avila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Primogênito de Zico; foi morar perto do Rio Quebra-Anzol, casado com a prima Lacir.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "083"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "iracema-benevides-de-avila",
+  "nome": "Iracema Benevides de Avila (Tia Iracema)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "patos-de-minas",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Zico; doceira e costureira, mudou-se para Patos de Minas. O livro diz que casou com o primo \"Zico\"; a etiqueta de receita diz José Antonio Ferreira Junior.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-12",
+   "rec-25"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "083"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D13-iracema-marido"
+  ],
+  "nota_confirmar": "Marido: divergência interna do livro."
+ },
+ {
+  "id": "joaquim-benevides-de-avila",
+  "nome": "Joaquim (filho de Zico e Adélia)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Terceiro filho, brincalhão; noivo que fugiu antes de casar com a prima Walma, casou-se mais tarde e teve seis filhos e três enteados.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "084"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "doraci-benevides-de-avila",
+  "nome": "Doraci Benevides de Avila (Tia Doraci)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Zico, falante e alegre; casou com o primo Rui Afonso das Perdizes. Biscoito papudinho (16).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-16"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "086"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "jose-benevides-de-avila-ze-zico",
+  "nome": "José Benevides de Avila (Zé Zico)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho de Zico, jardineiro e botânico, casado com a prima Joaquina Rita, sem filhos; morreu aos 94 anos.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "087"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "jenusval-benevides-de-avila",
+  "nome": "Jenusval",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho de Zico, lembrado como brincalhão e amoroso.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "087"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "maria-benevides-dias",
+  "nome": "Maria Benevides Dias (Tia Maria)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "ig-20201130-132426-f1",
+  "resumo": "Filha de Zico, esposa de Urquiza Ferreira Dias; ativa por quase noventa anos na lida da fazenda e mestra de quitandas. Receitas de broa de massa de queijo (37), pão de queijo (53) e sequilho vaporoso (73) levam \"Tia Maria\" no título.",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Tia Maria"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-37",
+   "rec-53",
+   "rec-73"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "088"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Receitas 53 e 73: \"Tia Maria\" sem etiqueta; identificação a confirmar."
+ },
+ {
+  "id": "manoel-benevides-de-avila",
+  "nome": "Manoel (filho de Zico e Adélia)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "patos-de-minas",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho de Zico, casado com a prima Mariinha; foi morar em Patos de Minas. Não confundir com Manoel Antonio (Lico).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "089"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "adelia-benevides-de-avila-delica",
+  "nome": "Adélia Benevides de Avila (Tia Delica)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "goias",
+  "ramo": "goias",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Zico, casada com Dirceu Rodrigues Valle; foi para Goiás e morreu cedo, deixando quatro filhos. Biscoito frito (15).",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Delica"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-15"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "089"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "eugelia-de-avila-gelica",
+  "nome": "Eugélia de Avila (Tia Gelica)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p158-139-eugelia-gelica-e-renato",
+  "resumo": "Filha de Zico, casada com João Ribeiro Filho (João Franqueiro); hospitaleira, com crônica própria no Cap. V (a \"Doce Gelica\"). Receitas: bolo de coalhada (23) e quindão (61).",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Gelica"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-23",
+   "rec-61"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "158"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "renato-benevides-de-avila",
+  "nome": "Renato Benevides de Avila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p137-123-renato-benevides-de-avila",
+  "resumo": "Caçula dos doze, no colo da mãe na foto de 1927/1928; recebeu a sede da Fazenda Morro Alto e foi fazendeiro até os setenta anos. Casado com Maria Amâncio Avila; avô materno do autor.",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "089"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "082",
+    "trecho": "lista dos doze irmãos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Falecido(a) conforme o livro (só Dinorá sobrevivia quando foi escrito).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D01-1927-1928"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "ana-candida-candinha",
+  "nome": "Ana Cândida de Avila (Tia Candinha)",
+  "nascimento": "1884-06-05",
+  "morte": null,
+  "lugar": "tres-cruzes",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "tiburcio-joaquim-de-avila",
+   "thereza-thomazia-teixeira"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Primogênita de Tibúrcio, casada com seu tio Antonio Affonso Teixeira; receita dos ovos nevados (47). Não confundir com Donana nem com a \"Vovó Candinha\" (Cândida Umbelina), de ramo arquivado.",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Candinha"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": {
+   "data": "1884-06-05",
+   "precisao": "dia",
+   "lugar_id": "araxa",
+   "nota": "Batizada em 05/07/1884 pelo Cônego Cassiano."
+  },
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-47"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "109"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "127",
+    "trecho": "os oito filhos"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D14-ana-candida"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "olinto-de-avila",
+  "nome": "Olinto de Avila",
+  "nascimento": "1885-09-20",
+  "morte": null,
+  "lugar": "ibia",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "tiburcio-joaquim-de-avila",
+   "thereza-thomazia-teixeira"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p113-090-filhos-de-tiburcio-e-thereza",
+  "resumo": "Filho de Tibúrcio, nascido em 20/09/1885; morava em Ibiá e participou da viagem ao Rio de Janeiro narrada por Ângelo D'Ávila.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": {
+   "data": "1885-09-20",
+   "precisao": "dia",
+   "lugar_id": null,
+   "nota": null
+  },
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "109"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "127",
+    "trecho": "os oito filhos"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "carlos-de-avila-netto-carico",
+  "nome": "Carlos de Avila Netto (Carico)",
+  "nascimento": "1887-11-04",
+  "morte": null,
+  "lugar": "fazenda-bananal",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "tiburcio-joaquim-de-avila",
+   "thereza-thomazia-teixeira"
+  ],
+  "conjuge": "irinea-de-aguiar-avila",
+  "filhos": [
+   "joaquim-de-avila-aviador",
+   "pedro-israel-de-avila",
+   "osvaldo-de-avila",
+   "adolfo-de-avila",
+   "carlos-filho-de-carico",
+   "teresa-tete-de-avila",
+   "geraldo-de-avila",
+   "geralda-dadi-de-avila",
+   "martha-de-avila",
+   "cincinato-de-avila",
+   "olga-maria-de-avila",
+   "maria-cecilia-de-avila"
+  ],
+  "foto": "livro-p116-094-carico-e-irinea",
+  "resumo": "Filho de Tibúrcio, nascido em 04/11/1887; casou em 31/07/1910 com Irinéa de Aguiar e mudou-se em 02/02/1911 para a Fazenda Bananal, onde criou treze filhos. Bisavô do autor.",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Carico"
+  ],
+  "conjuges": [
+   "irinea-de-aguiar-avila"
+  ],
+  "nascimento_detalhe": {
+   "data": "1887-11-04",
+   "precisao": "dia",
+   "lugar_id": "tres-cruzes",
+   "nota": null
+  },
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "116"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "127",
+    "trecho": "os oito filhos"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D17-bodas-carico"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "antonio-de-avila-sinho",
+  "nome": "Antonio de Avila (Sinhô)",
+  "nascimento": "1891-08-20",
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "tiburcio-joaquim-de-avila",
+   "thereza-thomazia-teixeira"
+  ],
+  "conjuge": null,
+  "filhos": [
+   "iris-de-avila"
+  ],
+  "foto": "livro-p113-090-filhos-de-tiburcio-e-thereza",
+  "resumo": "Filho de Tibúrcio, nascido em 20/08/1891 (batizado em 02/11/1891 em São Pedro de Alcântara). Pai de Iris, segundo etiqueta de receita (a família de sua esposa pertence ao ramo arquivado).",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Sinhô"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": {
+   "data": "1891-08-20",
+   "precisao": "dia",
+   "lugar_id": null,
+   "nota": null
+  },
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "110"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "127",
+    "trecho": "os oito filhos"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "jose-de-avila-zeca",
+  "nome": "José de Avila (Zeca)",
+  "nascimento": "1895-09-25",
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "tiburcio-joaquim-de-avila",
+   "thereza-thomazia-teixeira"
+  ],
+  "conjuge": null,
+  "filhos": [
+   "angelo-davila"
+  ],
+  "foto": "livro-p113-090-filhos-de-tiburcio-e-thereza",
+  "resumo": "Filho de Tibúrcio, nascido em 25/09/1895; pai de Ângelo D'Ávila e Alonso, segundo a crônica do Cap. V.",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Zeca"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": {
+   "data": "1895-09-25",
+   "precisao": "dia",
+   "lugar_id": null,
+   "nota": null
+  },
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "110"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "127",
+    "trecho": "os oito filhos"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "lourival-de-avila-lorico",
+  "nome": "Lourival de Avila (Lorico / Lourico)",
+  "nascimento": "1896-12-03",
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "tiburcio-joaquim-de-avila",
+   "thereza-thomazia-teixeira"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho de Tibúrcio, nascido em 03/12/1896, batizado pelo Padre Pedro Pezuttÿ. Na postagem de 2022 aparece como \"Tio Lourico\"/\"Dr. Lourival\".",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Lorico",
+   "Lourico"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": {
+   "data": "1896-12-03",
+   "precisao": "dia",
+   "lugar_id": null,
+   "nota": null
+  },
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "111"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "127",
+    "trecho": "os oito filhos"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D02-lourico"
+  ],
+  "nota_confirmar": null
+ },
+ {
+  "id": "mariana-de-avila-fiica",
+  "nome": "Mariana de Avila (Vó Fiíca)",
+  "nascimento": "1902-10-13",
+  "morte": null,
+  "lugar": "rua-alexandre-gondim",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "tiburcio-joaquim-de-avila",
+   "thereza-thomazia-teixeira"
+  ],
+  "conjuge": "jose-porfirio-ferreira-juquinha",
+  "filhos": [
+   "antonio-ferreira-de-avila-titonho",
+   "aston-filho-de-fiica",
+   "paulo-filho-de-fiica",
+   "jose-dentista-filho-de-fiica",
+   "marcos-filho-de-fiica"
+  ],
+  "foto": "livro-p126-109-mariana-de-avila-e-jose-porfirio-ferre",
+  "resumo": "Sétima filha de Tibúrcio, nascida em 13/10/1902; aluna do professor Leão e interna no Colégio Sion de Campanha. Casou em 18/10/1920 com José Porfírio Ferreira (Juquinha); moraram no casarão da Rua Alexandre Gondim e foram sócios do Grande Hotel. Autora de brevidades, suspiros, roscas. Bisavó do autor.",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Fiíca",
+   "Fíica"
+  ],
+  "conjuges": [
+   "jose-porfirio-ferreira-juquinha"
+  ],
+  "nascimento_detalhe": {
+   "data": "1902-10-13",
+   "precisao": "dia",
+   "lugar_id": "araxa",
+   "nota": "Batizada em 09/12/1902."
+  },
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-17",
+   "rec-34",
+   "rec-67",
+   "rec-74"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "126"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "127",
+    "trecho": "os oito filhos"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "tiburcia-de-avila-tiburcinha",
+  "nome": "Tibúrcia de Avila (Tia Tiburcinha)",
+  "nascimento": "1904-12-10",
+  "morte": null,
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "tiburcio-joaquim-de-avila",
+   "thereza-thomazia-teixeira"
+  ],
+  "conjuge": "pedro-pezzuti",
+  "filhos": [],
+  "foto": "ig-20210329-131712-f1",
+  "resumo": "Caçula de Tibúrcio, nascida em 10/12/1904 (batizada em 20/01/1905); casou com o Dr. Pedro Pezzuti e foi sócia do Grande Hotel de Araxá. Sequilho (72).",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Tiburcinha"
+  ],
+  "conjuges": [
+   "pedro-pezzuti"
+  ],
+  "nascimento_detalhe": {
+   "data": "1904-12-10",
+   "precisao": "dia",
+   "lugar_id": "tres-cruzes",
+   "nota": null
+  },
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-72"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "112"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "127",
+    "trecho": "os oito filhos"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "irinea-de-aguiar-avila",
+  "nome": "Irinéa de Aguiar Avila (Vó Irinéa)",
+  "nascimento": "1894-11-08",
+  "morte": null,
+  "lugar": "fazenda-bananal",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "carlos-de-avila-netto-carico",
+  "filhos": [
+   "joaquim-de-avila-aviador",
+   "pedro-israel-de-avila",
+   "osvaldo-de-avila",
+   "adolfo-de-avila",
+   "carlos-filho-de-carico",
+   "teresa-tete-de-avila",
+   "geraldo-de-avila",
+   "geralda-dadi-de-avila",
+   "martha-de-avila",
+   "cincinato-de-avila",
+   "olga-maria-de-avila",
+   "maria-cecilia-de-avila"
+  ],
+  "foto": "livro-p116-094-carico-e-irinea",
+  "resumo": "Esposa de Carico, nascida em 08/11/1894; foi a primeira moça da família a casar fora do círculo de primos. A ascendência dela (Ferreira de Aguiar/Portella) pertence a ramo arquivado e não é detalhada aqui. Doce de mamão (41).",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Vó Irinéa"
+  ],
+  "conjuges": [
+   "carlos-de-avila-netto-carico"
+  ],
+  "nascimento_detalhe": {
+   "data": "1894-11-08",
+   "precisao": "dia",
+   "lugar_id": null,
+   "nota": null
+  },
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-41"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "116"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "117",
+    "trecho": "casamento 31 de julho de 1910"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Escopo: só a pessoa e o casamento; ascendência arquivada."
+ },
+ {
+  "id": "jose-porfirio-ferreira-juquinha",
+  "nome": "José Porfírio Ferreira (Juquinha Galdino)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "rua-alexandre-gondim",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "galdino-jose-ferreira",
+   "ana-porfirio-da-rocha-e-silva"
+  ],
+  "conjuge": "mariana-de-avila-fiica",
+  "filhos": [
+   "antonio-ferreira-de-avila-titonho",
+   "aston-filho-de-fiica",
+   "paulo-filho-de-fiica",
+   "jose-dentista-filho-de-fiica",
+   "marcos-filho-de-fiica"
+  ],
+  "foto": "livro-p126-109-mariana-de-avila-e-jose-porfirio-ferre",
+  "resumo": "Marido de Fiíca (casamento em 1920; bodas de ouro em 18/10/1970), filho de Galdino José Ferreira e Ana Porfirio da Rocha e Silva. Sócio do Grande Hotel de Araxá. Bisavô do autor.",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Juquinha"
+  ],
+  "conjuges": [
+   "mariana-de-avila-fiica"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "128"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "127",
+    "trecho": "bodas de ouro 18-10-70"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "galdino-jose-ferreira",
+  "nome": "Galdino José Ferreira",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "ana-porfirio-da-rocha-e-silva",
+  "filhos": [
+   "jose-porfirio-ferreira-juquinha"
+  ],
+  "foto": null,
+  "resumo": "Pai de Juquinha; terceiro marido de Ana Porfirio, \"viúvo com filhos\" segundo a legenda de Instagram (D).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "ana-porfirio-da-rocha-e-silva"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "128"
+   },
+   {
+    "arquivo": "fontes-integrais/instagram-fabricio/postagens/2021-05-30_131506_fabriciodeavila_segundo-o-autor-e-a-unica/ficha.md"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "ana-porfirio-da-rocha-e-silva",
+  "nome": "Ana Porfirio da Rocha e Silva (Vovó Saninha)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "jose-porfirio-alvares-machado",
+   "ana-tereza-da-rocha"
+  ],
+  "conjuge": "galdino-jose-ferreira",
+  "filhos": [
+   "jose-porfirio-ferreira-juquinha",
+   "elias-porfirio-de-azevedo"
+  ],
+  "foto": "ig-20210530-131506-f1",
+  "resumo": "Tataravó do autor, filha do Capitão José Porfírio Álvares Machado; segundo o autor (Instagram, D), foi uma das primeiras a vender doces cristalizados em Araxá e casou três vezes. A única foto dela foi postada em 2021.",
+  "linha": "tres-cruzes",
+  "apelidos": [
+   "Vovó Saninha"
+  ],
+  "conjuges": [
+   "galdino-jose-ferreira",
+   "elias-pereira-guimaraes",
+   "camilo-afonso-de-almeida"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "128"
+   },
+   {
+    "arquivo": "fontes-integrais/instagram-fabricio/postagens/2021-05-30_131506_fabriciodeavila_segundo-o-autor-e-a-unica/ficha.md"
+   }
+  ],
+  "evidencia_detalhe": "Livro (P) para filiação; detalhes dos casamentos só na legenda (D).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "jose-porfirio-alvares-machado",
+  "nome": "Capitão José Porfírio Álvares Machado",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": "ana-tereza-da-rocha",
+  "filhos": [
+   "ana-porfirio-da-rocha-e-silva"
+  ],
+  "foto": null,
+  "resumo": "Araxaense que comandou tropas na Guerra do Paraguai, segundo o livro; pai de Ana Porfirio.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "ana-tereza-da-rocha"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "128"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "ana-tereza-da-rocha",
+  "nome": "Ana Tereza da Rocha",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "D",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [
+   "ana-porfirio-da-rocha-e-silva"
+  ],
+  "foto": null,
+  "resumo": "Mãe de Ana Porfirio, segundo legenda de Instagram de 30/05/2021.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "pesquisa/novos-integrantes.md",
+    "trecho": "Instagram do autor, 30/05/2021"
+   },
+   {
+    "arquivo": "fontes-integrais/instagram-fabricio/postagens/2021-05-30_131506_fabriciodeavila_segundo-o-autor-e-a-unica/ficha.md"
+   }
+  ],
+  "evidencia_detalhe": "Legenda de rede social (D); não localizado no livro; conferir em registros paroquiais de Araxá.",
+  "encontrado_por_este_estudo": true,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Candidato a novo integrante, encontrado por este estudo."
+ },
+ {
+  "id": "elias-pereira-guimaraes",
+  "nome": "Elias Pereira Guimarães",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "D",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Primeiro marido de Ana Porfirio; pai do Maestro Elias Porfirio de Azevedo (legenda de 30/05/2021).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "pesquisa/novos-integrantes.md",
+    "trecho": "Instagram do autor, 30/05/2021"
+   },
+   {
+    "arquivo": "fontes-integrais/instagram-fabricio/postagens/2021-05-30_131506_fabriciodeavila_segundo-o-autor-e-a-unica/ficha.md"
+   }
+  ],
+  "evidencia_detalhe": "Legenda de rede social (D); não localizado no livro; conferir em registros paroquiais de Araxá.",
+  "encontrado_por_este_estudo": true,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Candidato a novo integrante, encontrado por este estudo."
+ },
+ {
+  "id": "elias-porfirio-de-azevedo",
+  "nome": "Maestro Elias Porfirio de Azevedo",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "D",
+  "aconfirmar": true,
+  "pais": [
+   "ana-porfirio-da-rocha-e-silva"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho de Ana Porfirio e Elias Pereira Guimarães (legenda de 30/05/2021).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "pesquisa/novos-integrantes.md",
+    "trecho": "Instagram do autor, 30/05/2021"
+   },
+   {
+    "arquivo": "fontes-integrais/instagram-fabricio/postagens/2021-05-30_131506_fabriciodeavila_segundo-o-autor-e-a-unica/ficha.md"
+   }
+  ],
+  "evidencia_detalhe": "Legenda de rede social (D); não localizado no livro; conferir em registros paroquiais de Araxá.",
+  "encontrado_por_este_estudo": true,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Candidato a novo integrante, encontrado por este estudo."
+ },
+ {
+  "id": "camilo-afonso-de-almeida",
+  "nome": "Camilo Afonso de Almeida",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "D",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Segundo marido de Ana Porfirio; morto 45 dias após o casamento por chifrada de boi na Fazenda Capão Grosso, segundo a legenda.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "pesquisa/novos-integrantes.md",
+    "trecho": "Instagram do autor, 30/05/2021"
+   },
+   {
+    "arquivo": "fontes-integrais/instagram-fabricio/postagens/2021-05-30_131506_fabriciodeavila_segundo-o-autor-e-a-unica/ficha.md"
+   }
+  ],
+  "evidencia_detalhe": "Legenda de rede social (D); não localizado no livro; conferir em registros paroquiais de Araxá.",
+  "encontrado_por_este_estudo": true,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Candidato a novo integrante, encontrado por este estudo."
+ },
+ {
+  "id": "pedro-pezzuti",
+  "nome": "Dr. Pedro Pezzuti",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "tiburcia-de-avila-tiburcinha",
+  "filhos": [],
+  "foto": null,
+  "resumo": "Médico italiano radicado em Araxá, marido de Tiburcinha e sócio do Grande Hotel; cita-se seu livro \"O Ponto nos iis\" (referência bibliográfica não verificada). Não confundir com o Padre Pedro Pezuttÿ (batismo de 1896).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [
+   "tiburcia-de-avila-tiburcinha"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "128"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "074"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Referência de \"O Ponto nos iis\": [referência não verificada]."
+ },
+ {
+  "id": "orlelimda-rita-de-avila",
+  "nome": "Orlelimda Rita de Avila (Tia Linda)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "francisco-antonio-de-avila-chico-do-muro",
+   "maria-rita-de-paiva"
+  ],
+  "conjuge": "manoel-antonio-de-avila-lico",
+  "filhos": [
+   "lacir-rita-de-avila",
+   "joaquina-rita-de-avila",
+   "ivone-avila-oliveira"
+  ],
+  "foto": null,
+  "resumo": "Filha de Chico do Muro, casada com Manoel (Lico); mãe de Lacir, Joaquina Rita e Ivone. Pudim de \"um\" (59). Grafia incomum do nome conferida na imagem, a confirmar.",
+  "linha": "morro-alto",
+  "apelidos": [
+   "Tia Linda"
+  ],
+  "conjuges": [
+   "manoel-antonio-de-avila-lico"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-59"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/59-pudim-de-um-da-tia-linda.md",
+    "trecho": "etiqueta: Tia Linda"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "083"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Grafia \"Orlelimda\"."
+ },
+ {
+  "id": "joaquim-de-avila-aviador",
+  "nome": "Tenente Aviador Joaquim de Avila (Joaquim Tibúrcio)",
+  "nascimento": "1926-10-28",
+  "morte": "1965",
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p156-138-tenente-aviador-joaquim-de-avila",
+  "resumo": "Nascido em Araxá em 28/10/1926, oficial da FAB formado nos EUA; sofreu uma doença cardíaca e morreu aos 39 anos. Identificação com o filho de Carico é provável, não declarada pelo livro.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": {
+   "data": "1926-10-28",
+   "precisao": "dia",
+   "lugar_id": "araxa",
+   "nota": null
+  },
+  "morte_detalhe": {
+   "data": "1965",
+   "precisao": "aprox",
+   "lugar_id": null,
+   "nota": "Inferido: 39 anos de idade (1965 ou 1966)."
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "156"
+   },
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "157",
+    "trecho": "Faleceu com 39 anos"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [
+   "D11-dedicatoria-94"
+  ],
+  "nota_confirmar": "Filiação a Carico provável; dedicatória \"14/8/94\" incompatível com a data da morte."
+ },
+ {
+  "id": "pedro-israel-de-avila",
+  "nome": "Pedro Israel de Avila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Caçula de Carico e Irinéa; morreu aos dezenove anos, dias depois de um acidente de caminhonete após um carnaval.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "120"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "121"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "osvaldo-de-avila",
+  "nome": "Osvaldo de Avila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho de Carico e Irinéa, morto de bronquite com sete meses.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "119"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "leao-coelho-de-almeida",
+  "nome": "Professor Leão Coelho de Almeida",
+  "nascimento": "1867-03-05",
+  "morte": "1956-12-06",
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p162-141-professor-leao-coelho-de-almeida",
+  "resumo": "Nascido em 05/03/1867 em São João da Barra (RJ), de formação francesa, professor itinerante que alfabetizou os filhos de Zico e de outras fazendas de Araxá; morreu em 06/12/1956.",
+  "linha": "minas",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": {
+   "data": "1867-03-05",
+   "precisao": "dia",
+   "lugar_id": null,
+   "nota": null
+  },
+  "morte_detalhe": {
+   "data": "1956-12-06",
+   "precisao": "dia",
+   "lugar_id": null,
+   "nota": null
+  },
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "162"
+   },
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "164"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P). Texto escrito pela filha, D. Mariazinha.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "sa-jeronima",
+  "nome": "Sá Jerônima",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p085-062-sa-jeronima",
+  "resumo": "Mulher negra \"da época da escravidão\", segundo o livro, que viveu no casebre do Morro Alto e morreu aos 120 anos; dá nome ao tareco de mandioca (75).",
+  "linha": "minas",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-75"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "084"
+   },
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "085"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Idade (120) é a declarada pelo livro; legendas das fotos de Sá Jerônima, Mariquinha e Juvenal possivelmente trocadas, a conferir no impresso."
+ },
+ {
+  "id": "mariquinha",
+  "nome": "Mariquinha",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "morro-alto",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": "livro-p085-063-mariquinha",
+  "resumo": "Lavadeira e parteira do Morro Alto, \"como gente da família\", que teria morrido aos 116 anos.",
+  "linha": "minas",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "085"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Legendas possivelmente trocadas (Mariquinha/Juvenal), a conferir no impresso."
+ },
+ {
+  "id": "crioula-germana",
+  "nome": "Crioula Germana",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "tres-cruzes",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Mulher escravizada recebida por Tibúrcio Joaquim como herança do avô materno; dá nome à broa de fubá (36).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-36"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/36-broa-de-fuba-da-crioula-germana.md",
+    "trecho": "etiqueta"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "romana-crioula",
+  "nome": "Romana (crioula)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "tres-cruzes",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Recebida por Tibúrcio aos seis anos junto com Alexandre e Auta; estimada por todos, deu à luz gêmeas (Marcolina e Marcelina) em 30/03/1887, segundo carta transcrita.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "106"
+   }
+  ],
+  "evidencia_detalhe": "Dado vindo de documento transcrito no livro (assento, testamento, carta ou registro); o original não foi conferido e a cota do arquivo é [referência não verificada]. Nível P conforme regra do estudo.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "leopoldino-e-silvina",
+  "nome": "Leopoldino e Silvina (agregados)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "fazenda-bananal",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Casal vindo do Chapadão de São Francisco das Chagas (Rio Paranaíba) com Carico e Irinéa para a Fazenda Bananal, onde formaram família; folia de Reis dos Leopoldino.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "124"
+   }
+  ],
+  "evidencia_detalhe": "Narrativa do autor (P).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "adolfo-de-avila",
+  "nome": "Adolfo (filho de Carico e Irinéa)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Citado como filho de Carico e Irinéa.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "118"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "carlos-filho-de-carico",
+  "nome": "Carlos (filho de Carico e Irinéa)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Citado como filho de Carico e Irinéa.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "119"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "teresa-tete-de-avila",
+  "nome": "Tereza de Avila (Tia Tetê)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Carico e Irinéa; sequilho (71).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-71"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "119"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "geraldo-de-avila",
+  "nome": "Geraldo (filho de Carico e Irinéa)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Gêmeo de Geralda.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "119"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "geralda-dadi-de-avila",
+  "nome": "Geralda de Avila (Tia Dadi)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Carico e Irinéa; autora do relato de vida dos pais; bombas (32).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-32"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "116"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "martha-de-avila",
+  "nome": "Maria Martha de Avila (Tia Martha)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Carico e Irinéa; bala de café e nougat (4, 46).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-04",
+   "rec-46"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "119"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "cincinato-de-avila",
+  "nome": "Cincinato (Sonato)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho de Carico e Irinéa.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "120"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "olga-maria-de-avila",
+  "nome": "Olga Maria de Avila (Tia Olga)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Carico e Irinéa; cajuzinho (40).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-40"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "120"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "maria-cecilia-de-avila",
+  "nome": "Maria Cecília de Avila (Vó Cecília)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "carlos-de-avila-netto-carico",
+   "irinea-de-aguiar-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Caçulinha de Carico e Irinéa; avó paterna do autor; pingo e rosquinha de nata (57, 69).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-57",
+   "rec-69"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/08-capitulo-4-avos-um-velho-amor-sempre-novo.md",
+    "pagina_pdf": "139"
+   },
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "120"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "antonio-ferreira-de-avila-titonho",
+  "nome": "Antonio Ferreira de Avila (Titonho)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "mariana-de-avila-fiica",
+   "jose-porfirio-ferreira-juquinha"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filho de Fíica e Juquinha; avô paterno do autor, \"exímio cozinheiro\" segundo o Cap. V.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-48"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/08-capitulo-4-avos-um-velho-amor-sempre-novo.md",
+    "pagina_pdf": "138"
+   },
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "154"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "aston-filho-de-fiica",
+  "nome": "Aston (filho de Fiíca e Juquinha)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "mariana-de-avila-fiica",
+   "jose-porfirio-ferreira-juquinha"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Um dos cinco filhos de Fiíca e Juquinha.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "130"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "paulo-filho-de-fiica",
+  "nome": "Paulo (filho de Fiíca e Juquinha)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "mariana-de-avila-fiica",
+   "jose-porfirio-ferreira-juquinha"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Um dos cinco filhos de Fiíca e Juquinha.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "130"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "jose-dentista-filho-de-fiica",
+  "nome": "José (o Zé dentista) (filho de Fiíca e Juquinha)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "mariana-de-avila-fiica",
+   "jose-porfirio-ferreira-juquinha"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Um dos cinco filhos de Fiíca e Juquinha.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "130"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "marcos-filho-de-fiica",
+  "nome": "Marcos (filho de Fiíca e Juquinha)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "mariana-de-avila-fiica",
+   "jose-porfirio-ferreira-juquinha"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Um dos cinco filhos de Fiíca e Juquinha.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "130"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "dinorah-benevides-de-avila",
+  "nome": "Dinorá (Tia Dinorah)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joaquim-antonio-de-avila-zico",
+   "adelia-benevides-jacob"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Zico e Adélia; a única dos doze irmãos que sobrevivia quando o livro foi escrito; biscoito de queijo (13).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-13"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "089"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "maria-amancio-avila",
+  "nome": "Maria Amâncio Avila (Vó Maria)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Avó materna do autor, esposa de Renato; ameixinha de queijo e arrebenta-forno (1, 5).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-01",
+   "rec-05"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/08-capitulo-4-avos-um-velho-amor-sempre-novo.md",
+    "pagina_pdf": "136"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "lacir-rita-de-avila",
+  "nome": "Lacir Rita de Avila (Tia Lacir)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "manoel-antonio-de-avila-lico",
+   "orlelimda-rita-de-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Lico e Linda; bolo de mandioca (28).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-28"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/28-bolo-de-mandioca-da-tia-lacir.md"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "joaquina-rita-de-avila",
+  "nome": "Joaquina Rita de Avila (Tia Joaquina)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "manoel-antonio-de-avila-lico",
+   "orlelimda-rita-de-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Lico e Linda; rosca (66).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-66"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/66-rosca-da-tia-joaquina.md"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "ivone-avila-oliveira",
+  "nome": "Ivone Avila Oliveira",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "manoel-antonio-de-avila-lico",
+   "orlelimda-rita-de-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Lico e Linda; biscoito de queijo (11).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-11"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/11-biscoito-de-queijo-da-ivone.md"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "antonieta-lemos-de-avila",
+  "nome": "Antonieta Lemos de Avila (Tia Antonieta)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Esposa de Adhemar e depois de Tonico; biscoitos (8, 10).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-08",
+   "rec-10"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/08-biscoito-de-fuba-de-canjica-da-tia-antonieta.md"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "zaida-jacob",
+  "nome": "Zaida Jacob",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "maria-candida-da-conceicao-nica"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Neta de Joaquim Esteves, filha de Nica; bolo de banana (18).",
+  "linha": "jacob-naves",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-18"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/18-bolo-de-banana-da-zaida.md"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "maria-eunice-de-paiva",
+  "nome": "Maria Eunice de Paiva",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Citada como autora do pão de batata (50).",
+  "linha": "jacob-naves",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-50"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/50-pao-de-batata-da-maria-eunice.md"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "adelia-teixeira-rocha",
+  "nome": "Adélia Teixeira Rocha",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "dinorah-benevides-de-avila"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Neta de Zico; bolo de queijo (31).",
+  "linha": "morro-alto",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-31"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/31-bolo-de-queijo-da-adelia.md"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "iris-de-avila",
+  "nome": "Iris de Avila (Tia Iris)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "antonio-de-avila-sinho"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Sinhô; empada e quindim (44, 62).",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-44",
+   "rec-62"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/receitas/44-empada-de-queijo-da-tia-iris.md"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "juvenal",
+  "nome": "Juvenal",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Carreiro do Morro Alto, registrado com 104 anos na época do livro. Legendas possivelmente trocadas (Mariquinha/Juvenal), a conferir no impresso.",
+  "linha": "minas",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/06-capitulo-2-os-avila-do-morro-alto.md",
+    "pagina_pdf": "085"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": "Legendas possivelmente trocadas, a conferir no impresso.",
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "pedro-leopoldino",
+  "nome": "Pedro Leopoldino",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Da família de agregados da Fazenda Bananal.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "124"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "celina-leopoldino",
+  "nome": "Celina Leopoldino",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Da família de agregados da Fazenda Bananal.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/07-capitulo-3-os-avila-das-tres-cruzes.md",
+    "pagina_pdf": "125"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "angelo-davila",
+  "nome": "Ângelo D'Ávila",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "jose-de-avila-zeca"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Cronista de duas histórias do Cap. V.",
+  "linha": "tres-cruzes",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "148"
+   },
+   {
+    "arquivo": "estudos/09-capitulo-5-historias-que-bordam-a-historia.md",
+    "pagina_pdf": "152"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "fabricio-de-avila-ferreira",
+  "nome": "Fabricio de Avila Ferreira (autor)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Autor do livro \"Avila: 300 anos de História & Sabores\" (2009).",
+  "linha": "minas",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [
+   "rec-22"
+  ],
+  "fontes": [
+   {
+    "arquivo": "estudos/00-capa-e-sumario.md",
+    "pagina_pdf": "004"
+   }
+  ],
+  "evidencia_detalhe": "Citado(a) no livro; pessoa possivelmente viva: dados omitidos.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null,
+  "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ }
+]

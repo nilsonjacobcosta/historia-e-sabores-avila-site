@@ -1,0 +1,122 @@
+<svg id="mapa-rota" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="group" aria-labelledby="mapa-t mapa-d" font-family="'Atkinson Hyperlegible',system-ui,sans-serif">
+  <title id="mapa-t">Rota da família Ávila: Ilha do Pico, Minas Gerais, Araxá, Goiás</title>
+  <desc id="mapa-d">Mapa estilizado, fora de escala. Um tracado azul parte da Ilha do Pico, nos Açores, em 1709, atravessa o Atlântico, chega a Borda do Campo e Barbacena, passa por Morro Alto, São Domingos do Araxá e segue para Goiás; Brasília aparece como ponto de hoje.</desc>
+  <!--
+    USO inline no HTML (recomendado, para o CSS herdar tokens): cole este <svg> e defina no CSS da pagina as variaveis
+    mapa-mar, mapa-terra, mapa-tracado, mapa-ponto, mapa-texto, com prefixo de dois hifens (fallbacks abaixo, claro/escuro automatico).
+    EVENTO: ao ativar um ponto (clique, Enter ou Espaço) dispara window 'lugar-selecionado' {detail:{lugar}}.
+    A pagina escuta o evento e abre o painel do lugar (dados em ../dados). A animacao inicia ao entrar na tela (IntersectionObserver); sem JS o trajeto aparece completo. REPLAY: svg.classList.remove('anima'); void svg.offsetWidth; svg.classList.add('anima').
+  -->
+  <style>
+    #mapa-rota{--m-mar:var(--mapa-mar,#DCE6F7);--m-terra:var(--mapa-terra,#E4E0D2);--m-linha:var(--mapa-linha,#7C8790);
+      --m-trac:var(--mapa-tracado,#1E3F94);--m-ponto:var(--mapa-ponto,#9C4A1A);--m-txt:var(--mapa-texto,#182026);--m-foco:var(--mapa-foco,#9C4A1A)}
+    @media (prefers-color-scheme:dark){#mapa-rota:not([data-theme="light"]){--m-mar:var(--mapa-mar,#1A2735);--m-terra:var(--mapa-terra,#26302F);--m-linha:var(--mapa-linha,#6E7A83);
+      --m-trac:var(--mapa-tracado,#9DB8F2);--m-ponto:var(--mapa-ponto,#E8A064);--m-txt:var(--mapa-texto,#E9ECE8);--m-foco:var(--mapa-foco,#E8A064)}}
+    #mapa-rota .fundo{fill:var(--m-mar)}
+    #mapa-rota .terra{fill:var(--m-terra);stroke:var(--m-linha);stroke-width:1.4;stroke-linejoin:round}
+    #mapa-rota .grade{stroke:var(--m-linha);stroke-width:.6;stroke-dasharray:2 7;opacity:.5;fill:none}
+    #mapa-rota .onda{fill:none;stroke:var(--m-linha);stroke-width:1.2;stroke-linecap:round;opacity:.5}
+    #mapa-rota .trilho{fill:none;stroke:var(--m-trac);stroke-width:2;stroke-dasharray:3 8;stroke-linecap:round;opacity:.28}
+    #mapa-rota .tracado{fill:none;stroke:var(--m-trac);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:0}
+    #mapa-rota .hoje{fill:none;stroke:var(--m-ponto);stroke-width:2.2;stroke-dasharray:2 7;stroke-linecap:round}
+    #mapa-rota .txt{fill:var(--m-txt);font-size:16px;font-weight:700;paint-order:stroke;stroke:var(--m-mar);stroke-width:5px;stroke-linejoin:round}
+    #mapa-rota .sub{fill:var(--m-txt);font-size:13px;opacity:.85;paint-order:stroke;stroke:var(--m-mar);stroke-width:4px}
+    #mapa-rota .rotulo-mar{fill:var(--m-txt);font-size:14px;font-style:italic;opacity:.7;letter-spacing:.35em}
+    #mapa-rota .ponto{cursor:pointer;outline:none}
+    #mapa-rota .ponto .halo{fill:var(--m-ponto);opacity:.18;transition:r .25s ease}
+    #mapa-rota .ponto .miolo{fill:var(--m-ponto);stroke:var(--m-mar);stroke-width:3}
+    #mapa-rota .ponto:hover .halo,#mapa-rota .ponto:focus-visible .halo,#mapa-rota .ponto[aria-pressed="true"] .halo{r:22;opacity:.28}
+    #mapa-rota .ponto:focus-visible .foco{opacity:1}
+    #mapa-rota .foco{fill:none;stroke:var(--m-foco);stroke-width:3;opacity:0}
+    #mapa-rota .ponto[aria-pressed="true"] .miolo{fill:var(--m-trac)}
+    #mapa-rota .ponto.hoje-p .miolo{fill:var(--m-mar);stroke:var(--m-ponto);stroke-width:3}
+    #mapa-rota.espera .tracado{stroke-dashoffset:1}
+    #mapa-rota.espera .ponto,#mapa-rota.espera .hoje{opacity:0}
+    /* ---- MOTION: tracado desenha em ~7s; pontos surgem conforme o traco passa ---- */
+    #mapa-rota.anima .tracado{stroke-dashoffset:1;animation:desenha 7s cubic-bezier(.45,.05,.3,1) .4s forwards}
+    #mapa-rota.anima .ponto{opacity:0;animation:surge .5s ease forwards;animation-delay:var(--d,0s)}
+    #mapa-rota.anima .hoje{opacity:0;animation:surge .8s ease 7.4s forwards}
+    @keyframes desenha{to{stroke-dashoffset:0}}
+    @keyframes surge{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    @media (prefers-reduced-motion:reduce){
+      #mapa-rota.anima .tracado{animation:none;stroke-dashoffset:0}
+      #mapa-rota.anima .ponto,#mapa-rota.anima .hoje{animation:none;opacity:1}
+      #mapa-rota .ponto .halo{transition:none}
+    }
+  </style>
+
+  <rect class="fundo" width="800" height="520"/>
+  <path class="grade" d="M0 130H800M0 260H800M0 390H800M200 0V520M400 0V520M600 0V520"/>
+
+  <!-- Iberia (sliver, canto superior direito) -->
+  <path class="terra" d="M800 0 H730 L712 14 L726 34 L718 52 L740 70 L770 66 L800 78 Z"/>
+  <!-- Brasil estilizado, a oeste/sudoeste (fora de escala): costa a leste -->
+  <path class="terra" d="M0 120 L120 128 L260 120 L400 146 L452 190 L492 250 L486 300 L470 340 L440 392 L420 450 L400 520 H0 Z"/>
+  <path class="onda" d="M560 330 q10 -8 20 0 t20 0 t20 0 M620 390 q10 -8 20 0 t20 0 t20 0 M520 220 q10 -8 20 0 t20 0 t20 0 M560 160 q10 -8 20 0 t20 0 t20 0 M600 460 q10 -8 20 0 t20 0 t20 0"/>
+  <text class="rotulo-mar" x="720" y="290" text-anchor="end">OCEANO ATLÂNTICO</text>
+  <!-- ilhas: grupo central dos Açores (Faial/Pico/Sao Jorge, esquemático) -->
+  <g class="terra">
+    <path d="M672 118 q10 -14 28 -8 q16 4 12 16 q-12 12 -30 8 q-12 -4 -10 -16Z"/>
+    <path d="M730 92 q18 -6 34 0 l8 8 l-18 4 l-26 -2Z"/>
+  </g>
+
+  <!-- rosa-dos-ventos -->
+  <g transform="translate(96 70)" fill="none" stroke="var(--m-txt)" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true">
+    <circle r="30" opacity=".5"/><path d="M0 -42 L6 -6 L42 0 L6 6 L0 42 L-6 6 L-42 0 L-6 -6Z" fill="var(--m-txt)" fill-opacity=".15"/>
+    <text y="-48" text-anchor="middle" font-size="13" font-weight="700" fill="var(--m-txt)" stroke="none">N</text>
+  </g>
+
+  <!-- trilho fantasma + tracado animado (pathLength=1). Ordem: Pico > Borda do Campo > Morro Alto > Araxá > Goiás -->
+  <path class="trilho" d="M700 112 C600 40 500 230 440 330 C430 345 420 360 410 372 C380 340 350 315 320 290 C270 270 215 250 170 230"/>
+  <path class="tracado" pathLength="1" d="M700 112 C600 40 500 230 440 330 C430 345 420 360 410 372 C380 340 350 315 320 290 C270 270 215 250 170 230"/>
+  <!-- ligacao tracejada "hoje": Goiás -> Brasília -->
+  <path class="hoje" d="M170 230 C195 218 222 210 250 205"/>
+
+  <!-- PONTOS CLICAVEIS: data-lugar = id do lugar em ../dados ; teclado: Tab, Enter/Espaço -->
+  <g class="ponto" data-lugar="pico" tabindex="0" role="button" aria-pressed="false" aria-label="Ilha do Pico, Açores, 1709" style="--d:0.4s">
+    <circle class="halo" cx="700" cy="112" r="14"/><circle class="foco" cx="700" cy="112" r="24"/><circle class="miolo" cx="700" cy="112" r="8"/>
+    <text class="txt" x="724" y="158" text-anchor="end">Ilha do Pico</text><text class="sub" x="724" y="176" text-anchor="end">Açores &#183; 1709</text>
+  </g>
+  <g class="ponto" data-lugar="borda-do-campo" tabindex="0" role="button" aria-pressed="false" aria-label="Borda do Campo e Barbacena, Minas Gerais" style="--d:3.4s">
+    <circle class="halo" cx="440" cy="330" r="14"/><circle class="foco" cx="440" cy="330" r="24"/><circle class="miolo" cx="440" cy="330" r="8"/>
+    <text class="txt" x="462" y="322" text-anchor="start">Borda do Campo</text><text class="sub" x="462" y="340" text-anchor="start">Barbacena &#183; MG</text>
+  </g>
+  <g class="ponto" data-lugar="morro-alto" tabindex="0" role="button" aria-pressed="false" aria-label="Morro Alto, Minas Gerais" style="--d:4.2s">
+    <circle class="halo" cx="410" cy="372" r="14"/><circle class="foco" cx="410" cy="372" r="24"/><circle class="miolo" cx="410" cy="372" r="8"/>
+    <text class="txt" x="428" y="392" text-anchor="start">Morro Alto</text>
+  </g>
+  <g class="ponto" data-lugar="araxa" tabindex="0" role="button" aria-pressed="false" aria-label="São Domingos do Araxá, Minas Gerais" style="--d:5.4s">
+    <circle class="halo" cx="320" cy="290" r="14"/><circle class="foco" cx="320" cy="290" r="24"/><circle class="miolo" cx="320" cy="290" r="8"/>
+    <text class="txt" x="320" y="262" text-anchor="middle">São Domingos do Araxá</text>
+  </g>
+  <g class="ponto" data-lugar="goias" tabindex="0" role="button" aria-pressed="false" aria-label="Goiás" style="--d:6.8s">
+    <circle class="halo" cx="170" cy="230" r="14"/><circle class="foco" cx="170" cy="230" r="24"/><circle class="miolo" cx="170" cy="230" r="8"/>
+    <text class="txt" x="150" y="266" text-anchor="middle">Goiás</text>
+  </g>
+  <g class="ponto hoje-p" data-lugar="brasilia" tabindex="0" role="button" aria-pressed="false" aria-label="Brasília, onde Nilson e Duda moram hoje" style="--d:7.5s">
+    <circle class="halo" cx="250" cy="205" r="14"/><circle class="foco" cx="250" cy="205" r="24"/><circle class="miolo" cx="250" cy="205" r="8"/>
+    <text class="txt" x="250" y="170" text-anchor="middle">Brasília</text><text class="sub" x="250" y="188" text-anchor="middle">hoje</text>
+  </g>
+
+  <text class="sub" x="16" y="506">Mapa esquemático, fora de escala.</text>
+
+  <script><![CDATA[
+  (function(){
+    var svg=document.getElementById('mapa-rota');
+    if(!svg||svg.__ini)return; svg.__ini=true;
+    var reduz=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduz||!('IntersectionObserver' in window)){svg.classList.add('anima');}
+    else{svg.classList.add('espera');
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){svg.classList.remove('espera');svg.classList.add('anima');io.disconnect();}});},{threshold:.35});
+      io.observe(svg);}
+    function ativa(g){
+      svg.querySelectorAll('[data-lugar]').forEach(function(p){p.setAttribute('aria-pressed',p===g?'true':'false');});
+      window.dispatchEvent(new CustomEvent('lugar-selecionado',{detail:{lugar:g.getAttribute('data-lugar')}}));
+    }
+    svg.querySelectorAll('[data-lugar]').forEach(function(g){
+      g.addEventListener('click',function(){ativa(g);});
+      g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();ativa(g);}});
+    });
+  })();
+  ]]></script>
+</svg>

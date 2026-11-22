@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>História e Sabores Ávila</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%231E3F94%27/%3E%3Cpath d=%27M16 6l8 10-8 10-8-10z%27 fill=%27%23fff%27/%3E%3C/svg%3E">
+<meta name="description" content="300 anos da família Ávila, da Ilha do Pico a Brasília: rota, linha do tempo, pessoas, fotos e receitas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: cabeçalho fixo, herói em 2 colunas, rota com painel, linha do tempo, árvore e cartões, galeria, receitas. */
+/* =========================================================
+   Cal & Basalto — base.css  (Historia e Sabores · Avila)
+   Tokens claro/escuro, componentes, acessibilidade.
+   Fontes (no <head> do HTML, Google Fonts):
+   Young Serif | Atkinson Hyperlegible | Caveat
+   ========================================================= */
+
+/* ---------- TOKENS: CLARO (padrao) ---------- */
+:root {
+  color-scheme: light dark;
+  --cal:    #F2F4F1;  /* fundo: cal de parede, levemente frio */
+  --papel:  #FFFFFF;  /* superficies elevadas */
+  --tinta:  #182026;  /* texto principal (basalto) */
+  --tinta-2:#4A545C;  /* texto secundario */
+  --mar:    #1E3F94;  /* azul de azulejo: links, acentos, tracado */
+  --barro:  #9C4A1A;  /* ocre/barro mineiro: destaque quente, receitas */
+  --cerrado:#3F6322;  /* verde de cerrado: confirmado, Goias */
+  --linha:  color-mix(in srgb, var(--tinta) 18%, transparent);
+  --mar-suave:   color-mix(in srgb, var(--mar) 9%, var(--cal));
+  --barro-suave: color-mix(in srgb, var(--barro) 10%, var(--cal));
+  --cerrado-suave: color-mix(in srgb, var(--cerrado) 10%, var(--cal));
+  --sobre-mar: #FFFFFF;
+  --sombra: 0 1px 0 var(--linha), 0 8px 24px -12px color-mix(in srgb, var(--tinta) 35%, transparent);
+
+  /* tipografia */
+  --f-display: "Young Serif", "Georgia", serif;
+  --f-texto:   "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --f-mao:     "Caveat", "Bradley Hand", cursive;
+  --t-0: clamp(1rem, .96rem + .2vw, 1.0625rem);      /* corpo */
+  --t-1: clamp(1.15rem, 1.08rem + .35vw, 1.3rem);
+  --t-2: clamp(1.4rem, 1.2rem + 1vw, 1.9rem);
+  --t-3: clamp(1.8rem, 1.4rem + 2vw, 2.8rem);
+  --t-4: clamp(2.4rem, 1.6rem + 4vw, 4.6rem);        /* titulo heroi */
+  --t-p: .875rem;                                     /* legendas/etiquetas */
+  --medida: 65ch;
+
+  /* espaco e grade (base 4px) */
+  --gutter: 16px;
+  --s1: .25rem; --s2: .5rem; --s3: 1rem; --s4: 1.5rem; --s5: 2.5rem; --s6: 4rem; --s7: 6rem;
+  --raio: 6px;
+  --largura: 72rem;
+
+  /* motion */
+  --ease: cubic-bezier(.22,.7,.2,1);
+  --dur: .6s;
+}
+
+/* ---------- TOKENS: ESCURO ---------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --cal:#12171B; --papel:#1B2228; --tinta:#E9ECE8; --tinta-2:#A9B3BB;
+    --mar:#9DB8F2; --barro:#E8A064; --cerrado:#A9CC7C;
+    --sobre-mar:#12171B;
+    --mar-suave:   color-mix(in srgb, var(--mar) 12%, var(--cal));
+    --barro-suave: color-mix(in srgb, var(--barro) 12%, var(--cal));
+    --cerrado-suave: color-mix(in srgb, var(--cerrado) 12%, var(--cal));
+  }
+}
+[data-theme="dark"] {
+  color-scheme: dark;
+  --cal:#12171B; --papel:#1B2228; --tinta:#E9ECE8; --tinta-2:#A9B3BB;
+  --mar:#9DB8F2; --barro:#E8A064; --cerrado:#A9CC7C; --sobre-mar:#12171B;
+  --mar-suave:   color-mix(in srgb, var(--mar) 12%, var(--cal));
+  --barro-suave: color-mix(in srgb, var(--barro) 12%, var(--cal));
+  --cerrado-suave: color-mix(in srgb, var(--cerrado) 12%, var(--cal));
+}
+[data-theme="light"] { color-scheme: light; }
+
+/* ---------- BASE ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+body {
+  margin: 0; background-color: var(--cal); color: var(--tinta);
+  font: 400 var(--t-0)/1.65 var(--f-texto);
+  padding-inline: var(--gutter);
+}
+h1,h2,h3,h4 { font-family: var(--f-display); font-weight: 400; line-height: 1.12; text-wrap: balance; margin: 0 0 var(--s3); }
+h1 { font-size: var(--t-4); } h2 { font-size: var(--t-3); } h3 { font-size: var(--t-2); } h4 { font-size: var(--t-1); }
+p, li, dd, blockquote { max-width: var(--medida); text-wrap: pretty; }
+p { margin: 0 0 var(--s3); }
+a { color: var(--mar); text-underline-offset: .2em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+img, svg { max-width: 100%; height: auto; display: block; }
+.sprite { position:absolute; width:0; height:0; overflow:hidden; } /* sprite de ornamentos.svg.html */
+.mao { font-family: var(--f-mao); font-size: 1.35em; line-height: 1.2; color: var(--barro); }
+.etiqueta { font-size: var(--t-p); letter-spacing: .08em; text-transform: uppercase; color: var(--tinta-2); }
+.conteudo { max-width: var(--largura); margin-inline: auto; }
+.secao { padding-block: var(--s6); }
+.so-leitor { position:absolute!important; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+
+/* foco visivel (nunca remover) */
+:focus-visible { outline: 3px solid var(--mar); outline-offset: 3px; border-radius: 2px; }
+[data-theme="dark"] :focus-visible { outline-color: var(--barro); }
+.pular { position:absolute; left:var(--gutter); top:-4rem; background:var(--mar); color:var(--sobre-mar); padding:.6rem 1rem; z-index:100; }
+.pular:focus { top: var(--s2); }
+
+/* alvos de toque >= 44px */
+button, .botao, [role="button"] { min-height: 44px; min-width: 44px; }
+.botao, button.botao {
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  padding:.6rem 1.1rem; font: 700 var(--t-0)/1 var(--f-texto); cursor:pointer;
+  background: var(--mar); color: var(--sobre-mar); border: 2px solid var(--mar); border-radius: var(--raio);
+  text-decoration: none;
+}
+.botao--vazado { background: transparent; color: var(--mar); }
+.botao:hover { filter: brightness(1.08); }
+
+/* ---------- AZULEJO (fundo repetivel; usa <pattern> de ornamentos.svg.html ou data-uri) ---------- */
+.azulejo-faixa { height: 56px; background: var(--mar-suave); border-block: 1px solid var(--linha); color: var(--mar); }
+.azulejo-faixa svg { width:100%; height:100%; }
+.divisor { width:100%; height: 24px; color: var(--mar); opacity:.85; margin-block: var(--s5); }
+
+/* ---------- CABECALHO ---------- */
+.cabecalho {
+  position: sticky; top: 0; z-index: 50; margin-inline: calc(var(--gutter) * -1); padding: .5rem var(--gutter);
+  background: color-mix(in srgb, var(--cal) 92%, transparent); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--linha);
+}
+.cabecalho__in { max-width: var(--largura); margin-inline:auto; display:flex; align-items:center; justify-content:space-between; gap: var(--s3); }
+.cabecalho__marca { display:flex; align-items:center; gap:.6rem; font-family:var(--f-display); font-size:1.15rem; color:var(--tinta); text-decoration:none; }
+.cabecalho__marca svg { width:36px; height:36px; color: var(--mar); }
+.nav { display:none; gap: var(--s4); list-style:none; margin:0; padding:0; }
+.nav a { color: var(--tinta); text-decoration:none; padding:.5rem 0; border-bottom:2px solid transparent; }
+.nav a:hover, .nav a[aria-current="true"] { border-bottom-color: var(--barro); }
+.menu-btn { background:none; border:2px solid var(--linha); color:var(--tinta); border-radius:var(--raio); cursor:pointer; }
+.menu-painel[hidden] { display:none; }
+.menu-painel { padding: var(--s3) 0; display:grid; gap:.25rem; }
+.menu-painel a { padding:.75rem 0; min-height:44px; color:var(--tinta); }
+@media (min-width: 52rem) { .nav { display:flex; } .menu-btn, .menu-painel { display:none; } }
+
+/* ---------- HEROI ---------- */
+.heroi { position:relative; padding-block: var(--s6) var(--s5); overflow:clip; }
+.heroi__grade { display:grid; gap: var(--s5); max-width: var(--largura); margin-inline:auto; }
+.heroi__ilha { color: var(--tinta); }
+.heroi__ilha .mar-linha { color: var(--mar); }
+@media (min-width: 52rem) { .heroi__grade { grid-template-columns: 1.1fr .9fr; align-items:center; } }
+
+/* ---------- CARTAO DE PESSOA ---------- */
+.pessoas { display:grid; gap: var(--s4); grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); list-style:none; padding:0; margin:0; }
+.pessoa {
+  position:relative; background: var(--papel); border:1px solid var(--linha); border-radius: var(--raio);
+  box-shadow: var(--sombra); padding: var(--s4) var(--s3) var(--s3); display:grid; gap:.5rem; align-content:start;
+}
+.pessoa::before { /* friso de azulejo no topo */
+  content:""; position:absolute; inset:0 0 auto 0; height:6px; border-radius: var(--raio) var(--raio) 0 0;
+  background: repeating-linear-gradient(90deg, var(--mar) 0 12px, transparent 12px 18px);
+}
+.pessoa__retrato { width:96px; aspect-ratio:4/5; border-radius: 48px 48px var(--raio) var(--raio); object-fit:cover; background: var(--mar-suave); border:2px solid var(--mar); }
+.pessoa__nome { font: 400 var(--t-1)/1.2 var(--f-display); margin:0; }
+.pessoa__datas { font-size: var(--t-p); color: var(--tinta-2); margin:0; }
+.pessoa__lugar { font-size: var(--t-p); margin:0; color: var(--barro); font-weight:700; }
+.pessoa__resumo { font-size: .95rem; margin:0; }
+.pessoa__link { margin-top:.25rem; font-weight:700; min-height:44px; display:inline-flex; align-items:center; }
+.pessoa[data-ramo="acores"]   { --ramo: var(--mar); }
+.pessoa[data-ramo="minas"]    { --ramo: var(--barro); }
+.pessoa[data-ramo="goias"]    { --ramo: var(--cerrado); }
+.pessoa[data-ramo]::before    { background: repeating-linear-gradient(90deg, var(--ramo) 0 12px, transparent 12px 18px); }
+.pessoa[data-ramo] .pessoa__retrato { border-color: var(--ramo); }
+
+/* ---------- LINHA DO TEMPO (vertical padrao) ---------- */
+.linha-tempo { list-style:none; margin:0; padding:0 0 0 1.75rem; position:relative; }
+.linha-tempo::before { content:""; position:absolute; left:.45rem; top:.4rem; bottom:.4rem; width:2px; background: var(--mar); opacity:.55; }
+.marco { position:relative; padding-bottom: var(--s5); }
+.marco::before { /* nó em losango, como azulejo girado */
+  content:""; position:absolute; left:-1.75rem; top:.35rem; width:.95rem; height:.95rem; background: var(--cal);
+  border:2px solid var(--mar); transform: rotate(45deg);
+}
+.marco[data-regiao="minas"]::before { border-color: var(--barro); }
+.marco[data-regiao="goias"]::before { border-color: var(--cerrado); }
+.marco__ano { font: 400 var(--t-2)/1 var(--f-display); color: var(--mar); margin:0 0 .25rem; }
+.marco__titulo { font-weight:700; margin:0 0 .25rem; }
+.marco__texto { margin:0; color: var(--tinta); }
+.marco[aria-current="true"]::before { background: var(--barro); }
+/* variante horizontal (desktop): rolagem com snap, teclado: tabindex=0 no container */
+@media (min-width: 52rem) {
+  .linha-tempo--h { display:flex; gap: var(--s4); overflow-x:auto; padding: var(--s5) var(--s2) var(--s3); scroll-snap-type:x mandatory; overscroll-behavior-x:contain; }
+  .linha-tempo--h::before { left:0; right:0; top:calc(var(--s5) + .45rem); bottom:auto; width:auto; height:2px; }
+  .linha-tempo--h .marco { flex:0 0 15rem; scroll-snap-align:start; padding: var(--s4) 0 0; }
+  .linha-tempo--h .marco::before { left:0; top:-.35rem; }
+}
+
+/* ---------- GALERIA + LIGHTBOX (<dialog>) ---------- */
+.galeria { display:grid; gap: var(--gutter); grid-template-columns: repeat(auto-fill, minmax(min(100%, 12.5rem), 1fr)); list-style:none; padding:0; margin:0; }
+.foto { margin:0; }
+.foto__botao { all:unset; display:block; cursor:zoom-in; width:100%; border-radius: var(--raio); }
+.foto__botao:focus-visible { outline: 3px solid var(--mar); outline-offset: 3px; }
+.moldura { /* moldura de foto: passe-partout + filete de azulejo */
+  background: var(--papel); padding: 10px 10px 8px; border:1px solid var(--linha); outline: 2px solid var(--mar); outline-offset:-7px;
+  box-shadow: var(--sombra); transition: transform .3s var(--ease);
+}
+.moldura img { aspect-ratio: 4/3; width:100%; object-fit:cover; background: var(--mar-suave); }
+.foto__botao:hover .moldura { transform: rotate(-.6deg) translateY(-2px); }
+.foto figcaption { font-size: var(--t-p); color: var(--tinta-2); padding-top:.5rem; max-width:none; }
+.lightbox { border:0; padding:0; background: transparent; max-width: min(96vw, 64rem); width:100%; color: var(--tinta); }
+.lightbox::backdrop { background: color-mix(in srgb, #0a0d10 88%, transparent); }
+.lightbox__corpo { background: var(--papel); border-radius: var(--raio); padding: var(--s3); display:grid; gap: var(--s3); max-height: 94vh; overflow:auto; }
+.lightbox__img { max-height: 70vh; width:100%; object-fit:contain; background: var(--mar-suave); }
+.lightbox__barra { display:flex; gap: var(--s2); justify-content:space-between; align-items:center; flex-wrap:wrap; }
+.lightbox__legenda { max-width: var(--medida); margin:0; }
+
+/* ---------- SELO DE NIVEL DE EVIDENCIA ---------- */
+/* nunca so cor: letra + rotulo + forma. Texto sempre var(--tinta) sobre fundo suave => AA. */
+.selo-evidencia {
+  --c: var(--mar);
+  display:inline-flex; align-items:center; gap:.4rem; font-size: var(--t-p); line-height:1.2; font-weight:700;
+  padding: .2rem .6rem .2rem .25rem; border:1.5px solid var(--c); border-radius: 999px;
+  background: color-mix(in srgb, var(--c) 10%, var(--papel)); color: var(--tinta); white-space:nowrap;
+}
+.selo-evidencia::before {
+  content: attr(data-nivel); display:grid; place-items:center; width:1.6rem; height:1.6rem; border-radius:50%;
+  background: var(--c); color: var(--sobre-mar); font-family: var(--f-display); font-size:.85rem;
+}
+.selo-evidencia[data-nivel="A"] { --c: var(--cerrado); }         /* documento primario */
+.selo-evidencia[data-nivel="B"] { --c: var(--mar); }             /* fonte secundaria confiavel */
+.selo-evidencia[data-nivel="C"] { --c: var(--barro); }           /* tradicao/livro sem documento */
+.selo-evidencia[data-nivel="D"] { --c: var(--tinta-2); }         /* indicio fraco */
+.selo-evidencia[data-nivel="P"] { --c: var(--mar); border-style: dashed; } /* hipotese a pesquisar */
+.selo-evidencia[data-nivel="controverso"] { --c: var(--barro); border-style: double; border-width:4px; padding-block:.05rem; }
+.selo-evidencia[data-nivel="controverso"]::before { content:"!"; }
+/* (a legenda dos niveis fica no mapa de secoes: A documento, B fonte confiavel, C tradicao, D indicio, P a pesquisar) */
+
+/* ---------- AVISO "A CONFIRMAR PELA FAMILIA" ---------- */
+.aviso-confirmar {
+  display:flex; gap:.75rem; align-items:flex-start; padding: var(--s3); margin-block: var(--s3);
+  background: var(--barro-suave); border:1px solid var(--barro); border-left-width: 6px; border-radius: var(--raio);
+  color: var(--tinta); max-width: var(--medida);
+}
+.aviso-confirmar svg { flex:none; width:28px; height:28px; color: var(--barro); }
+.aviso-confirmar strong { font-family: var(--f-mao); font-size:1.4em; font-weight:700; color: var(--barro); display:block; line-height:1.1; }
+.aviso-confirmar p { margin:0; font-size:.95rem; }
+
+/* ---------- CARTAO DE RECEITA ---------- */
+.receita {
+  position:relative; background: var(--papel); border:1px solid var(--linha); border-radius: var(--raio); box-shadow: var(--sombra);
+  padding: var(--s4) var(--s3) var(--s4); max-width: 46rem;
+  background-image: repeating-linear-gradient(transparent 0 1.74rem, color-mix(in srgb, var(--mar) 12%, transparent) 1.74rem calc(1.74rem + 1px));
+  background-position: 0 var(--s5);
+}
+.receita__cab { display:flex; gap: var(--s3); align-items:center; margin-bottom: var(--s3); }
+.receita__icone { width:56px; height:56px; flex:none; color: var(--barro); }
+.receita__titulo { margin:0; font: 400 var(--t-2)/1.1 var(--f-display); }
+.receita__origem { margin:0; font-family: var(--f-mao); font-size:1.3rem; color: var(--barro); }
+.receita__meta { display:flex; flex-wrap:wrap; gap:.5rem 1.25rem; font-size: var(--t-p); color: var(--tinta-2); margin:0 0 var(--s3); padding:0; list-style:none; }
+.receita__corpo { display:grid; gap: var(--s4); }
+@media (min-width: 40rem) { .receita__corpo { grid-template-columns: 1fr 1.4fr; } }
+.ingredientes { list-style:none; margin:0; padding:0; }
+.ingredientes li { display:flex; align-items:baseline; gap:.6rem; padding:.3rem 0; border-bottom:1px dotted var(--linha); }
+.ingredientes input[type="checkbox"] { width:1.25rem; height:1.25rem; accent-color: var(--mar); flex:none; translate:0 .2rem; }
+.ingredientes input:checked + span { text-decoration: line-through; color: var(--tinta-2); }
+.ingredientes label { display:flex; gap:.6rem; min-height:44px; align-items:center; cursor:pointer; width:100%; }
+.modo { counter-reset: passo; list-style:none; margin:0; padding:0; }
+.modo li { counter-increment: passo; position:relative; padding-left:2.5rem; margin-bottom: var(--s3); }
+.modo li::before { content: counter(passo); position:absolute; left:0; top:-.1rem; width:1.9rem; height:1.9rem; display:grid; place-items:center;
+  font-family: var(--f-display); color: var(--sobre-mar); background: var(--barro); border-radius:50%; }
+.receita__nota { font-family: var(--f-mao); font-size:1.3rem; color: var(--tinta-2); border-top:1px dashed var(--linha); padding-top: var(--s2); margin:var(--s3) 0 0; }
+
+/* ---------- MAPA / ARVORE (hooks) ---------- */
+.mapa { background: var(--mar-suave); border:1px solid var(--linha); border-radius: var(--raio); overflow:hidden; }
+.mapa { /* tokens do tema alimentam o mapa.svg inline (#mapa-rota), inclusive com [data-theme] */
+  --mapa-mar: var(--mar-suave); --mapa-terra: color-mix(in srgb, var(--barro) 14%, var(--cal));
+  --mapa-linha: var(--tinta-2); --mapa-tracado: var(--mar); --mapa-ponto: var(--barro); --mapa-texto: var(--tinta); --mapa-foco: var(--barro);
+}
+.mapa [data-lugar] { cursor:pointer; }
+.mapa [data-lugar]:focus-visible { outline: 3px solid var(--barro); outline-offset: 2px; }
+.arvore { overflow:auto; border:1px solid var(--linha); border-radius: var(--raio); background: var(--papel); }
+.arvore [role="treeitem"]:focus-visible > .no { outline: 3px solid var(--mar); }
+
+/* ---------- MOTION ---------- */
+/* Momento orquestrado: abertura (ilha emerge -> tracado azul -> titulo). Demais revelacoes sao discretas. */
+.revela { opacity:0; transform: translateY(14px); transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease); }
+.revela.visivel { opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto; }
+  *, *::before, *::after { animation-duration:.001ms!important; animation-iteration-count:1!important; transition-duration:.001ms!important; }
+  .revela { opacity:1; transform:none; }
+}
+
+/* ---------- IMPRESSAO nao e usada (artefato sem print) ---------- */
+
+/* ---- extras da página ---- */
+.heroi h1{margin-bottom:var(--s3)}
+.heroi .sub{font-size:var(--t-1);color:var(--tinta-2);max-width:40ch}
+.heroi .dedica{margin-top:var(--s4)}
+.heroi__ilha svg.pico{width:100%;max-width:26rem;margin-inline:auto;color:var(--tinta)}
+.heroi__ilha .selo{width:7rem;height:7rem;color:var(--mar);margin:var(--s3) auto 0}
+@keyframes emerge{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes sobe{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.heroi__ilha svg.pico{animation:emerge .7s var(--ease) both}
+.heroi h1{animation:sobe .6s var(--ease) .5s both}
+.rota{display:grid;gap:var(--s4)}
+@media(min-width:52rem){.rota{grid-template-columns:2fr 1fr;align-items:start}.painel{position:sticky;top:5rem}}
+.painel{background:var(--papel);border:1px solid var(--linha);border-radius:var(--raio);padding:var(--s3);box-shadow:var(--sombra)}
+.painel h3{font-size:var(--t-2)}
+.painel ul{padding-left:1.1rem;margin:.25rem 0 var(--s3)}
+.mini-fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem;list-style:none;padding:0;margin:var(--s2) 0}
+.mini-fotos button{all:unset;display:block;cursor:zoom-in;border-radius:4px;min-height:44px}
+.mini-fotos img{aspect-ratio:1;object-fit:cover;width:100%;border:1px solid var(--linha)}
+.filtros{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 var(--s4)}
+.filtros button,.chip{border:2px solid var(--linha);background:var(--papel);color:var(--tinta);border-radius:999px;padding:.4rem .9rem;font:700 var(--t-p)/1 var(--f-texto);cursor:pointer}
+.filtros button[aria-pressed="true"]{background:var(--mar);color:var(--sobre-mar);border-color:var(--mar)}
+.tempo-wrap{overflow-x:auto}
+.marco .selo-evidencia{margin-top:.4rem}
+.marco__nota{font-family:var(--f-mao);font-size:1.15rem;color:var(--barro);margin:.3rem 0 0}
+.arv ul{list-style:none;margin:0;padding-left:1.1rem;border-left:2px solid var(--linha)}
+.arv>ul{border-left:0;padding-left:0}
+.arv li{margin:.15rem 0}
+.arv details>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:.5rem;list-style:none}
+.arv details>summary::-webkit-details-marker{display:none}
+.arv details>summary::before{content:"+";display:grid;place-items:center;width:1.4rem;height:1.4rem;border:1.5px solid var(--mar);border-radius:4px;color:var(--mar);font-weight:700}
+.arv details[open]>summary::before{content:"\2212"}
+.arv .folha{min-height:44px;display:flex;align-items:center;gap:.5rem;padding-left:1.9rem}
+.arv button.nome{all:unset;cursor:pointer;color:var(--tinta);text-decoration:underline;text-decoration-color:var(--ramo,var(--mar));text-decoration-thickness:3px;text-underline-offset:.2em}
+.arv button.nome:focus-visible{outline:3px solid var(--mar);outline-offset:2px}
+.arv [data-ramo=acores]{--ramo:var(--mar)}.arv [data-ramo=minas]{--ramo:var(--barro)}.arv [data-ramo=goias]{--ramo:var(--cerrado)}
+.arv .ref{color:var(--tinta-2);font-size:var(--t-p)}
+.pessoa-painel{margin-top:var(--s4)}
+.busca{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:var(--s3)}
+.busca input{font:inherit;min-height:44px;padding:.4rem .8rem;border:2px solid var(--linha);border-radius:var(--raio);background:var(--papel);color:var(--tinta);flex:1 1 14rem}
+.mais{margin-top:var(--s4);display:flex;justify-content:center}
+.receitas{display:grid;gap:var(--s4);grid-template-columns:repeat(auto-fill,minmax(min(100%,19rem),1fr))}
+.rec{background:var(--papel);border:1px solid var(--linha);border-radius:var(--raio);padding:var(--s3);box-shadow:var(--sombra);display:grid;gap:.4rem;align-content:start}
+.rec h3{font-size:var(--t-1);margin:0}
+.rec .cat{font-family:var(--f-mao);font-size:1.25rem;color:var(--barro);margin:0}
+.rec ul{margin:0;padding-left:1.1rem;font-size:.95rem}
+.nota-ig{font-size:var(--t-p);color:var(--tinta-2);margin:0}
+.legenda-niveis{display:grid;gap:var(--s2);list-style:none;padding:0;margin:var(--s3) 0}
+.legenda-niveis li{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
+.rodape{padding-block:var(--s6);border-top:1px solid var(--linha);display:grid;gap:var(--s3)}
+.rodape svg.rosa{width:64px;height:64px;color:var(--mar)}
+.tema-btn{background:none;border:2px solid var(--linha);color:var(--tinta);border-radius:var(--raio);cursor:pointer;padding:0 .8rem;font:700 var(--t-p)/1 var(--f-texto)}
+.carregando{color:var(--tinta-2)}
+.mini-fotos button:focus-visible,.arv button.nome:focus-visible{outline:3px solid var(--mar);outline-offset:2px}
+[data-theme="dark"] .mini-fotos button:focus-visible{outline-color:var(--barro)}
+.arv button.nome{min-height:44px;display:inline-flex;align-items:center}
+.cabecalho__marca{min-height:44px}
+.painel h4{margin-top:var(--s3)}
+.rota>*{min-width:0}
+.mapa-rolagem{overflow-x:auto}
+.mapa-rolagem>svg{min-width:640px}
+.lugares-lista{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:var(--s2) 0 0}
+.lugares-lista button{border:2px solid var(--linha);background:var(--papel);color:var(--tinta);border-radius:999px;padding:.4rem .9rem;min-height:44px;font:700 var(--t-p)/1 var(--f-texto);cursor:pointer}
+.lugares-lista button[aria-pressed="true"]{background:var(--mar);color:var(--sobre-mar);border-color:var(--mar)}
+.arv .tog{all:unset;box-sizing:border-box;cursor:pointer;display:grid;place-items:center;width:44px;height:44px;flex:none;color:var(--mar);font-weight:700;font-size:1.2rem}
+.arv .tog:focus-visible{outline:3px solid var(--mar);outline-offset:-3px}
+.arv .row{display:flex;align-items:center;gap:.25rem;flex-wrap:wrap}
+.arv .espaco{width:44px;flex:none}
+.monograma{width:64px;height:64px;display:grid;place-items:center;background:var(--mar-suave);border:2px solid var(--ramo,var(--mar));transform:rotate(45deg);margin:.4rem 0 .6rem .6rem}
+.monograma span{transform:rotate(-45deg);font:400 1.3rem/1 var(--f-display);color:var(--tinta)}
+.nenhum{color:var(--tinta-2)}
+.tempo-wrap{position:relative}
+.dica{font-size:var(--t-p);color:var(--tinta-2);margin:0 0 var(--s2)}
+.tempo-wrap:focus-visible,#tempo-lista:focus-visible{outline:3px solid var(--mar);outline-offset:3px}
+dialog.lightbox[open]{display:block;margin:auto}
+</style>
+</head>
+<body>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- 1. AZULEJO: ladrilho 80x80. Estrela de 8 pontas + quartos de circulo nos cantos (estilo hispano-lusitano, desenho proprio) -->
+    <symbol id="orn-azulejo" viewBox="0 0 80 80">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+        <rect x=".8" y=".8" width="78.4" height="78.4" opacity=".55"/>
+        <path d="M40 8 L47 26 L66 19 L54 34 L72 40 L54 46 L66 61 L47 54 L40 72 L33 54 L14 61 L26 46 L8 40 L26 34 L14 19 L33 26 Z"/>
+        <circle cx="40" cy="40" r="7"/>
+        <circle cx="40" cy="40" r="2.4" fill="currentColor" stroke="none"/>
+        <path d="M0 22 A22 22 0 0 0 22 0 M58 0 A22 22 0 0 0 80 22 M80 58 A22 22 0 0 0 58 80 M22 80 A22 22 0 0 0 0 58" opacity=".8"/>
+        <path d="M5 5 Q13 5 13 13 Q5 13 5 5Z M75 5 Q67 5 67 13 Q75 13 75 5Z M5 75 Q13 75 13 67 Q5 67 5 75Z M75 75 Q67 75 67 67 Q75 67 75 75Z" fill="currentColor" stroke="none" opacity=".7"/>
+      </g>
+    </symbol>
+    <pattern id="pat-azulejo" width="80" height="80" patternUnits="userSpaceOnUse" style="color:var(--mar,#1E3F94)"><!-- cor do padrao vem daqui (currentColor dentro de pattern nao herda do uso) -->
+      <use href="#orn-azulejo" width="80" height="80"/>
+    </pattern>
+
+    <!-- 2. DIVISOR ONDAS (mar): 240x24, repetivel horizontalmente -->
+    <symbol id="orn-divisor-ondas" viewBox="0 0 240 24" preserveAspectRatio="xMidYMid slice">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <path d="M0 12 q10 -10 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0"/>
+        <path d="M0 18 q10 -8 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" opacity=".45"/>
+      </g>
+    </symbol>
+
+    <!-- 3. DIVISOR RENDA/BORDADO: losangos com ponto-de-cruz, 240x24 -->
+    <symbol id="orn-divisor-renda" viewBox="0 0 240 24" preserveAspectRatio="xMidYMid meet">
+      <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 12 H92 M148 12 H234" stroke-dasharray="2 5"/>
+        <path d="M120 2 L130 12 L120 22 L110 12 Z"/>
+        <path d="M120 7 L125 12 L120 17 L115 12 Z" fill="currentColor"/>
+        <path d="M96 12 l6 -6 l6 6 l-6 6 Z M132 12 l6 -6 l6 6 l-6 6 Z" opacity=".7"/>
+        <path d="M86 8 l8 8 M86 16 l8 -8 M146 8 l8 8 M146 16 l8 -8" opacity=".55"/>
+      </g>
+    </symbol>
+
+    <!-- 4. MOLDURA DE FOTO: 200x150, miolo livre (use como <svg> sobreposto; a foto vai por baixo em 20,20,160,110) -->
+    <symbol id="orn-moldura" viewBox="0 0 200 150">
+      <g fill="none" stroke="currentColor" stroke-linejoin="round">
+        <rect x="2" y="2" width="196" height="146" stroke-width="2.4"/>
+        <rect x="10" y="10" width="180" height="130" stroke-width="1"/>
+        <rect x="18" y="18" width="164" height="114" stroke-width="1.6"/>
+        <path d="M2 24 Q24 24 24 2 M176 2 Q176 24 198 24 M198 126 Q176 126 176 148 M24 148 Q24 126 2 126" stroke-width="1.6"/>
+        <path d="M100 4 l5 4 l-5 4 l-5 -4Z M100 138 l5 4 l-5 4 l-5 -4Z" fill="currentColor" stroke="none"/>
+      </g>
+    </symbol>
+
+    <!-- 5. SELO / BRASAO SIMPLES (inventado): anel com texto, pico, ondas e estrela. 160x160 -->
+    <symbol id="orn-selo" viewBox="0 0 160 160">
+      <defs><path id="orn-selo-arco" d="M80 80 m-58 0 a58 58 0 1 1 116 0 a58 58 0 1 1 -116 0"/></defs>
+      <g fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="80" cy="80" r="76"/><circle cx="80" cy="80" r="46" stroke-width="1.5"/>
+        <circle cx="80" cy="80" r="70" stroke-width="1" stroke-dasharray="1 5" stroke-linecap="round"/>
+        <path d="M50 92 L68 62 L74 70 L80 52 L110 92 Z" fill="currentColor" fill-opacity=".18" stroke-linejoin="round"/>
+        <path d="M54 100 q6 -6 13 0 t13 0 t13 0 t13 0" stroke-linecap="round"/>
+        <path d="M44 110 q6 -6 13 0 t13 0 t13 0 t13 0 t10 0" stroke-linecap="round" opacity=".55"/>
+        <path d="M80 30 l3 7 l8 .5 l-6 5 l2 8 l-7 -4.5 l-7 4.5 l2 -8 l-6 -5 l8 -.5Z" fill="currentColor" stroke="none"/>
+      </g>
+      <text font-family="'Young Serif',Georgia,serif" font-size="15" letter-spacing="3.4" fill="currentColor">
+        <textPath href="#orn-selo-arco" startOffset="50%" text-anchor="middle" transform="rotate(0)">ÁVILA · 1709 · 2026 ·</textPath>
+      </text>
+    </symbol>
+
+    <!-- 6. ROSA-DOS-VENTOS 120x120 -->
+    <symbol id="orn-rosa" viewBox="0 0 120 120">
+      <g stroke="currentColor" stroke-linejoin="round" fill="none">
+        <circle cx="60" cy="60" r="44" stroke-width="1.2"/><circle cx="60" cy="60" r="38" stroke-width=".8" stroke-dasharray="1 4"/>
+        <path d="M60 6 L68 52 L114 60 L68 68 L60 114 L52 68 L6 60 L52 52 Z" fill="currentColor" fill-opacity=".14" stroke-width="1.6"/>
+        <path d="M60 6 L68 52 L60 60 Z M60 114 L52 68 L60 60 Z M6 60 L52 52 L60 60 Z M114 60 L68 68 L60 60 Z" fill="currentColor" stroke="none"/>
+        <path d="M28 28 L54 54 M92 28 L66 54 M28 92 L54 66 M92 92 L66 66" stroke-width="1.2"/>
+      </g>
+      <text x="60" y="4.5" text-anchor="middle" font-family="'Young Serif',Georgia,serif" font-size="9" fill="currentColor">N</text>
+    </symbol>
+
+    <!-- 7. ILHA DO PICO ESTILIZADA 320x160: cone alto com cume, Faial ao fundo, Sao Jorge a direita, mar -->
+    <symbol id="orn-pico" viewBox="0 0 320 160">
+      <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="2">
+        <path d="M6 120 L70 108 L100 112 L132 100 L158 62 L170 34 L178 28 L186 34 L198 64 L222 92 L250 100 L314 114" fill="currentColor" fill-opacity=".9" stroke="none"/>
+        <path d="M170 34 L178 28 L186 34 L181 38 L176 36 Z" fill="var(--cal,#fff)" fill-opacity=".9" stroke="none"/>
+        <path d="M60 110 Q76 92 96 106" opacity=".5" stroke="var(--cal,#fff)" stroke-opacity=".5"/>
+        <path d="M158 62 L164 70 L170 56 M198 64 L190 72 L186 54" stroke="var(--cal,#fff)" stroke-opacity=".35" stroke-width="1.5"/>
+        <path d="M0 132 q10 -8 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0"/>
+        <path d="M0 144 q10 -8 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" opacity=".5"/>
+        <path d="M148 14 q6 -6 12 0 q6 -7 13 0" opacity=".45" stroke-width="1.5"/>
+      </g>
+    </symbol>
+
+    <!-- 8. CASA / FAZENDA mineira 200x140: telhado de 2 aguas, varanda com colunas, chamine, janelas, palmeira/arvore -->
+    <symbol id="orn-casa" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M18 62 L100 22 L182 62"/><path d="M26 62 H174"/>
+        <path d="M150 38 V20 H162 V46"/>
+        <path d="M34 62 V120 H166 V62"/>
+        <path d="M28 120 H172"/>
+        <path d="M34 78 H166" stroke-width="1.4" opacity=".6"/>
+        <path d="M44 78 V120 M70 78 V120 M130 78 V120 M156 78 V120" stroke-width="1.8"/>
+        <path d="M84 120V104a16 16 0 0 1 32 0v16z"/>
+        <path d="M100 88 V120 M84 104 H116" stroke-width="1.2"/>
+        <rect x="46" y="48" width="0" height="0"/>
+        <path d="M92 50 h16 v10 h-16Z M100 50 v10" stroke-width="1.4"/>
+        <path d="M0 132 H200" stroke-width="1.4" stroke-dasharray="2 6" opacity=".6"/>
+        <path d="M186 120 V96 M186 96 q-10 -4 -14 -12 M186 96 q10 -4 14 -12 M186 96 q-8 -10 -4 -20 M186 96 q8 -10 4 -20" stroke-width="1.6"/>
+      </g>
+    </symbol>
+
+    <!-- 9. ICONE PANELA 64x64 (com vapor) -->
+    <symbol id="orn-panela" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 30 H50 V46 Q50 56 40 56 H24 Q14 56 14 46 Z"/>
+        <path d="M10 34 H14 M50 34 H54"/>
+        <path d="M12 30 H52"/>
+        <path d="M24 46 H40" opacity=".5"/>
+        <path d="M24 8 q-4 5 0 9 t0 8 M34 6 q-4 5 0 9 t0 10 M44 8 q-4 5 0 9 t0 8" stroke-width="2" opacity=".75"/>
+      </g>
+    </symbol>
+
+    <!-- 10. ICONE COLHER DE PAU 64x64 -->
+    <symbol id="orn-colher" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse cx="22" cy="22" rx="11" ry="14" transform="rotate(-40 22 22)"/>
+        <path d="M30 31 L56 57"/>
+        <path d="M14 16 q4 -4 8 -2" opacity=".5"/>
+        <path d="M52 57 L58 51" opacity=".6"/>
+      </g>
+    </symbol>
+
+    <!-- 11. ICONE ROSCA 64x64 (rosca/bolo-de-anel com acucar) -->
+    <symbol id="orn-rosca" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse cx="32" cy="34" rx="26" ry="20"/>
+        <ellipse cx="32" cy="34" rx="9" ry="6"/>
+        <path d="M14 22 q4 -7 12 -9 M50 22 q-4 -7 -12 -9" opacity=".55"/>
+        <path d="M14 38 q8 12 18 12 q10 0 18 -12" opacity=".5"/>
+      </g>
+      <g fill="currentColor"><circle cx="20" cy="28" r="1.6"/><circle cx="30" cy="22" r="1.6"/><circle cx="43" cy="24" r="1.6"/><circle cx="48" cy="34" r="1.6"/><circle cx="16" cy="36" r="1.6"/><circle cx="38" cy="47" r="1.6"/><circle cx="24" cy="46" r="1.6"/></g>
+    </symbol>
+
+    <!-- 12. ICONE AVISO "a confirmar" 32x32 (lupa com interrogacao) -->
+    <symbol id="orn-confirmar" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="14" cy="14" r="9"/><path d="M21 21 L29 29"/><path d="M11 11.5 q0 -3 3 -3 t3 3 q0 2 -3 3.5 v1.5"/>
+      </g><circle cx="14" cy="19.2" r="1.2" fill="currentColor"/>
+    </symbol>
+
+    <!-- 13. MARCA DO CABECALHO 48x48: azulejo-estrela dentro de losango -->
+    <symbol id="orn-marca" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+        <rect x="6" y="6" width="36" height="36" transform="rotate(45 24 24)"/>
+        <path d="M24 11 L27 21 L37 24 L27 27 L24 37 L21 27 L11 24 L21 21 Z" fill="currentColor"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+<a class="pular" href="#main">Pular para o conteúdo</a>
+<header class="cabecalho">
+  <div class="cabecalho__in">
+    <a class="cabecalho__marca" href="#topo"><svg aria-hidden="true"><use href="#orn-marca"/></svg><span>Ávila</span></a>
+    <nav aria-label="Seções"><ul class="nav">
+      <li><a href="#rota">Rota</a></li><li><a href="#tempo">Linha do tempo</a></li><li><a href="#pessoas">Pessoas</a></li><li><a href="#fotos">Fotos</a></li><li><a href="#receitas">Receitas</a></li><li><a href="#fontes">Fontes</a></li>
+    </ul></nav>
+    <div style="display:flex;gap:.5rem">
+      <button class="tema-btn" id="tema" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-painel" aria-label="Abrir menu">&#9776;</button>
+    </div>
+  </div>
+  <div class="menu-painel" id="menu-painel" hidden>
+    <a href="#rota">Rota</a><a href="#tempo">Linha do tempo</a><a href="#pessoas">Pessoas</a><a href="#fotos">Fotos</a><a href="#receitas">Receitas</a><a href="#fontes">Fontes</a>
+  </div>
+</header>
+<main id="main">
+<section class="heroi" id="topo" aria-labelledby="t-heroi">
+  <div class="heroi__grade">
+    <div>
+      <p class="etiqueta">Livro, vídeos e acervo da família</p>
+      <h1 id="t-heroi">História e Sabores: Ávila</h1>
+      <p class="sub">300 anos, da Ilha do Pico, nos Açores, a Minas Gerais e a Brasília. Aqui “Ávila” são os antepassados.</p>
+      <p><a class="botao" href="#rota">Começar pela rota</a> <a class="botao botao--vazado" href="#receitas">Ir às receitas</a></p>
+      <p class="mao dedica">Para a Duda: guarde o que for nosso e pergunte o que ainda não sabemos.</p>
+    </div>
+    <div class="heroi__ilha" aria-hidden="true">
+      <svg class="pico" viewBox="0 0 400 220"><use href="#orn-pico"/></svg>
+      <svg class="ondas" viewBox="0 0 600 24" preserveAspectRatio="none" style="width:100%;height:24px;color:var(--mar);margin-top:-6px"><use href="#orn-divisor-ondas"/></svg>
+      <svg class="selo" viewBox="0 0 120 120"><use href="#orn-selo"/></svg>
+    </div>
+  </div>
+</section>
+<div class="azulejo-faixa" aria-hidden="true"><svg><rect width="100%" height="100%" fill="url(#pat-azulejo)"/></svg></div>
+
+<div class="conteudo">
+<section class="secao" id="rota" aria-labelledby="t-rota">
+  <h2 id="t-rota">A rota</h2>
+  <p>Mapa esquemático, fora de escala. Toque em um ponto para ver o lugar, as pessoas e as fotos ligadas a ele.</p>
+  <div class="rota">
+    <div><div class="mapa"><div class="mapa-rolagem" tabindex="0" role="region" aria-label="Mapa da rota, role para o lado no celular"><svg id="mapa-rota" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="group" aria-labelledby="mapa-t mapa-d" font-family="'Atkinson Hyperlegible',system-ui,sans-serif">
+  <title id="mapa-t">Rota da família Ávila: Ilha do Pico, Minas Gerais, Araxá, Goiás</title>
+  <desc id="mapa-d">Mapa estilizado, fora de escala. Um tracado azul parte da Ilha do Pico, nos Açores, em 1709, atravessa o Atlântico, chega a Borda do Campo e Barbacena, passa por Morro Alto, São Domingos do Araxá e segue para Goiás; Brasília aparece como ponto de hoje.</desc>
+  <!--
+    USO inline no HTML (recomendado, para o CSS herdar tokens): cole este <svg> e defina no CSS da pagina as variaveis
+    mapa-mar, mapa-terra, mapa-tracado, mapa-ponto, mapa-texto, com prefixo de dois hifens (fallbacks abaixo, claro/escuro automatico).
+    EVENTO: ao ativar um ponto (clique, Enter ou Espaço) dispara window 'lugar-selecionado' {detail:{lugar}}.
+    A pagina escuta o evento e abre o painel do lugar (dados em ../dados). A animacao inicia ao entrar na tela (IntersectionObserver); sem JS o trajeto aparece completo. REPLAY: svg.classList.remove('anima'); void svg.offsetWidth; svg.classList.add('anima').
+  -->
+  <style>
+    #mapa-rota{--m-mar:var(--mapa-mar,#DCE6F7);--m-terra:var(--mapa-terra,#E4E0D2);--m-linha:var(--mapa-linha,#7C8790);
+      --m-trac:var(--mapa-tracado,#1E3F94);--m-ponto:var(--mapa-ponto,#9C4A1A);--m-txt:var(--mapa-texto,#182026);--m-foco:var(--mapa-foco,#9C4A1A)}
+    @media (prefers-color-scheme:dark){#mapa-rota:not([data-theme="light"]){--m-mar:var(--mapa-mar,#1A2735);--m-terra:var(--mapa-terra,#26302F);--m-linha:var(--mapa-linha,#6E7A83);
+      --m-trac:var(--mapa-tracado,#9DB8F2);--m-ponto:var(--mapa-ponto,#E8A064);--m-txt:var(--mapa-texto,#E9ECE8);--m-foco:var(--mapa-foco,#E8A064)}}
+    #mapa-rota .fundo{fill:var(--m-mar)}
+    #mapa-rota .terra{fill:var(--m-terra);stroke:var(--m-linha);stroke-width:1.4;stroke-linejoin:round}
+    #mapa-rota .grade{stroke:var(--m-linha);stroke-width:.6;stroke-dasharray:2 7;opacity:.5;fill:none}
+    #mapa-rota .onda{fill:none;stroke:var(--m-linha);stroke-width:1.2;stroke-linecap:round;opacity:.5}
+    #mapa-rota .trilho{fill:none;stroke:var(--m-trac);stroke-width:2;stroke-dasharray:3 8;stroke-linecap:round;opacity:.28}
+    #mapa-rota .tracado{fill:none;stroke:var(--m-trac);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:0}
+    #mapa-rota .hoje{fill:none;stroke:var(--m-ponto);stroke-width:2.2;stroke-dasharray:2 7;stroke-linecap:round}
+    #mapa-rota .txt{fill:var(--m-txt);font-size:16px;font-weight:700;paint-order:stroke;stroke:var(--m-mar);stroke-width:5px;stroke-linejoin:round}
+    #mapa-rota .sub{fill:var(--m-txt);font-size:13px;opacity:.85;paint-order:stroke;stroke:var(--m-mar);stroke-width:4px}
+    #mapa-rota .rotulo-mar{fill:var(--m-txt);font-size:14px;font-style:italic;opacity:.7;letter-spacing:.35em}
+    #mapa-rota .ponto{cursor:pointer;outline:none}
+    #mapa-rota .ponto .halo{fill:var(--m-ponto);opacity:.18;transition:r .25s ease}
+    #mapa-rota .ponto .miolo{fill:var(--m-ponto);stroke:var(--m-mar);stroke-width:3}
+    #mapa-rota .ponto:hover .halo,#mapa-rota .ponto:focus-visible .halo,#mapa-rota .ponto[aria-pressed="true"] .halo{r:22;opacity:.28}
+    #mapa-rota .ponto:focus-visible .foco{opacity:1}
+    #mapa-rota .foco{fill:none;stroke:var(--m-foco);stroke-width:3;opacity:0}
+    #mapa-rota .ponto[aria-pressed="true"] .miolo{fill:var(--m-trac)}
+    #mapa-rota .ponto.hoje-p .miolo{fill:var(--m-mar);stroke:var(--m-ponto);stroke-width:3}
+    #mapa-rota.espera .tracado{stroke-dashoffset:1}
+    #mapa-rota.espera .ponto,#mapa-rota.espera .hoje{opacity:0}
+    /* ---- MOTION: tracado desenha em ~7s; pontos surgem conforme o traco passa ---- */
+    #mapa-rota.anima .tracado{stroke-dashoffset:1;animation:desenha 7s cubic-bezier(.45,.05,.3,1) .4s forwards}
+    #mapa-rota.anima .ponto{opacity:0;animation:surge .5s ease forwards;animation-delay:var(--d,0s)}
+    #mapa-rota.anima .hoje{opacity:0;animation:surge .8s ease 7.4s forwards}
+    @keyframes desenha{to{stroke-dashoffset:0}}
+    @keyframes surge{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    @media (prefers-reduced-motion:reduce){
+      #mapa-rota.anima .tracado{animation:none;stroke-dashoffset:0}
+      #mapa-rota.anima .ponto,#mapa-rota.anima .hoje{animation:none;opacity:1}
+      #mapa-rota .ponto .halo{transition:none}
+    }
+  </style>
+
+  <rect class="fundo" width="800" height="520"/>
+  <path class="grade" d="M0 130H800M0 260H800M0 390H800M200 0V520M400 0V520M600 0V520"/>
+
+  <!-- Iberia (sliver, canto superior direito) -->
+  <path class="terra" d="M800 0 H730 L712 14 L726 34 L718 52 L740 70 L770 66 L800 78 Z"/>
+  <!-- Brasil estilizado, a oeste/sudoeste (fora de escala): costa a leste -->
+  <path class="terra" d="M0 120 L120 128 L260 120 L400 146 L452 190 L492 250 L486 300 L470 340 L440 392 L420 450 L400 520 H0 Z"/>
+  <path class="onda" d="M560 330 q10 -8 20 0 t20 0 t20 0 M620 390 q10 -8 20 0 t20 0 t20 0 M520 220 q10 -8 20 0 t20 0 t20 0 M560 160 q10 -8 20 0 t20 0 t20 0 M600 460 q10 -8 20 0 t20 0 t20 0"/>
+  <text class="rotulo-mar" x="720" y="290" text-anchor="end">OCEANO ATLÂNTICO</text>
+  <!-- ilhas: grupo central dos Açores (Faial/Pico/Sao Jorge, esquemático) -->
+  <g class="terra">
+    <path d="M672 118 q10 -14 28 -8 q16 4 12 16 q-12 12 -30 8 q-12 -4 -10 -16Z"/>
+    <path d="M730 92 q18 -6 34 0 l8 8 l-18 4 l-26 -2Z"/>
+  </g>
+
+  <!-- rosa-dos-ventos -->
+  <g transform="translate(96 70)" fill="none" stroke="var(--m-txt)" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true">
+    <circle r="30" opacity=".5"/><path d="M0 -42 L6 -6 L42 0 L6 6 L0 42 L-6 6 L-42 0 L-6 -6Z" fill="var(--m-txt)" fill-opacity=".15"/>
+    <text y="-48" text-anchor="middle" font-size="13" font-weight="700" fill="var(--m-txt)" stroke="none">N</text>
+  </g>
+
+  <!-- trilho fantasma + tracado animado (pathLength=1). Ordem: Pico > Borda do Campo > Morro Alto > Araxá > Goiás -->
+  <path class="trilho" d="M700 112 C600 40 500 230 440 330 C430 345 420 360 410 372 C380 340 350 315 320 290 C270 270 215 250 170 230"/>
+  <path class="tracado" pathLength="1" d="M700 112 C600 40 500 230 440 330 C430 345 420 360 410 372 C380 340 350 315 320 290 C270 270 215 250 170 230"/>
+  <!-- ligacao tracejada "hoje": Goiás -> Brasília -->
+  <path class="hoje" d="M170 230 C195 218 222 210 250 205"/>
+
+  <!-- PONTOS CLICAVEIS: data-lugar = id do lugar em ../dados ; teclado: Tab, Enter/Espaço -->
+  <g class="ponto" data-lugar="pico" tabindex="0" role="button" aria-pressed="false" aria-label="Ilha do Pico, Açores, 1709" style="--d:0.4s">
+    <circle class="halo" cx="700" cy="112" r="14"/><circle class="foco" cx="700" cy="112" r="24"/><circle class="miolo" cx="700" cy="112" r="8"/>
+    <text class="txt" x="724" y="158" text-anchor="end">Ilha do Pico</text><text class="sub" x="724" y="176" text-anchor="end">Açores &#183; 1709</text>
+  </g>
+  <g class="ponto" data-lugar="borda-do-campo" tabindex="0" role="button" aria-pressed="false" aria-label="Borda do Campo e Barbacena, Minas Gerais" style="--d:3.4s">
+    <circle class="halo" cx="440" cy="330" r="14"/><circle class="foco" cx="440" cy="330" r="24"/><circle class="miolo" cx="440" cy="330" r="8"/>
+    <text class="txt" x="462" y="322" text-anchor="start">Borda do Campo</text><text class="sub" x="462" y="340" text-anchor="start">Barbacena &#183; MG</text>
+  </g>
+  <g class="ponto" data-lugar="morro-alto" tabindex="0" role="button" aria-pressed="false" aria-label="Morro Alto, Minas Gerais" style="--d:4.2s">
+    <circle class="halo" cx="410" cy="372" r="14"/><circle class="foco" cx="410" cy="372" r="24"/><circle class="miolo" cx="410" cy="372" r="8"/>
+    <text class="txt" x="428" y="392" text-anchor="start">Morro Alto</text>
+  </g>
+  <g class="ponto" data-lugar="araxa" tabindex="0" role="button" aria-pressed="false" aria-label="São Domingos do Araxá, Minas Gerais" style="--d:5.4s">
+    <circle class="halo" cx="320" cy="290" r="14"/><circle class="foco" cx="320" cy="290" r="24"/><circle class="miolo" cx="320" cy="290" r="8"/>
+    <text class="txt" x="320" y="262" text-anchor="middle">São Domingos do Araxá</text>
+  </g>
+  <g class="ponto" data-lugar="goias" tabindex="0" role="button" aria-pressed="false" aria-label="Goiás" style="--d:6.8s">
+    <circle class="halo" cx="170" cy="230" r="14"/><circle class="foco" cx="170" cy="230" r="24"/><circle class="miolo" cx="170" cy="230" r="8"/>
+    <text class="txt" x="150" y="266" text-anchor="middle">Goiás</text>
+  </g>
+  <g class="ponto hoje-p" data-lugar="brasilia" tabindex="0" role="button" aria-pressed="false" aria-label="Brasília, onde Nilson e Duda moram hoje" style="--d:7.5s">
+    <circle class="halo" cx="250" cy="205" r="14"/><circle class="foco" cx="250" cy="205" r="24"/><circle class="miolo" cx="250" cy="205" r="8"/>
+    <text class="txt" x="250" y="170" text-anchor="middle">Brasília</text><text class="sub" x="250" y="188" text-anchor="middle">hoje</text>
+  </g>
+
+  <text class="sub" x="16" y="506">Mapa esquemático, fora de escala.</text>
+
+  <script><![CDATA[
+  (function(){
+    var svg=document.getElementById('mapa-rota');
+    if(!svg||svg.__ini)return; svg.__ini=true;
+    var reduz=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduz||!('IntersectionObserver' in window)){svg.classList.add('anima');}
+    else{svg.classList.add('anima');
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){svg.classList.remove('espera');svg.classList.add('anima');io.disconnect();}});},{threshold:.35});
+      io.observe(svg);}
+    function ativa(g){
+      svg.querySelectorAll('[data-lugar]').forEach(function(p){p.setAttribute('aria-pressed',p===g?'true':'false');});
+      window.dispatchEvent(new CustomEvent('lugar-selecionado',{detail:{lugar:g.getAttribute('data-lugar')}}));
+    }
+    svg.querySelectorAll('[data-lugar]').forEach(function(g){
+      g.addEventListener('click',function(){ativa(g);});
+      g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();ativa(g);}});
+    });
+  })();
+  ]]></script>
+</svg>
+</div></div><ul class="lugares-lista" id="lugares-lista" aria-label="Lugares da rota"></ul></div>
+    <aside class="painel" id="painel-lugar" aria-live="polite"><p class="carregando">Escolha um ponto no mapa.</p></aside>
+  </div>
+</section>
+
+<svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-ondas"/></svg>
+<section class="secao" id="tempo" aria-labelledby="t-tempo">
+  <h2 id="t-tempo">Linha do tempo</h2>
+  <div class="filtros" id="f-tempo" role="group" aria-label="Filtrar por região"></div>
+  <p class="dica">Role para o lado para ver os marcos seguintes.</p>
+  <div class="tempo-wrap" role="region" aria-label="Linha do tempo"><ol class="linha-tempo linha-tempo--h" id="tempo-lista" tabindex="0" aria-label="Linha do tempo, role para o lado"><li class="carregando">Carregando…</li></ol></div>
+</section>
+
+<svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-ondas"/></svg>
+<section class="secao" id="pessoas" aria-labelledby="t-pessoas">
+  <h2 id="t-pessoas">Pessoas</h2>
+  <p>Famílias do livro, em ordem de geração. Quem pode estar vivo aparece só com nome e papel. Onde falta confirmação, a página diz.</p>
+  <div class="busca"><label class="so-leitor" for="busca">Buscar pessoa</label><input id="busca" type="search" placeholder="Buscar pessoa pelo nome" autocomplete="off"><button class="botao botao--vazado" id="exp" type="button">Expandir tudo</button><button class="botao botao--vazado" id="rec" type="button">Recolher tudo</button></div>
+  <p id="busca-res" role="status" class="nota-ig"></p>
+  <div class="filtros" id="f-ramo" role="group" aria-label="Filtrar por ramo"></div>
+  <div class="arv" id="arvore" aria-label="Árvore de pessoas"></div>
+  <div class="pessoa-painel" id="pessoa-painel" aria-live="polite"></div>
+  <h3 style="margin-top:var(--s5)">Cartões</h3>
+  <ul class="pessoas" id="cartoes"></ul>
+  <div class="mais"><button class="botao botao--vazado" id="mais-pessoas" type="button">Mostrar mais pessoas</button></div>
+</section>
+
+<svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-renda"/></svg>
+
+<section class="secao" id="fotos" aria-labelledby="t-fotos">
+  <h2 id="t-fotos">Fotos</h2>
+  <p>Cada foto leva o crédito de quem a publicou. Postagens e legendas de vídeo são indícios (nível D); o livro traz a memória do autor (nível P).</p>
+  <div class="filtros" id="f-fotos" role="group" aria-label="Filtrar fotos por origem"></div>
+  <p><button class="botao botao--vazado" id="vivos-toggle" type="button" aria-pressed="false"></button></p>
+  <ul class="galeria" id="galeria"></ul>
+  <div class="mais"><button class="botao botao--vazado" id="mais-fotos" type="button">Mostrar mais fotos</button></div>
+</section>
+
+<svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-ondas"/></svg>
+<section class="secao" id="receitas" aria-labelledby="t-rec">
+  <h2 id="t-rec">Livro de receitas</h2>
+  <p>As 76 receitas do livro, com quem as guarda e os ingredientes citados. As quantidades e o modo de fazer ficam no livro impresso.</p>
+  <div class="filtros" id="f-rec" role="group" aria-label="Filtrar receitas por tipo"></div>
+  <div class="receitas" id="rec-lista"></div>
+</section>
+
+<svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-ondas"/></svg>
+<section class="secao" id="fontes" aria-labelledby="t-fontes">
+  <h2 id="t-fontes">Fontes e níveis de evidência</h2>
+  <ul class="legenda-niveis">
+    <li><span class="selo-evidencia" data-nivel="A">A</span> meta-análise ou revisão sistemática</li>
+    <li><span class="selo-evidencia" data-nivel="B">B</span> estudo revisado por pares ou documento de organismo oficial</li>
+    <li><span class="selo-evidencia" data-nivel="C">C</span> especialista ou documento de época sem conferência do original</li>
+    <li><span class="selo-evidencia" data-nivel="D">D</span> imprensa, redes sociais, legendas de vídeo</li>
+    <li><span class="selo-evidencia" data-nivel="P">P</span> memória ou narrativa pessoal, como a do autor do livro</li>
+    <li><span class="selo-evidencia" data-nivel="controverso">controverso</span> fontes em conflito</li>
+  </ul>
+  <div class="aviso-confirmar"><svg aria-hidden="true"><use href="#orn-confirmar"/></svg><div><strong>a confirmar pela família</strong><p>Nomes, datas e identificações de fotos marcados assim dependem de quem viveu a história. Se você sabe, conte.</p></div></div>
+  <details><summary>Divergências em aberto</summary><ul id="diverg"></ul></details>
+  <p>Livro: <em>Avila: 300 anos de História &amp; Sabores</em>, de Fabricio de Avila Ferreira. Imagens do livro (© Fabricio de Avila Ferreira), de postagens de @fabriciodeavila e @jornal.interacao e de vídeos do canal Antonio Joaquim (YouTube), reproduzidas sem fins comerciais, só para uso privado da família. Os direitos são dos titulares; os fotógrafos originais, em geral, não são conhecidos. Não republique. Retiramos qualquer imagem a pedido.</p>
+</section>
+</div>
+</main>
+<footer class="rodape conteudo">
+  <svg class="rosa" aria-hidden="true"><use href="#orn-rosa"/></svg>
+  <p>Página privada da família. Não é para divulgação. Pessoas que podem estar vivas aparecem só com nome e papel, e as fotos de grupos com elas ficam ocultas até você pedir para vê-las.</p>
+</footer>
+
+<dialog class="lightbox" id="lb" aria-label="Foto ampliada">
+  <div class="lightbox__corpo">
+    <img class="lightbox__img" id="lb-img" alt="">
+    <p class="lightbox__legenda" id="lb-leg"></p>
+    <div class="lightbox__barra"><button class="botao botao--vazado" id="lb-ant" type="button">Anterior</button><button class="botao botao--vazado" id="lb-prox" type="button">Próxima</button><button class="botao" id="lb-fecha" type="button">Fechar</button></div>
+  </div>
+</dialog>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,r){return (r||document).querySelector(s)};
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var NIVEIS={A:'A',B:'B',C:'C',D:'D',P:'P',controverso:'controverso'};
+var selo=function(n){n=NIVEIS[n]?n:'D';return '<span class="selo-evidencia" data-nivel="'+n+'">'+(n==='controverso'?'controverso':'nível '+n)+'</span>'};
+var aviso=function(t){return '<div class="aviso-confirmar"><svg aria-hidden="true"><use href="#orn-confirmar"/></svg><div><strong>a confirmar pela família</strong><p>'+esc(t||'Informação ainda sem confirmação.')+'</p></div></div>'};
+var regiao=function(l){return (l==='pico'||l==='faial'||l==='angra')?'acores':(l==='goias'||l==='brasilia')?'goias':'minas'};
+var RAMO={acores:'Açores',minas:'Minas Gerais',goias:'Goiás'};
+var D={};
+// tema e menu
+var root=document.documentElement;
+$('#tema').addEventListener('click',function(){var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);root.setAttribute('data-theme',dark?'light':'dark');this.setAttribute('aria-pressed',String(!dark))});
+var mb=$('#menu-btn'),mp=$('#menu-painel');
+mb.addEventListener('click',function(){var o=mp.hidden;mp.hidden=!o;mb.setAttribute('aria-expanded',String(o))});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!mp.hidden){mp.hidden=true;mb.setAttribute('aria-expanded','false');mb.focus()}});
+mp.addEventListener('click',function(e){if(e.target.tagName==='A'){mp.hidden=true;mb.setAttribute('aria-expanded','false')}});
+// lightbox
+var lbList=[],lbI=0,lb=$('#lb'),lastBtn=null;
+function lbShow(i){lbI=(i+lbList.length)%lbList.length;var f=lbList[lbI];$('#lb-img').src=f.arquivo;$('#lb-img').alt=f.alt||f.legenda_curta||'';
+ var cit=(f.possivelmente_vivos||!(f.pessoas_citadas&&f.pessoas_citadas.length))?'':' Citados: '+f.pessoas_citadas.join(', ')+'.';
+ $('#lb-leg').innerHTML=esc(f.legenda_curta)+'. <br><span class="etiqueta">Crédito: '+esc(f.credito)+(f.data?' · '+esc(f.data):'')+' · '+esc(f.origem)+'</span>'+esc(cit)+' '+selo(f.nivel_evidencia)+(f.nota?'<br><span class="mao">'+esc(f.nota)+'</span>':'')}
+function lbOpen(list,i,btn){lbList=list;lastBtn=btn||null;lbShow(i);if(!lb.open)lb.showModal()}
+$('#lb-fecha').addEventListener('click',function(){lb.close()});
+lb.addEventListener('close',function(){if(lastBtn)lastBtn.focus()});
+lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+$('#lb-ant').addEventListener('click',function(){lbShow(lbI-1)});
+$('#lb-prox').addEventListener('click',function(){lbShow(lbI+1)});
+lb.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')lbShow(lbI-1);if(e.key==='ArrowRight')lbShow(lbI+1)});
+function fotoBtn(f,list,i,cls){return '<button type="button" data-lb="'+i+'" aria-label="Ampliar: '+esc(f.legenda_curta)+'"'+(cls?' class="'+cls+'"':'')+'>'}
+function bindLb(cont,list){cont.addEventListener('click',function(e){var b=e.target.closest('[data-lb]');if(b)lbOpen(list,+b.getAttribute('data-lb'),b)})}
+function filtros(el,itens,atual,fn){el.innerHTML=itens.map(function(i){return '<button type="button" data-v="'+esc(i[0])+'" aria-pressed="'+(i[0]===atual)+'">'+esc(i[1])+'</button>'}).join('');
+ el.onclick=function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(el.querySelectorAll('button'),function(x){x.setAttribute('aria-pressed',String(x===b))});fn(b.getAttribute('data-v'))}}
+Promise.all(['pessoas','linha_do_tempo','lugares','receitas','relacoes','imagens'].map(function(n){return fetch('dados/'+n+'.json').then(function(r){if(!r.ok)throw new Error(n);return r.json()})}))
+.then(function(r){D.pessoas=r[0];D.tempo=r[1];D.lugares=r[2];D.rec=r[3];D.rel=r[4];D.img=r[5];init()})
+.catch(function(e){$('#tempo-lista').innerHTML='<li>Não foi possível carregar os dados ('+esc(e.message)+'). Recarregue a página.</li>'});
+function init(){
+ D.pById={};D.pessoas.forEach(function(p){D.pById[p.id]=p});
+ D.lById={};D.lugares.forEach(function(l){D.lById[l.id]=l});
+ D.vivoFoto={};D.rel.fotos.forEach(function(f){D.vivoFoto[f.id]=f});
+ D.imgs=D.img.map(function(f){var r=D.vivoFoto[f.id]||{};f.mini=f.arquivo;f.possivelmente_vivos=!!f.possivelmente_vivos;f.lugar_id=r.lugar_id;return f});
+ D.iById={};D.imgs.forEach(function(f){D.iById[f.id]=f});
+ lugaresLista();tempo();arvore();cartoes();galeria();receitas();divergencias();painelLugar('pico',true);
+}
+function tempo(){
+ var cur='todos';
+ function draw(){var ev=D.tempo.filter(function(e){return cur==='todos'||regiao(e.lugar_id)===cur});
+  $('#tempo-lista').innerHTML=ev.map(function(e){return '<li class="marco" data-regiao="'+regiao(e.lugar_id)+'"><p class="marco__ano">'+esc(e.ano)+'</p><p class="marco__titulo">'+esc(e.titulo)+'</p><p class="marco__texto">'+esc(e.texto)+'</p>'+selo(e.nivel)+(e.nota?'<p class="marco__nota">'+esc(String(e.nota).replace(/\[referência não verificada\]/g,'(referência ainda por verificar)'))+'</p>':'')+'</li>'}).join('')}
+ filtros($('#f-tempo'),[['todos','Tudo'],['acores','Açores'],['minas','Minas Gerais'],['goias','Goiás e Brasília']],cur,function(v){cur=v;draw()});draw()}
+function lugaresLista(){var ids=['pico','borda-do-campo','morro-alto','araxa','goias','brasilia'];$('#lugares-lista').innerHTML=ids.filter(function(i){return D.lById[i]}).map(function(i){return '<li><button type="button" data-lg="'+i+'" aria-pressed="false">'+esc(D.lById[i].nome.split(' (')[0])+'</button></li>'}).join('');$('#lugares-lista').addEventListener('click',function(e){var b=e.target.closest('[data-lg]');if(b)painelLugar(b.getAttribute('data-lg'))})}
+function marcaLugar(id){[].forEach.call(document.querySelectorAll('#lugares-lista button'),function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-lg')===id))});[].forEach.call(document.querySelectorAll('#mapa-rota [data-lugar]'),function(g){g.setAttribute('aria-pressed',String(g.getAttribute('data-lugar')===id))})}
+function painelLugar(id,silencioso){
+ var l=D.lById[id];if(!l)return;
+ var pes=D.pessoas.filter(function(p){return p.lugar===id&&!p.possivelmente_vivo}).slice(0,8);
+ var fs=D.imgs.filter(function(f){return f.lugar_id===id&&!f.possivelmente_vivos}).slice(0,6);
+ var evs=D.tempo.filter(function(e){return e.lugar_id===id}).slice(0,4);
+ var h='<h3>'+esc(l.nome)+'</h3><p>'+esc(l.descricao||'')+'</p>'+selo(l.nivel_evidencia);
+ if(l.lat==null)h+='<p class="nota-ig">Coordenadas não verificadas nas fontes. O ponto do mapa é esquemático.</p>';
+ if(evs.length)h+='<h4>Na linha do tempo</h4><ul>'+evs.map(function(e){return '<li>'+esc(e.ano)+': '+esc(e.titulo)+'</li>'}).join('')+'</ul>';
+ if(pes.length)h+='<h4>Pessoas</h4><ul>'+pes.map(function(p){return '<li>'+esc(p.nome)+'</li>'}).join('')+'</ul>';
+ if(fs.length)h+='<h4>Fotos</h4><ul class="mini-fotos">'+fs.map(function(f,i){return '<li>'+fotoBtn(f,fs,i)+'<img loading="lazy" src="'+esc(f.mini)+'" alt="'+esc(f.alt||f.legenda_curta)+'"></button></li>'}).join('')+'</ul>';
+ var el=$('#painel-lugar');el.innerHTML=h;bindLb(el,fs);marcaLugar(silencioso?'':id)}
+window.addEventListener('lugar-selecionado',function(e){painelLugar(e.detail.lugar)});
+// pessoas
+var VISTO={};
+function pessoaLi(p,nivel){
+ var viva=p.possivelmente_vivo;var kids=(p.filhos||[]).map(function(i){return D.pById[i]}).filter(Boolean);
+ var nm='<button class="nome" type="button" data-p="'+esc(p.id)+'">'+esc(p.nome)+'</button>'+(viva?' <span class="ref">(só nome e papel)</span>':'')+(p.aconfirmar?' <span class="mao" style="font-size:1.1rem">a confirmar</span>':'');
+ if(VISTO[p.id])return '<li data-ramo="'+p.ramo+'"><div class="row"><span class="espaco"></span>'+nm+' <span class="ref">(já aparece acima)</span></div></li>';
+ VISTO[p.id]=1;
+ if(!kids.length)return '<li data-ramo="'+p.ramo+'" data-id="'+esc(p.id)+'"><div class="row"><span class="espaco"></span>'+nm+'</div></li>';
+ var open=nivel<1,uid='k-'+p.id;
+ return '<li data-ramo="'+p.ramo+'" data-id="'+esc(p.id)+'"><div class="row"><button class="tog" type="button" aria-expanded="'+open+'" aria-controls="'+esc(uid)+'" aria-label="'+(open?'Recolher':'Expandir')+' filhos de '+esc(p.nome)+'">'+(open?'\u2212':'+')+'</button>'+nm+'</div><ul id="'+esc(uid)+'"'+(open?'':' hidden')+'>'+kids.map(function(k){return pessoaLi(k,nivel+1)}).join('')+'</ul></li>'}
+function togg(btn,open){var ul=document.getElementById(btn.getAttribute('aria-controls'));if(!ul)return;ul.hidden=!open;btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'\u2212':'+';btn.setAttribute('aria-label',(open?'Recolher':'Expandir')+btn.getAttribute('aria-label').replace(/^(Recolher|Expandir)/,''))}
+function arvore(){
+ var roots=D.pessoas.filter(function(p){return !(p.pais||[]).some(function(i){return D.pById[i]})});
+ // ordena raízes: quem tem descendentes primeiro
+ roots.sort(function(a,b){return (b.filhos||[]).length-(a.filhos||[]).length});
+ VISTO={};
+ var com=roots.filter(function(p){return (p.filhos||[]).length}),sem=roots.filter(function(p){return !(p.filhos||[]).length});
+ var h='<ul>'+com.map(function(p){return pessoaLi(p,0)}).join('')+'</ul>';
+ if(sem.length)h+='<h3>Outras pessoas citadas</h3><ul>'+sem.map(function(p){return pessoaLi(p,0)}).join('')+'</ul>';
+ $('#arvore').innerHTML=h;
+ $('#arvore').addEventListener('click',function(e){var t=e.target.closest('.tog');if(t){togg(t,t.getAttribute('aria-expanded')!=='true');return}var b=e.target.closest('[data-p]');if(b){detalhe(b.getAttribute('data-p'))}});
+ $('#exp').onclick=function(){[].forEach.call(document.querySelectorAll('#arvore .tog'),function(t){togg(t,true)})};
+ $('#rec').onclick=function(){[].forEach.call(document.querySelectorAll('#arvore .tog'),function(t){togg(t,false)})};
+ $('#busca').addEventListener('input',function(){var q=this.value.trim().toLowerCase();var lis=document.querySelectorAll('#arvore li');var out=$('#busca-res');
+  if(!q){[].forEach.call(lis,function(l){l.hidden=false});out.textContent='';return}
+  [].forEach.call(lis,function(l){l.hidden=true});var n=0;
+  D.pessoas.forEach(function(p){if(p.nome.toLowerCase().indexOf(q)<0)return;var li=document.querySelector('#arvore li[data-id="'+p.id+'"]');if(li)n++;
+   while(li){li.hidden=false;var ul=li.parentElement;if(ul&&ul.id&&ul.hidden){var t=document.querySelector('[aria-controls="'+ul.id+'"]');if(t)togg(t,true)}li=li.parentElement.closest('li')}});
+  out.textContent=n?n+' pessoa(s) encontrada(s).':'Nenhuma pessoa encontrada.'});
+ filtros($('#f-ramo'),[['todos','Todos os ramos'],['acores','Açores'],['minas','Minas Gerais'],['goias','Goiás']],'todos',function(v){cardRamo=v;cardN=24;cartoes()});
+}
+function detalhe(id){
+ var p=D.pById[id];if(!p)return;var viva=p.possivelmente_vivo;
+ var f=p.foto&&D.iById[p.foto];if(f&&f.possivelmente_vivos)f=null;var pais=(p.pais||[]).map(function(i){return D.pById[i]}).filter(Boolean).map(function(x){return esc(x.nome)}).join(' e ');
+ var fil=(p.filhos||[]).map(function(i){return D.pById[i]}).filter(Boolean).map(function(x){return esc(x.nome)}).join(', ');
+ var h='<article class="painel"><h3>'+esc(p.nome)+'</h3>';
+ if(viva){h+='<p>Pode estar viva. Por isso a página guarda só o nome e o papel na família.</p>'+(p.resumo?'<p>'+esc(p.resumo)+'</p>':'')+(pais?'<p>Filho(a) de '+pais+'.</p>':'')}
+ else{var d=[p.nascimento,p.morte].filter(Boolean).join(' – ');h+=(d?'<p class="pessoa__datas">'+esc(d)+'</p>':'')+(p.lugar&&D.lById[p.lugar]?'<p class="pessoa__lugar">'+esc(D.lById[p.lugar].nome)+'</p>':'')+'<p>'+esc(p.resumo)+'</p>'+(pais?'<p>Filho(a) de '+pais+'.</p>':'')+(fil?'<p>Filhos: '+fil+'.</p>':'')+(f?'<p><img loading="lazy" style="max-width:16rem" src="'+esc(f.mini)+'" alt="'+esc(f.alt||f.legenda_curta)+'"><span class="nota-ig">'+esc(f.credito)+'</span></p>':'')}
+ h+=selo(p.evidencia)+(p.aconfirmar||p.nota_confirmar?aviso(p.nota_confirmar):'')+(p.encontrado_por_este_estudo?'<p class="nota-ig">Encontrada por este estudo, a partir de uma legenda de rede social (nível D).</p>':'')+'</article>';
+ var el=$('#pessoa-painel');el.innerHTML=h;el.scrollIntoView({block:'nearest',behavior:'smooth'})}
+var cardRamo='todos',cardN=24;
+function cartoes(){
+ var ps=D.pessoas.filter(function(p){return cardRamo==='todos'||p.ramo===cardRamo});
+ var vis=ps.slice(0,cardN);
+ $('#cartoes').innerHTML=vis.map(function(p){var viva=p.possivelmente_vivo;var f=!viva&&p.foto&&D.iById[p.foto];if(f&&f.possivelmente_vivos)f=null;
+  return '<li class="pessoa" data-ramo="'+p.ramo+'">'+(f?'<img class="pessoa__retrato" loading="lazy" src="'+esc(f.mini)+'" alt="'+esc(f.alt||f.legenda_curta)+'">':'')+(!f?'<div class="monograma" aria-hidden="true"><span>'+esc(p.nome.replace(/^(Tia|Tio|Vó|Vô|Dona|Capitão|Major|Padre)\s+/,'').charAt(0))+'</span></div>':'')+'<h4 class="pessoa__nome">'+esc(p.nome)+'</h4>'+(!viva&&(p.nascimento||p.morte)?'<p class="pessoa__datas">'+esc([p.nascimento,p.morte].filter(Boolean).join(' – '))+'</p>':'')+(!viva&&p.lugar&&D.lById[p.lugar]?'<p class="pessoa__lugar">'+esc(D.lById[p.lugar].nome)+'</p>':'')+'<p class="pessoa__resumo">'+esc(viva?(p.resumo||''):(p.resumo||'').slice(0,220)+((p.resumo||'').length>220?'…':''))+'</p>'+selo(p.evidencia)+(p.aconfirmar?'<span class="mao">a confirmar pela família</span>':'')+'<button class="pessoa__link botao--vazado" type="button" data-p="'+esc(p.id)+'" style="background:none;border:0;color:var(--mar);text-align:left;cursor:pointer;padding:0">Ver mais</button></li>'}).join('');
+ $('#mais-pessoas').hidden=cardN>=ps.length}
+$('#cartoes').addEventListener('click',function(e){var b=e.target.closest('[data-p]');if(b)detalhe(b.getAttribute('data-p'))});
+$('#mais-pessoas').addEventListener('click',function(){cardN+=24;cartoes()});
+// galeria
+var gOri='todos',gN=36,gVivos=false;
+function galeria(){
+ filtros($('#f-fotos'),[['todos','Todas'],['livro','Do livro'],['instagram','Instagram'],['video','Vídeo do lançamento']],'todos',function(v){gOri=v;gN=36;draw()});
+ function draw(){var nOc=D.imgs.filter(function(f){return f.possivelmente_vivos}).length;var tg=$('#vivos-toggle');tg.textContent=gVivos?'Ocultar fotos de grupos com pessoas possivelmente vivas':'Mostrar fotos de grupos com pessoas possivelmente vivas ('+nOc+')';tg.setAttribute('aria-pressed',String(gVivos));
+  var l=D.imgs.filter(function(f){return (gOri==='todos'||f.origem===gOri)&&(gVivos||!f.possivelmente_vivos)});var vis=l.slice(0,gN);
+  $('#galeria').innerHTML=vis.map(function(f,i){return '<li class="foto">'+fotoBtn(f,vis,i,'foto__botao')+'<div class="moldura"><img loading="lazy" src="'+esc(f.mini)+'" alt="'+esc(f.alt||f.legenda_curta)+'" width="'+esc(f.largura)+'" height="'+esc(f.altura)+'"></div></button><figcaption>'+esc(f.legenda_curta)+'<br><span class="nota-ig">'+esc(f.credito)+'</span></figcaption></li>'}).join('');
+  $('#mais-fotos').hidden=gN>=l.length;$('#galeria').__l=vis}
+ bindLb2();draw();$('#vivos-toggle').addEventListener('click',function(){gVivos=!gVivos;gN=36;draw()});$('#mais-fotos').addEventListener('click',function(){gN+=36;draw()})}
+function bindLb2(){$('#galeria').addEventListener('click',function(e){var b=e.target.closest('[data-lb]');if(b)lbOpen(this.__l,+b.getAttribute('data-lb'),b)})}
+// receitas
+function receitas(){
+ var cats=['todos'].concat(Object.keys(D.rec.reduce(function(a,r){a[r.categoria]=1;return a},{})).sort());var cur='todos';
+ function draw(){$('#rec-lista').innerHTML=D.rec.filter(function(r){return cur==='todos'||r.categoria===cur}).map(function(r){
+  var q=r.quem_cita||{};var pp=q.pessoa_id&&D.pById[q.pessoa_id];var quem=q.nome_no_livro||(pp&&!pp.possivelmente_vivo?pp.nome:null);
+  var ig=(r.instagram||[]).filter(function(i){return i.vinculo==='Confirmado'||i.vinculo==='Provável'});
+  return '<article class="rec"><svg aria-hidden="true" style="width:36px;height:36px;color:var(--barro)"><use href="#orn-'+(r.categoria==='rosca'?'rosca':r.categoria==='bolo'||r.categoria==='doce'?'colher':'panela')+'"/></svg><h3>'+esc(r.numero+'. '+r.nome)+'</h3><p class="cat">'+esc(r.categoria)+(quem?' · de '+esc(quem):'')+'</p><ul>'+(r.ingredientes_resumo||[]).map(function(i){return '<li>'+esc(i)+'</li>'}).join('')+'</ul><p class="nota-ig">Livro, p. '+esc(r.pagina_impressa||'?')+'</p>'+(ig.length?'<p class="nota-ig">Há postagem do autor ligada a esta receita (indício, nível D).</p>':'')+selo(r.nivel_evidencia)+'</article>'}).join('')}
+ filtros($('#f-rec'),cats.map(function(c){return [c,c==='todos'?'Todas':c]}),cur,function(v){cur=v;draw()});draw()}
+function divergencias(){
+ var d=[['Foto da família de Zico e Adélia','1927 (livro e vídeo) ou 1928 (comentário do autor).'],['Lourival','“Lorico” no livro, “Lourico” nas postagens.'],['Antonio Luiz Leite','Com ou sem “da Silva” no nome.'],['Maria Célia e Malvina','Aparecem só numa legenda de foto, sem filiação.'],['Francisco Antônio','Mais de um homônimo; o vídeo não distingue.'],['Rua das Flores e Rua Capitão José Porfírio','Provavelmente a mesma casa, não confirmado.'],['Os Portella','Três pessoas Portella impressas no livro como ascendência direta estão na árvore com aviso; aguardam decisão da família.']];
+ $('#diverg').innerHTML=d.map(function(x){return '<li><strong>'+esc(x[0])+'.</strong> '+esc(x[1])+'</li>'}).join('')}
+})();
+</script>
+</body>
+</html>
