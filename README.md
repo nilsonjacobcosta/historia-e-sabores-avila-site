@@ -2,6 +2,9 @@
 
 Página única, ilustrada e interativa sobre os 300 anos da família Ávila (os antepassados), da Ilha do Pico, nos Açores, a Minas Gerais e Brasília. Repositório **privado**, para uso da família. O acervo e as pesquisas ficam em `historia-e-sabores-avila`.
 
+## Link da página
+https://claude.ai/artifact/SaeBzhzkPyUkLHuUoead32 (artefato privado: abre só para quem tem acesso à conta do Nilson ou recebe o compartilhamento dele).
+
 ## Conteúdo
 - Rota com mapa clicável, linha do tempo, árvore de pessoas com busca, galeria com ampliação, livro de receitas e legenda dos níveis de evidência (A, B, C, D, P, controverso).
 - Pessoas que podem estar vivas aparecem só com nome e papel. Fotos de grupos com elas ficam ocultas até o visitante pedir.
