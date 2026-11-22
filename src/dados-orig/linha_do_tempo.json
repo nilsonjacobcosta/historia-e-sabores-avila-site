@@ -988,5 +988,24 @@
   ],
   "nota": null,
   "id": "ev-49"
+ },
+ {
+  "ano": 1950,
+  "data": "1950-09",
+  "titulo": "Bodas de ouro de Francisco Amâncio da Costa e Virgilina Rosa de Jesus",
+  "texto": "Folheto de lembrança das bodas de ouro (Araxá, casamento em 1900). Leitura da foto da postagem de @idelmadacosta2; conferir com o original.",
+  "lugar_id": "araxa",
+  "pessoas_ids": [
+   "francisco-amancio-da-costa",
+   "virgilina-rosa-de-jesus"
+  ],
+  "nivel": "D",
+  "fonte": [
+   {
+    "arquivo": "fontes-integrais/instagram-idelma/INDICE.md"
+   }
+  ],
+  "nota": "Leitura da imagem.",
+  "id": "ev-idelma-01"
  }
 ]

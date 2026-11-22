@@ -2435,6 +2435,461 @@
    "tipo": "foto_lugar",
    "de": "ig-20251104-124202-f1",
    "para": "santa-casa-araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joao-de-avila-da-silveira",
+   "para": "ig-idelma-20250710-2040-joao-de-avila-da-silveir-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "francisca-da-conceicao",
+   "para": "ig-idelma-20250710-2040-joao-de-avila-da-silveir-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250710-2040-joao-de-avila-da-silveir-f1",
+   "para": "borda-do-campo"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250710-2041-da-ilha-do-pico-aos-sert-f1",
+   "para": "pico"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joao-de-avila-raposo",
+   "para": "ig-idelma-20250710-2042-capitao-joao-de-avila-ra-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "maria-do-rosario",
+   "para": "ig-idelma-20250710-2042-capitao-joao-de-avila-ra-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250710-2042-capitao-joao-de-avila-ra-f1",
+   "para": "pico"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joao-de-avila-da-silveira",
+   "para": "ig-idelma-20250710-2043-erupcao-1748-emigracao-p-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "francisca-da-conceicao",
+   "para": "ig-idelma-20250710-2043-erupcao-1748-emigracao-p-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250710-2043-erupcao-1748-emigracao-p-f1",
+   "para": "pico"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joao-de-avila-raposo",
+   "para": "ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f1",
+   "para": "angra"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joao-de-avila-raposo",
+   "para": "ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f2"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f2",
+   "para": "angra"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joao-de-avila-raposo",
+   "para": "ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f3"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f3",
+   "para": "angra"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joao-de-avila-da-silveira",
+   "para": "ig-idelma-20250712-1219-joao-de-avila-da-silveir-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250712-1219-joao-de-avila-da-silveir-f1",
+   "para": "pico"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "antonio-joaquim-de-avila",
+   "para": "ig-idelma-20250712-1233-antonio-joaquim-de-avila-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "francisco-antonio-de-avila-pentavo",
+   "para": "ig-idelma-20250712-1300-francisco-antonio-de-avi-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "ana-rosa-de-jesus",
+   "para": "ig-idelma-20250712-1300-francisco-antonio-de-avi-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250712-1304-morro-alto-acores-e-mina-f1",
+   "para": "morro-alto"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "manoel-francisco-de-avila",
+   "para": "ig-idelma-20250713-1830-manoel-francisco-de-avil-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-1830-manoel-francisco-de-avil-f1",
+   "para": "araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "manoel-francisco-de-avila",
+   "para": "ig-idelma-20250713-1842-casa-santa-casa-miserico-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-1842-casa-santa-casa-miserico-f1",
+   "para": "santa-casa-araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "manoel-francisco-de-avila",
+   "para": "ig-idelma-20250713-1842-casa-santa-casa-miserico-f2"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-1842-casa-santa-casa-miserico-f2",
+   "para": "santa-casa-araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joaquim-esteves-de-avila",
+   "para": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joaquina-candida-da-conceicao",
+   "para": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f1",
+   "para": "araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joaquim-esteves-de-avila",
+   "para": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f2"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joaquina-candida-da-conceicao",
+   "para": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f2"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f2",
+   "para": "araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joaquim-esteves-de-avila",
+   "para": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f3"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joaquina-candida-da-conceicao",
+   "para": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f3"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f3",
+   "para": "araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joaquim-esteves-de-avila",
+   "para": "ig-idelma-20250713-2031-joaquim-esteves-de-avila-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joaquina-candida-da-conceicao",
+   "para": "ig-idelma-20250713-2031-joaquim-esteves-de-avila-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-2031-joaquim-esteves-de-avila-f1",
+   "para": "morro-alto"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joaquim-esteves-de-avila",
+   "para": "ig-idelma-20250713-2031-joaquim-esteves-de-avila-f2"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joaquina-candida-da-conceicao",
+   "para": "ig-idelma-20250713-2031-joaquim-esteves-de-avila-f2"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-2031-joaquim-esteves-de-avila-f2",
+   "para": "morro-alto"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "maria-candida-da-conceicao-nica",
+   "para": "ig-idelma-20250713-2123-maria-candida-da-conceic-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-2123-maria-candida-da-conceic-f1",
+   "para": "ibia"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-2127-capa-reminiscencias-do-m-f1",
+   "para": "morro-alto"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joao-jacob",
+   "para": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "maria-custodia-de-oliveira-naves",
+   "para": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "adelia-benevides-jacob",
+   "para": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joao-jacob",
+   "para": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f2"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "maria-custodia-de-oliveira-naves",
+   "para": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f2"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "adelia-benevides-jacob",
+   "para": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f2"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "joao-jacob",
+   "para": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f3"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "maria-custodia-de-oliveira-naves",
+   "para": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f3"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "adelia-benevides-jacob",
+   "para": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f3"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "francisco-amancio-da-costa",
+   "para": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "virgilina-rosa-de-jesus",
+   "para": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f1",
+   "para": "araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "francisco-amancio-da-costa",
+   "para": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f2"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "virgilina-rosa-de-jesus",
+   "para": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f2"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f2",
+   "para": "araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "francisco-amancio-da-costa",
+   "para": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f3"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "virgilina-rosa-de-jesus",
+   "para": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f3"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f3",
+   "para": "araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "francisco-amancio-da-costa",
+   "para": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f4"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "virgilina-rosa-de-jesus",
+   "para": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f4"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f4",
+   "para": "araxa"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "francisco-amancio-da-costa",
+   "para": "ig-idelma-20260607-2040-bodas-de-ouro-francisco--f1"
+  },
+  {
+   "tipo": "pessoa_foto",
+   "de": "virgilina-rosa-de-jesus",
+   "para": "ig-idelma-20260607-2040-bodas-de-ouro-francisco--f1"
+  },
+  {
+   "tipo": "foto_lugar",
+   "de": "ig-idelma-20260607-2040-bodas-de-ouro-francisco--f1",
+   "para": "araxa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "francisco-amancio-da-costa",
+   "para": "manoel-amancio-da-costa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "virgilina-rosa-de-jesus",
+   "para": "manoel-amancio-da-costa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "joaquim-manoel-da-costa",
+   "para": "francisco-amancio-da-costa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "maria-rosa-de-sao-jose",
+   "para": "francisco-amancio-da-costa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "manoel-gomes-de-menezes",
+   "para": "virgilina-rosa-de-jesus"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "maria-roza-gomes",
+   "para": "virgilina-rosa-de-jesus"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "manoel-amancio-da-costa",
+   "para": "ilmovir-jose-da-costa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "zilda-jacob-da-costa",
+   "para": "ilmovir-jose-da-costa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "ilmovir-jose-da-costa",
+   "para": "nilson-jacob-da-costa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "hilmovir-jacob-de-rezende",
+   "para": "zilda-jacob-da-costa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "maria-candida-da-conceicao-nica",
+   "para": "zilda-jacob-da-costa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "hilmovir-jacob-de-rezende",
+   "para": "zaida-jacob"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "joao-jacob",
+   "para": "hilmovir-jacob-de-rezende"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "maria-custodia-de-oliveira-naves",
+   "para": "hilmovir-jacob-de-rezende"
+  },
+  {
+   "tipo": "conjuge",
+   "de": "francisco-amancio-da-costa",
+   "para": "virgilina-rosa-de-jesus"
+  },
+  {
+   "tipo": "conjuge",
+   "de": "manoel-amancio-da-costa",
+   "para": "zilda-jacob-da-costa"
+  },
+  {
+   "tipo": "conjuge",
+   "de": "hilmovir-jacob-de-rezende",
+   "para": "maria-candida-da-conceicao-nica"
+  },
+  {
+   "tipo": "conjuge",
+   "de": "joaquim-manoel-da-costa",
+   "para": "maria-rosa-de-sao-jose"
+  },
+  {
+   "tipo": "conjuge",
+   "de": "manoel-gomes-de-menezes",
+   "para": "maria-roza-gomes"
+  },
+  {
+   "tipo": "pessoa_lugar",
+   "de": "francisco-amancio-da-costa",
+   "para": "araxa"
+  },
+  {
+   "tipo": "pessoa_lugar",
+   "de": "virgilina-rosa-de-jesus",
+   "para": "araxa"
   }
  ],
  "fotos": [
@@ -4388,6 +4843,375 @@
   {
    "id": "ig-20210518-131544-f1",
    "arquivo": "img/ig-20210518-131544-f1.webp",
+   "lugar_id": null,
+   "pessoas_ids": [],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250710-2040-joao-de-avila-da-silveir-f1",
+   "arquivo": "img/ig-idelma-20250710-2040-joao-de-avila-da-silveir-f1.webp",
+   "lugar_id": "borda-do-campo",
+   "pessoas_ids": [
+    "joao-de-avila-da-silveira",
+    "francisca-da-conceicao"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250710-2041-da-ilha-do-pico-aos-sert-f1",
+   "arquivo": "img/ig-idelma-20250710-2041-da-ilha-do-pico-aos-sert-f1.webp",
+   "lugar_id": "pico",
+   "pessoas_ids": [],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250710-2042-capitao-joao-de-avila-ra-f1",
+   "arquivo": "img/ig-idelma-20250710-2042-capitao-joao-de-avila-ra-f1.webp",
+   "lugar_id": "pico",
+   "pessoas_ids": [
+    "joao-de-avila-raposo",
+    "maria-do-rosario"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250710-2043-erupcao-1748-emigracao-p-f1",
+   "arquivo": "img/ig-idelma-20250710-2043-erupcao-1748-emigracao-p-f1.webp",
+   "lugar_id": "pico",
+   "pessoas_ids": [
+    "joao-de-avila-da-silveira",
+    "francisca-da-conceicao"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f1",
+   "arquivo": "img/ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f1.webp",
+   "lugar_id": "angra",
+   "pessoas_ids": [
+    "joao-de-avila-raposo"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f2",
+   "arquivo": "img/ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f2.webp",
+   "lugar_id": "angra",
+   "pessoas_ids": [
+    "joao-de-avila-raposo"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f3",
+   "arquivo": "img/ig-idelma-20250710-2047-brasao-joao-de-avila-rap-f3.webp",
+   "lugar_id": "angra",
+   "pessoas_ids": [
+    "joao-de-avila-raposo"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250712-1219-joao-de-avila-da-silveir-f1",
+   "arquivo": "img/ig-idelma-20250712-1219-joao-de-avila-da-silveir-f1.webp",
+   "lugar_id": "pico",
+   "pessoas_ids": [
+    "joao-de-avila-da-silveira"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250712-1233-antonio-joaquim-de-avila-f1",
+   "arquivo": "img/ig-idelma-20250712-1233-antonio-joaquim-de-avila-f1.webp",
+   "lugar_id": null,
+   "pessoas_ids": [
+    "antonio-joaquim-de-avila"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250712-1300-francisco-antonio-de-avi-f1",
+   "arquivo": "img/ig-idelma-20250712-1300-francisco-antonio-de-avi-f1.webp",
+   "lugar_id": null,
+   "pessoas_ids": [
+    "francisco-antonio-de-avila-pentavo",
+    "ana-rosa-de-jesus"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250712-1304-morro-alto-acores-e-mina-f1",
+   "arquivo": "img/ig-idelma-20250712-1304-morro-alto-acores-e-mina-f1.webp",
+   "lugar_id": "morro-alto",
+   "pessoas_ids": [],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-1830-manoel-francisco-de-avil-f1",
+   "arquivo": "img/ig-idelma-20250713-1830-manoel-francisco-de-avil-f1.webp",
+   "lugar_id": "araxa",
+   "pessoas_ids": [
+    "manoel-francisco-de-avila"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-1842-casa-santa-casa-miserico-f1",
+   "arquivo": "img/ig-idelma-20250713-1842-casa-santa-casa-miserico-f1.webp",
+   "lugar_id": "santa-casa-araxa",
+   "pessoas_ids": [
+    "manoel-francisco-de-avila"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-1842-casa-santa-casa-miserico-f2",
+   "arquivo": "img/ig-idelma-20250713-1842-casa-santa-casa-miserico-f2.webp",
+   "lugar_id": "santa-casa-araxa",
+   "pessoas_ids": [
+    "manoel-francisco-de-avila"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f1",
+   "arquivo": "img/ig-idelma-20250713-1920-chernovitz-e-medicina-po-f1.webp",
+   "lugar_id": "araxa",
+   "pessoas_ids": [
+    "joaquim-esteves-de-avila",
+    "joaquina-candida-da-conceicao"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f2",
+   "arquivo": "img/ig-idelma-20250713-1920-chernovitz-e-medicina-po-f2.webp",
+   "lugar_id": "araxa",
+   "pessoas_ids": [
+    "joaquim-esteves-de-avila",
+    "joaquina-candida-da-conceicao"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-1920-chernovitz-e-medicina-po-f3",
+   "arquivo": "img/ig-idelma-20250713-1920-chernovitz-e-medicina-po-f3.webp",
+   "lugar_id": "araxa",
+   "pessoas_ids": [
+    "joaquim-esteves-de-avila",
+    "joaquina-candida-da-conceicao"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2031-joaquim-esteves-de-avila-f1",
+   "arquivo": "img/ig-idelma-20250713-2031-joaquim-esteves-de-avila-f1.webp",
+   "lugar_id": "morro-alto",
+   "pessoas_ids": [
+    "joaquim-esteves-de-avila",
+    "joaquina-candida-da-conceicao"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2031-joaquim-esteves-de-avila-f2",
+   "arquivo": "img/ig-idelma-20250713-2031-joaquim-esteves-de-avila-f2.webp",
+   "lugar_id": "morro-alto",
+   "pessoas_ids": [
+    "joaquim-esteves-de-avila",
+    "joaquina-candida-da-conceicao"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2033-familia-grande-pb-anos-7-f1",
+   "arquivo": "img/ig-idelma-20250713-2033-familia-grande-pb-anos-7-f1.webp",
+   "lugar_id": null,
+   "pessoas_ids": [],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2123-maria-candida-da-conceic-f1",
+   "arquivo": "img/ig-idelma-20250713-2123-maria-candida-da-conceic-f1.webp",
+   "lugar_id": "ibia",
+   "pessoas_ids": [
+    "maria-candida-da-conceicao-nica"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2127-capa-reminiscencias-do-m-f1",
+   "arquivo": "img/ig-idelma-20250713-2127-capa-reminiscencias-do-m-f1.webp",
+   "lugar_id": "morro-alto",
+   "pessoas_ids": [],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f1",
+   "arquivo": "img/ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f1.webp",
+   "lugar_id": null,
+   "pessoas_ids": [
+    "joao-jacob",
+    "maria-custodia-de-oliveira-naves",
+    "adelia-benevides-jacob"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f2",
+   "arquivo": "img/ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f2.webp",
+   "lugar_id": null,
+   "pessoas_ids": [
+    "joao-jacob",
+    "maria-custodia-de-oliveira-naves",
+    "adelia-benevides-jacob"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f3",
+   "arquivo": "img/ig-idelma-20250713-2144-maria-custodia-e-joao-ja-f3.webp",
+   "lugar_id": null,
+   "pessoas_ids": [
+    "joao-jacob",
+    "maria-custodia-de-oliveira-naves",
+    "adelia-benevides-jacob"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f1",
+   "arquivo": "img/ig-idelma-20250713-2201-francisco-amancio-da-cos-f1.webp",
+   "lugar_id": "araxa",
+   "pessoas_ids": [
+    "francisco-amancio-da-costa",
+    "virgilina-rosa-de-jesus"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f2",
+   "arquivo": "img/ig-idelma-20250713-2201-francisco-amancio-da-cos-f2.webp",
+   "lugar_id": "araxa",
+   "pessoas_ids": [
+    "francisco-amancio-da-costa",
+    "virgilina-rosa-de-jesus"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f3",
+   "arquivo": "img/ig-idelma-20250713-2201-francisco-amancio-da-cos-f3.webp",
+   "lugar_id": "araxa",
+   "pessoas_ids": [
+    "francisco-amancio-da-costa",
+    "virgilina-rosa-de-jesus"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f4",
+   "arquivo": "img/ig-idelma-20250713-2201-francisco-amancio-da-cos-f4.webp",
+   "lugar_id": "araxa",
+   "pessoas_ids": [
+    "francisco-amancio-da-costa",
+    "virgilina-rosa-de-jesus"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20260607-2040-bodas-de-ouro-francisco--f1",
+   "arquivo": "img/ig-idelma-20260607-2040-bodas-de-ouro-francisco--f1.webp",
+   "lugar_id": "araxa",
+   "pessoas_ids": [
+    "francisco-amancio-da-costa",
+    "virgilina-rosa-de-jesus"
+   ],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20260607-2054-casal-idosos-sentados-f1",
+   "arquivo": "img/ig-idelma-20260607-2054-casal-idosos-sentados-f1.webp",
+   "lugar_id": null,
+   "pessoas_ids": [],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20260607-2055-retrato-casal-pb-f1",
+   "arquivo": "img/ig-idelma-20260607-2055-retrato-casal-pb-f1.webp",
+   "lugar_id": null,
+   "pessoas_ids": [],
+   "contem_possivelmente_vivos": false,
+   "sugestao_exibicao": "livre dentro do acervo familiar privado",
+   "nivel_evidencia": "D"
+  },
+  {
+   "id": "ig-idelma-20260607-2302-grupo-idosos-colorido-f1",
+   "arquivo": "img/ig-idelma-20260607-2302-grupo-idosos-colorido-f1.webp",
    "lugar_id": null,
    "pessoas_ids": [],
    "contem_possivelmente_vivos": false,

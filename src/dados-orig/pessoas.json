@@ -1422,7 +1422,7 @@
   "divergencias": [
    "D15-portella"
   ],
-  "nota_confirmar": "O livro traz o sobrenome Portella na ascendência direta de Tibúrcio Joaquim. A família ainda não confirmou se esta linha chega ao Nilson; por isso ela aparece só por constar no livro."
+  "nota_confirmar": "Consta como pentavó na árvore do Nilson (pesquisa/arvore-genealogica-nilson.md), pelo livro: esposa de Francisco Antonio de Avila. Os pais dela (Nicolao Alves Portella e Maria Josefa Rodrigues de Oliveira) vêm só do livro e de uma legenda da Idelma."
  },
  {
   "id": "manoel-francisco-de-avila",
@@ -2181,9 +2181,10 @@
    "joaquim-esteves-de-avila",
    "joaquina-candida-da-conceicao"
   ],
-  "conjuge": null,
+  "conjuge": "hilmovir-jacob-de-rezende",
   "filhos": [
-   "zaida-jacob"
+   "zaida-jacob",
+   "zilda-jacob-da-costa"
   ],
   "foto": "livro-p078-055-maria-candida-da-conceicao-nica",
   "resumo": "Filha de Joaquim Esteves, casada com Ilmovir (Hilmovir) Jacob de Rezende; autora do pudim de laranja (receita 60). O livro a grafa também \"Maria Cândida de Avila\". Mãe de Zaida Jacob.",
@@ -2192,7 +2193,9 @@
    "Nica",
    "Tia Nica"
   ],
-  "conjuges": [],
+  "conjuges": [
+   "hilmovir-jacob-de-rezende"
+  ],
   "nascimento_detalhe": null,
   "morte_detalhe": null,
   "receitas": [
@@ -2499,7 +2502,8 @@
   "pais": [],
   "conjuge": "maria-custodia-de-oliveira-naves",
   "filhos": [
-   "adelia-benevides-jacob"
+   "adelia-benevides-jacob",
+   "hilmovir-jacob-de-rezende"
   ],
   "foto": null,
   "resumo": "Pai de Adélia Benevides Jacob; filho de Jacob Gonçalves Cardozo e Anna Luciana de Rezende.",
@@ -2535,7 +2539,8 @@
   "pais": [],
   "conjuge": "joao-jacob",
   "filhos": [
-   "adelia-benevides-jacob"
+   "adelia-benevides-jacob",
+   "hilmovir-jacob-de-rezende"
   ],
   "foto": null,
   "resumo": "Mãe de Adélia Benevides Jacob; filha de Manuel Prudêncio Naves e Isabella Cândida de Oliveira, moradores da Freguesia de Água Suja.",
@@ -5003,7 +5008,8 @@
   "evidencia": "P",
   "aconfirmar": true,
   "pais": [
-   "maria-candida-da-conceicao-nica"
+   "maria-candida-da-conceicao-nica",
+   "hilmovir-jacob-de-rezende"
   ],
   "conjuge": null,
   "filhos": [],
@@ -5308,5 +5314,405 @@
   "divergencias": [],
   "nota_confirmar": null,
   "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
+ },
+ {
+  "id": "joaquim-manoel-da-costa",
+  "nome": "Joaquim Manoel da Costa",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "D",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "maria-rosa-de-sao-jose",
+  "filhos": [
+   "francisco-amancio-da-costa"
+  ],
+  "foto": null,
+  "resumo": "Pai de Francisco Amâncio da Costa (legenda de @idelmadacosta2).",
+  "linha": "costa",
+  "apelidos": [],
+  "conjuges": [
+   "maria-rosa-de-sao-jose"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "fontes-integrais/instagram-idelma/INDICE.md"
+   }
+  ],
+  "evidencia_detalhe": "Legenda de @idelmadacosta2 (D).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "maria-rosa-de-sao-jose",
+  "nome": "Maria Rosa de São José",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "D",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "joaquim-manoel-da-costa",
+  "filhos": [
+   "francisco-amancio-da-costa"
+  ],
+  "foto": null,
+  "resumo": "Mãe de Francisco Amâncio da Costa (legenda de @idelmadacosta2).",
+  "linha": "costa",
+  "apelidos": [],
+  "conjuges": [
+   "joaquim-manoel-da-costa"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "fontes-integrais/instagram-idelma/INDICE.md"
+   }
+  ],
+  "evidencia_detalhe": "Legenda de @idelmadacosta2 (D).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "manoel-gomes-de-menezes",
+  "nome": "Manoel Gomes de Menezes",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "D",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "maria-roza-gomes",
+  "filhos": [
+   "virgilina-rosa-de-jesus"
+  ],
+  "foto": null,
+  "resumo": "Pai de Virgilina Rosa de Jesus. Possível ligação com Joaquim Gomes de Menezes, que casou com Maria, filha de Antonio Joaquim de Avila: a confirmar.",
+  "linha": "costa",
+  "apelidos": [],
+  "conjuges": [
+   "maria-roza-gomes"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "fontes-integrais/instagram-idelma/INDICE.md"
+   }
+  ],
+  "evidencia_detalhe": "Legenda de @idelmadacosta2 (D).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "maria-roza-gomes",
+  "nome": "Maria Roza Gomes",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "D",
+  "aconfirmar": true,
+  "pais": [],
+  "conjuge": "manoel-gomes-de-menezes",
+  "filhos": [
+   "virgilina-rosa-de-jesus"
+  ],
+  "foto": null,
+  "resumo": "Mãe de Virgilina Rosa de Jesus.",
+  "linha": "costa",
+  "apelidos": [],
+  "conjuges": [
+   "manoel-gomes-de-menezes"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "fontes-integrais/instagram-idelma/INDICE.md"
+   }
+  ],
+  "evidencia_detalhe": "Legenda de @idelmadacosta2 (D).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "virgilina-rosa-de-jesus",
+  "nome": "Virgilina Rosa de Jesus (\"Vovó Virgilina\")",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "manoel-gomes-de-menezes",
+   "maria-roza-gomes"
+  ],
+  "conjuge": "francisco-amancio-da-costa",
+  "filhos": [
+   "manoel-amancio-da-costa"
+  ],
+  "foto": null,
+  "resumo": "Casou-se com Francisco Amâncio da Costa em 1900; bodas de ouro em setembro de 1950, em Araxá (folheto da família; o dia está ilegível na foto). Filha de Manoel Gomes de Menezes e Maria Roza Gomes.",
+  "linha": "costa",
+  "apelidos": [],
+  "conjuges": [
+   "francisco-amancio-da-costa"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "fontes-integrais/instagram-idelma/INDICE.md"
+   }
+  ],
+  "evidencia_detalhe": "Livro (pp. 42–43) e postagens de @idelmadacosta2 (D).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Ligação Manoel Amâncio da Costa «Sorriso» (avô paterno do Nilson) como filho de Francisco Amâncio: inferência. O livro cita o filho «Manoel Sorriso»; e-mails de 2013 dão o avô como irmão de Joaquim Amâncio da Costa, também filho do casal. Falta a confirmação do Nilson ou um documento."
+ },
+ {
+  "id": "francisco-amancio-da-costa",
+  "nome": "Francisco Amâncio da Costa (\"Vovô Chico\")",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "araxa",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joaquim-manoel-da-costa",
+   "maria-rosa-de-sao-jose"
+  ],
+  "conjuge": "virgilina-rosa-de-jesus",
+  "filhos": [
+   "manoel-amancio-da-costa"
+  ],
+  "foto": "ig-idelma-20250713-2201-francisco-amancio-da-cos-f1",
+  "resumo": "Filho de Joaquim Manoel da Costa e Maria Rosa de São José; casado com Virgilina Rosa de Jesus; morava em Araxá (Rua Olegário Maciel, 603). O livro explica que «Amâncio» era nome e passou a ser usado como sobrenome nos filhos homens. Seria o bisavô do Nilson e avô do pai dele (a confirmar).",
+  "linha": "costa",
+  "apelidos": [],
+  "conjuges": [
+   "virgilina-rosa-de-jesus"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "fontes-integrais/instagram-idelma/INDICE.md"
+   }
+  ],
+  "evidencia_detalhe": "Livro (pp. 42–43) e postagens de @idelmadacosta2 (D).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Ligação Manoel Amâncio da Costa «Sorriso» (avô paterno do Nilson) como filho de Francisco Amâncio: inferência. O livro cita o filho «Manoel Sorriso»; e-mails de 2013 dão o avô como irmão de Joaquim Amâncio da Costa, também filho do casal. Falta a confirmação do Nilson ou um documento."
+ },
+ {
+  "id": "manoel-amancio-da-costa",
+  "nome": "Manoel Amâncio da Costa (\"Sorriso\")",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "francisco-amancio-da-costa",
+   "virgilina-rosa-de-jesus"
+  ],
+  "conjuge": "zilda-jacob-da-costa",
+  "filhos": [
+   "ilmovir-jose-da-costa"
+  ],
+  "foto": null,
+  "resumo": "Avô paterno do Nilson; irmão de Joaquim Amâncio da Costa (casado com Cândida). Hipótese: é o «Tio Manoel, Manoel Sorriso» do livro, filho de Francisco Amâncio da Costa e Virgilina.",
+  "linha": "costa",
+  "apelidos": [],
+  "conjuges": [
+   "zilda-jacob-da-costa"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "pesquisa/arvore-genealogica-nilson.md"
+   }
+  ],
+  "evidencia_detalhe": "E-mail «Família Costa» (2013) e árvore do Nilson (pesquisa/); ligação com Francisco Amâncio é inferência.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Ligação Manoel Amâncio da Costa «Sorriso» (avô paterno do Nilson) como filho de Francisco Amâncio: inferência. O livro cita o filho «Manoel Sorriso»; e-mails de 2013 dão o avô como irmão de Joaquim Amâncio da Costa, também filho do casal. Falta a confirmação do Nilson ou um documento."
+ },
+ {
+  "id": "hilmovir-jacob-de-rezende",
+  "nome": "Ilmovir (Hilmovir) Jacob de Rezende (\"Vitinho\")",
+  "nascimento": null,
+  "morte": null,
+  "lugar": "ibia",
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": true,
+  "pais": [
+   "joao-jacob",
+   "maria-custodia-de-oliveira-naves"
+  ],
+  "conjuge": "maria-candida-da-conceicao-nica",
+  "filhos": [
+   "zilda-jacob-da-costa",
+   "zaida-jacob"
+  ],
+  "foto": null,
+  "resumo": "Casou-se com Maria Cândida (Nica); morava em Ibiá. Inferência por nome: o livro lista um Ilmovir Jacob de Rezende entre os 16 filhos de João Jacob e Maria Custódia, e a legenda de @idelmadacosta2 chama os dois de bisavós do pai dela. Pai de Zaida e de Zilda.",
+  "linha": "jacob-naves",
+  "apelidos": [],
+  "conjuges": [
+   "maria-candida-da-conceicao-nica"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "pesquisa/arvore-genealogica-nilson.md"
+   }
+  ],
+  "evidencia_detalhe": "Livro e legendas de @idelmadacosta2 (D).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "zilda-jacob-da-costa",
+  "nome": "Zilda Jacob da Costa",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "D",
+  "aconfirmar": true,
+  "pais": [
+   "hilmovir-jacob-de-rezende",
+   "maria-candida-da-conceicao-nica"
+  ],
+  "conjuge": "manoel-amancio-da-costa",
+  "filhos": [
+   "ilmovir-jose-da-costa"
+  ],
+  "foto": null,
+  "resumo": "Avó paterna do Nilson (também «Zilda Jacob de Ávila»); irmã de Zaida Jacob; filha de Nica. É a ponte entre o Nilson e os Avila do livro.",
+  "linha": "jacob-naves",
+  "apelidos": [],
+  "conjuges": [
+   "manoel-amancio-da-costa"
+  ],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "pesquisa/arvore-genealogica-nilson.md"
+   }
+  ],
+  "evidencia_detalhe": "Legenda de @idelmadacosta2 (D).",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": "Falta certidão que ligue Zilda a Nica e Hilmovir; hoje apoiam: confirmação do Nilson e legenda da Idelma."
+ },
+ {
+  "id": "ilmovir-jose-da-costa",
+  "nome": "Ilmovir José da Costa",
+  "nascimento": null,
+  "morte": "26/01/2015",
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "B",
+  "aconfirmar": false,
+  "pais": [
+   "manoel-amancio-da-costa",
+   "zilda-jacob-da-costa"
+  ],
+  "conjuge": null,
+  "filhos": [
+   "nilson-jacob-da-costa"
+  ],
+  "foto": null,
+  "resumo": "Pai do Nilson.",
+  "linha": "costa",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "pesquisa/arvore-genealogica-nilson.md"
+   }
+  ],
+  "evidencia_detalhe": "Minuta do termo de cessão de direitos hereditários (2022) e e-mail de 2013.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
+  "id": "nilson-jacob-da-costa",
+  "nome": "Nilson Jacob da Costa",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "B",
+  "aconfirmar": false,
+  "pais": [
+   "ilmovir-jose-da-costa"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Neto de Zilda Jacob da Costa e Manoel Amâncio da Costa; bisneto de Maria Cândida (Nica). Autor deste acervo.",
+  "linha": "costa",
+  "apelidos": [],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [
+   {
+    "arquivo": "pesquisa/arvore-genealogica-nilson.md"
+   }
+  ],
+  "evidencia_detalhe": "Informação do próprio Nilson.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": true,
+  "divergencias": [],
+  "nota_confirmar": null
  }
 ]
