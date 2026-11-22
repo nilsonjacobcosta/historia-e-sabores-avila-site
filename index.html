@@ -559,11 +559,11 @@ dialog.lightbox[open]{display:block;margin:auto}
 <div class="conteudo">
 <section class="secao" id="rota" aria-labelledby="t-rota">
   <h2 id="t-rota">A rota</h2>
-  <p>Mapa esquemático, fora de escala. Toque em um ponto para ver o lugar, as pessoas e as fotos ligadas a ele.</p>
+  <p>Mapa esquemático, fora de escala. O traçado é um desenho geral, não o caminho de uma única família, e Brasília aparece só como ponto de contexto de hoje. Toque em um ponto para ver o lugar, as pessoas e as fotos ligadas a ele.</p>
   <div class="rota">
     <div><div class="mapa"><div class="mapa-rolagem" tabindex="0" role="region" aria-label="Mapa da rota, role para o lado no celular"><svg id="mapa-rota" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="group" aria-labelledby="mapa-t mapa-d" font-family="'Atkinson Hyperlegible',system-ui,sans-serif">
   <title id="mapa-t">Rota da família Ávila: Ilha do Pico, Minas Gerais, Araxá, Goiás</title>
-  <desc id="mapa-d">Mapa estilizado, fora de escala. Um tracado azul parte da Ilha do Pico, nos Açores, em 1709, atravessa o Atlântico, chega a Borda do Campo e Barbacena, passa por Morro Alto, São Domingos do Araxá e segue para Goiás; Brasília aparece como ponto de hoje.</desc>
+  <desc id="mapa-d">Mapa estilizado, fora de escala. O traçado azul é um esquema geral que liga a Ilha do Pico, Borda do Campo e Barbacena, São Domingos do Araxá, Morro Alto e Goiás; não é o caminho de uma única família. Brasília aparece como ponto de contexto de hoje.</desc>
   <!--
     USO inline no HTML (recomendado, para o CSS herdar tokens): cole este <svg> e defina no CSS da pagina as variaveis
     mapa-mar, mapa-terra, mapa-tracado, mapa-ponto, mapa-texto, com prefixo de dois hifens (fallbacks abaixo, claro/escuro automatico).
@@ -656,7 +656,7 @@ dialog.lightbox[open]{display:block;margin:auto}
     <circle class="halo" cx="170" cy="230" r="14"/><circle class="foco" cx="170" cy="230" r="24"/><circle class="miolo" cx="170" cy="230" r="8"/>
     <text class="txt" x="150" y="266" text-anchor="middle">Goiás</text>
   </g>
-  <g class="ponto hoje-p" data-lugar="brasilia" tabindex="0" role="button" aria-pressed="false" aria-label="Brasília, onde Nilson e Duda moram hoje" style="--d:7.5s">
+  <g class="ponto hoje-p" data-lugar="brasilia" tabindex="0" role="button" aria-pressed="false" aria-label="Brasília, ponto de contexto de hoje" style="--d:7.5s">
     <circle class="halo" cx="250" cy="205" r="14"/><circle class="foco" cx="250" cy="205" r="24"/><circle class="miolo" cx="250" cy="205" r="8"/>
     <text class="txt" x="250" y="170" text-anchor="middle">Brasília</text><text class="sub" x="250" y="188" text-anchor="middle">hoje</text>
   </g>
@@ -737,7 +737,7 @@ dialog.lightbox[open]{display:block;margin:auto}
     <li><span class="selo-evidencia" data-nivel="B">B</span> estudo revisado por pares ou documento de organismo oficial</li>
     <li><span class="selo-evidencia" data-nivel="C">C</span> especialista ou documento de época sem conferência do original</li>
     <li><span class="selo-evidencia" data-nivel="D">D</span> imprensa, redes sociais, legendas de vídeo</li>
-    <li><span class="selo-evidencia" data-nivel="P">P</span> memória ou narrativa pessoal, como a do autor do livro</li>
+    <li><span class="selo-evidencia" data-nivel="P">P</span> memória ou narrativa pessoal, como a do autor do livro, e documentos transcritos no livro</li>
     <li><span class="selo-evidencia" data-nivel="controverso">controverso</span> fontes em conflito</li>
   </ul>
   <div class="aviso-confirmar"><svg aria-hidden="true"><use href="#orn-confirmar"/></svg><div><strong>a confirmar pela família</strong><p>Nomes, datas e identificações de fotos marcados assim dependem de quem viveu a história. Se você sabe, conte.</p></div></div>
@@ -891,7 +891,7 @@ function receitas(){
   return '<article class="rec"><svg aria-hidden="true" style="width:36px;height:36px;color:var(--barro)"><use href="#orn-'+(r.categoria==='rosca'?'rosca':r.categoria==='bolo'||r.categoria==='doce'?'colher':'panela')+'"/></svg><h3>'+esc(r.numero+'. '+r.nome)+'</h3><p class="cat">'+esc(r.categoria)+(quem?' · de '+esc(quem):'')+'</p><ul>'+(r.ingredientes_resumo||[]).map(function(i){return '<li>'+esc(i)+'</li>'}).join('')+'</ul><p class="nota-ig">Livro, p. '+esc(r.pagina_impressa||'?')+'</p>'+(ig.length?'<p class="nota-ig">Há postagem do autor ligada a esta receita (indício, nível D).</p>':'')+selo(r.nivel_evidencia)+'</article>'}).join('')}
  filtros($('#f-rec'),cats.map(function(c){return [c,c==='todos'?'Todas':c]}),cur,function(v){cur=v;draw()});draw()}
 function divergencias(){
- var d=[['Foto da família de Zico e Adélia','1927 (livro e vídeo) ou 1928 (comentário do autor).'],['Lourival','“Lorico” no livro, “Lourico” nas postagens.'],['Antonio Luiz Leite','Com ou sem “da Silva” no nome.'],['Maria Célia e Malvina','Aparecem só numa legenda de foto, sem filiação.'],['Francisco Antônio','Mais de um homônimo; o vídeo não distingue.'],['Rua das Flores e Rua Capitão José Porfírio','Provavelmente a mesma casa, não confirmado.'],['Os Portella','Três pessoas Portella impressas no livro como ascendência direta estão na árvore com aviso; aguardam decisão da família.']];
+ var d=[['Foto da família de Zico e Adélia','1927 (livro e vídeo) ou 1928 (comentário do autor).'],['Lourival','“Lorico” no livro, “Lourico” nas postagens.'],['Antonio Luiz Leite','Com ou sem “da Silva” no nome.'],['Maria Célia e Malvina','Aparecem só numa legenda de foto, sem filiação.'],['Francisco Antônio','Mais de um homônimo; o vídeo não distingue.'],['Rua das Flores e Rua Capitão José Porfírio','Provavelmente a mesma casa, não confirmado.'],['Lico','“Manoel Antonio” na galeria e no inventário; “Manoel Joaquim” nas etiquetas de receita.'],['Marido de Iracema','O texto diz o primo “Zico”; a etiqueta de receita diz José Antonio Ferreira Junior.'],['Várias Candinhas','Candinha (filha de Tibúrcio), Donana e Anna Candida de Oliveira são pessoas diferentes.'],['Vila de Araxá','1831 numa postagem; posse da primeira Câmara em 1833 no livro.'],['Casamento de Carico e Irinéa','31/07/1910 na narrativa; 30/07/1910 no cartão das bodas de ouro.'],['Marianno no inventário','Consta “solteiro, 36 anos” embora casado com Escolástica; cronologia dos casamentos a conferir.'],['Thereza Thomázia','“Teixeira” ou “de Jesus”.'],['Joaquim Esteves','Nascido em 1857 e morto em 1940 “com 82 anos”: a conferir.'],['Nica','“Maria Cândida da Conceição” ou “Maria Cândida de Avila”; marido Hilmovir ou Ilmovir.'],['Os Portella','Nicolao Alves Portella, Ana Rosa de Jesus, Maria do Carmo e Anna Candida de Oliveira constam no livro como ascendência direta de Tibúrcio Joaquim. Eles unem as linhas de Morro Alto e Três Cruzes, mas a família ainda não confirmou se essa linha chega ao Nilson. Por isso aparecem com aviso.']];
  $('#diverg').innerHTML=d.map(function(x){return '<li><strong>'+esc(x[0])+'.</strong> '+esc(x[1])+'</li>'}).join('')}
 })();
 </script>

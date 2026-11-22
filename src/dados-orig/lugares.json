@@ -129,7 +129,7 @@
   "id": "goias",
   "nome": "Capitania/Província de Goiás",
   "tipo": "região",
-  "descricao": "Araxá pertencia a Goiás até 1816 (contexto histórico, pesquisa/verificacao); a sesmaria de 1802 teria sido pedida ao governo da Capitania de Goiás, segundo o livro. Não é local de residência de nenhum dos Avila do livro, exceto Delica, que se mudou para Goiás.",
+  "descricao": "Araxá pertencia a Goiás até 1816 (contexto histórico, pesquisa de contexto); a sesmaria de 1802 teria sido pedida ao governo da Capitania de Goiás, segundo o livro. Não é local de residência de nenhum dos Avila do livro, exceto Delica, que se mudou para Goiás.",
   "municipio_atual": null,
   "lat": null,
   "lon": null,
@@ -154,7 +154,7 @@
   "municipio_atual": "Araxá",
   "lat": -19.5933,
   "lon": -46.9394,
-  "coordenadas_nota": "Ponto da antiga estação ferroviária de Araxá, tal como citado na página pt.wikipedia.org/wiki/Araxá (nível D); precisão de cerca de 1 km do centro.",
+  "coordenadas_nota": "Ponto da antiga estação ferroviária de Araxá, tal como citado na página link iPatrimônio dentro da pt.wikipedia.org/wiki/Araxá (nível D); precisão de cerca de 1 km do centro.",
   "fontes": [
    {
     "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",

@@ -243,7 +243,7 @@
   "pessoas_ids": [
    "antonio-joaquim-de-avila"
   ],
-  "nivel": "controverso",
+  "nivel": "P",
   "fonte": [
    {
     "arquivo": "estudos/05-capitulo-1-da-ilha-do-pico-aos-sertoes-das-gerais.md",
@@ -254,7 +254,7 @@
     "pagina_pdf": null
    }
   ],
-  "nota": null,
+  "nota": "Só o livro traz esta informação.",
   "id": "ev-13"
  },
  {
@@ -844,7 +844,7 @@
   "ano": 1956,
   "data": "1956-12-06",
   "titulo": "Morre o professor Leão Coelho de Almeida",
-  "texto": "06/12/1956; ensinou os filhos de Zico e de Fiíca.",
+  "texto": "06/12/1956; ensinou Renato (filho de Zico) e Fiíca.",
   "lugar_id": "morro-alto",
   "pessoas_ids": [
    "leao-coelho-de-almeida"

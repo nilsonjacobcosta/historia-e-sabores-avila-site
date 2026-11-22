@@ -151,7 +151,7 @@
   "id": "francisca-da-conceicao",
   "nome": "Francisca da Conceição",
   "nascimento": null,
-  "morte": "1756",
+  "morte": "c. 1756 (inferido)",
   "lugar": "borda-do-campo",
   "ramo": "acores",
   "evidencia": "P",
@@ -303,12 +303,12 @@
   "divergencias": [
    "D10-pederneiras"
   ],
-  "nota_confirmar": "Sesmaria \"Pederneiras\" e cotas do testamento/inventário a confirmar. Há homônimos: o filho de Francisco Antonio e \"Tonico\" (ver ids)."
+  "nota_confirmar": "Sesmaria \"Pederneiras\" e cotas do testamento a confirmar. Há homônimos: o filho de Francisco Antonio e \"Tonico\"."
  },
  {
   "id": "marianna-joaquina-das-neves",
   "nome": "Marianna Joaquina das Neves",
-  "nascimento": "1754-05-27",
+  "nascimento": "bat. 1754",
   "morte": null,
   "lugar": "borda-do-campo",
   "ramo": "minas",
@@ -535,7 +535,7 @@
    "tiburcio-de-avila-menino",
    "carlos-joaquim-de-avila"
   ],
-  "foto": "livro-p129-113-casarao-da-rua-alexandre-gondim-constr",
+  "foto": null,
   "resumo": "Filho de Antonio Joaquim, formado em Coimbra segundo o livro, foi o primeiro presidente da Câmara de Araxá (posse em 07/01/1833) e líder do Partido Conservador. Morava na Fazenda das Três Cruzes e construiu o casarão da Rua Alexandre Gondim (1850); morreu em janeiro de 1863.",
   "linha": "tres-cruzes",
   "apelidos": [
@@ -764,7 +764,7 @@
   "conjuge": null,
   "filhos": [],
   "foto": null,
-  "resumo": "Filho de Marianno falecido aos oito anos; seu nome foi dado em homenagem a dois filhos de Carlos (Tibúrcio Joaquim e Tibúrcio Germano).",
+  "resumo": "Filho de Marianno, falecido aos oito anos. Carlos deu o nome Tibúrcio a dois filhos (Tibúrcio Joaquim e Tibúrcio Germano) em homenagem a este irmão.",
   "linha": "tres-cruzes",
   "apelidos": [],
   "conjuges": [],
@@ -806,15 +806,14 @@
    "tiburcio-germano-de-avila",
    "tiburcio-joaquim-de-avila"
   ],
-  "foto": "livro-p099-076-carta-patente-de-alferes-de-carlos-joa",
+  "foto": null,
   "resumo": "Filho de Marianno, nascido em 21/10/1833 e batizado na Fazenda da Água Fina. Alferes e depois Tenente da Guarda Nacional, casou em 1858 com Anna Candida de Oliveira, que faleceu em 1862. Teve também dois filhos \"naturais\" com Carlota Ana D'Abadia, que alforriou e legitimou. Era o \"Vovô Dindinho\".",
   "linha": "tres-cruzes",
   "apelidos": [
    "Vovô Dindinho"
   ],
   "conjuges": [
-   "ana-candida-de-oliveira",
-   "carlota-ana-dabadia"
+   "ana-candida-de-oliveira"
   ],
   "nascimento_detalhe": {
    "data": "1833-10-21",
@@ -826,7 +825,7 @@
    "data": null,
    "precisao": "desconhecida",
    "lugar_id": null,
-   "nota": "O livro situa a morte antes de 1911 (filho Tibúrcio morreu em 1904); data não informada."
+   "nota": "Data da morte não informada no livro."
   },
   "receitas": [],
   "fontes": [
@@ -902,7 +901,7 @@
   "divergencias": [
    "D15-portella"
   ],
-  "nota_confirmar": "Ver D15: o livro faz de Maria do Carmo (filha de Francisco Antonio) a mãe de Ana Candida, ligando as linhas Três Cruzes e Morro Alto."
+  "nota_confirmar": "O livro traz o sobrenome Portella na ascendência direta de Tibúrcio Joaquim. A família ainda não confirmou se esta linha chega ao Nilson; por isso ela aparece só por constar no livro."
  },
  {
   "id": "carlota-ana-dabadia",
@@ -914,7 +913,7 @@
   "evidencia": "P",
   "aconfirmar": false,
   "pais": [],
-  "conjuge": "carlos-joaquim-de-avila",
+  "conjuge": null,
   "filhos": [
    "possidonia-ana-dabadia",
    "tiburcio-germano-de-avila"
@@ -923,9 +922,7 @@
   "resumo": "Mulher escravizada (parda) de Carlos Joaquim de Avila e mãe de Possidônia e Tibúrcio Germano; ela e os filhos receberam alforria.",
   "linha": "tres-cruzes",
   "apelidos": [],
-  "conjuges": [
-   "carlos-joaquim-de-avila"
-  ],
+  "conjuges": [],
   "nascimento_detalhe": null,
   "morte_detalhe": null,
   "receitas": [],
@@ -1077,7 +1074,7 @@
   "divergencias": [
    "D15-portella"
   ],
-  "nota_confirmar": "Escopo: o ramo Portella/Ferreira de Aguiar da coluna do Jornal Interação está arquivado e não entra; entra apenas o Portella que o livro traz como ascendente direto de Tibúrcio Joaquim. Se o Nilson entender que isso viola a exclusão, remover este nó e o de Maria do Carmo."
+  "nota_confirmar": "O livro traz o sobrenome Portella na ascendência direta de Tibúrcio Joaquim. A família ainda não confirmou se esta linha chega ao Nilson; por isso ela aparece só por constar no livro."
  },
  {
   "id": "maria-do-carmo-de-oliveira",
@@ -1123,7 +1120,7 @@
   "divergencias": [
    "D15-portella"
   ],
-  "nota_confirmar": null
+  "nota_confirmar": "O livro traz o sobrenome Portella na ascendência direta de Tibúrcio Joaquim. A família ainda não confirmou se esta linha chega ao Nilson; por isso ela aparece só por constar no livro."
  },
  {
   "id": "tiburcio-joaquim-de-avila",
@@ -1425,7 +1422,7 @@
   "divergencias": [
    "D15-portella"
   ],
-  "nota_confirmar": null
+  "nota_confirmar": "O livro traz o sobrenome Portella na ascendência direta de Tibúrcio Joaquim. A família ainda não confirmou se esta linha chega ao Nilson; por isso ela aparece só por constar no livro."
  },
  {
   "id": "manoel-francisco-de-avila",
@@ -1628,7 +1625,7 @@
    "orlelimda-rita-de-avila"
   ],
   "foto": null,
-  "resumo": "Esposa de Chico do Muro (Paiva por casamento no livro; o ramo Paiva de Carrancas está arquivado e não entra).",
+  "resumo": "Esposa de Chico do Muro; o livro a chama de Paiva por casamento.",
   "linha": "morro-alto",
   "apelidos": [],
   "conjuges": [
@@ -3000,7 +2997,7 @@
   "conjuge": null,
   "filhos": [],
   "foto": "livro-p137-123-renato-benevides-de-avila",
-  "resumo": "Caçula dos doze, no colo da mãe na foto de 1927/1928; recebeu a sede da Fazenda Morro Alto e foi fazendeiro até os setenta anos. Casado com Maria Amâncio Avila; avô materno do autor.",
+  "resumo": "Caçula dos doze, na foto de 1927/1928; recebeu a sede da Fazenda Morro Alto e foi fazendeiro até os setenta anos. Casado com Maria Amâncio Avila; avô materno do autor.",
   "linha": "morro-alto",
   "apelidos": [],
   "conjuges": [],
@@ -3042,7 +3039,7 @@
   "conjuge": null,
   "filhos": [],
   "foto": null,
-  "resumo": "Primogênita de Tibúrcio, casada com seu tio Antonio Affonso Teixeira; receita dos ovos nevados (47). Não confundir com Donana nem com a \"Vovó Candinha\" (Cândida Umbelina), de ramo arquivado.",
+  "resumo": "Primogênita de Tibúrcio, casada com seu tio Antonio Affonso Teixeira; receita dos ovos nevados (47). Não confundir com Donana nem com outras Candinhas citadas no livro.",
   "linha": "tres-cruzes",
   "apelidos": [
    "Candinha"
@@ -3204,7 +3201,7 @@
    "iris-de-avila"
   ],
   "foto": "livro-p113-090-filhos-de-tiburcio-e-thereza",
-  "resumo": "Filho de Tibúrcio, nascido em 20/08/1891 (batizado em 02/11/1891 em São Pedro de Alcântara). Pai de Iris, segundo etiqueta de receita (a família de sua esposa pertence ao ramo arquivado).",
+  "resumo": "Filho de Tibúrcio, nascido em 20/08/1891 (batizado em 02/11/1891 em São Pedro de Alcântara). Pai de Iris, segundo etiqueta de receita.",
   "linha": "tres-cruzes",
   "apelidos": [
    "Sinhô"
@@ -3472,7 +3469,7 @@
    "maria-cecilia-de-avila"
   ],
   "foto": "livro-p116-094-carico-e-irinea",
-  "resumo": "Esposa de Carico, nascida em 08/11/1894; foi a primeira moça da família a casar fora do círculo de primos. A ascendência dela (Ferreira de Aguiar/Portella) pertence a ramo arquivado e não é detalhada aqui. Doce de mamão (41).",
+  "resumo": "Esposa de Carico, nascida em 08/11/1894; foi a primeira moça da família a casar fora do círculo de primos. A ascendência dela (família Ferreira de Aguiar) não é detalhada aqui. Doce de mamão (41).",
   "linha": "tres-cruzes",
   "apelidos": [
    "Vó Irinéa"
@@ -3505,7 +3502,7 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": "Escopo: só a pessoa e o casamento; ascendência arquivada."
+  "nota_confirmar": null
  },
  {
   "id": "jose-porfirio-ferreira-juquinha",
@@ -3914,7 +3911,7 @@
   "id": "joaquim-de-avila-aviador",
   "nome": "Tenente Aviador Joaquim de Avila (Joaquim Tibúrcio)",
   "nascimento": "1926-10-28",
-  "morte": "1965",
+  "morte": "c. 1965/66 (inferido)",
   "lugar": "araxa",
   "ramo": "minas",
   "evidencia": "P",

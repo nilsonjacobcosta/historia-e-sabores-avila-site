@@ -47,3 +47,9 @@ Gerado em 22/11/2026 a partir do repositório `historia-e-sabores-avila` (soment
 - **D22** Nica: "Maria Cândida da Conceição" x "Maria Cândida de Avila"; marido Hilmovir/Ilmovir.
 - Outras: "Borba do Campo" x "Borda do Campo"; grafias Fiíca/Fíica, Orlelimda, Thomázia; "Fazenda Boa Vista" aparece em dois contextos; quem é "o Capitão" (receita 29) e "o Major" (receita 39); dados de 1930 e 1919 da postagem de 2024 são relato oral (D/P).
 - Mariquinha, Juvenal e Sá Jerônima: legendas das fotos possivelmente trocadas, a conferir no impresso.
+
+## Atualização de 22/11/2026 (após os juízes)
+- Esta pasta `dados/` é a versão da página, gerada por `src/sanitize.py` a partir de `src/dados-orig/` (dados completos). As contagens acima são do original; na página, Juvenal passou a falecido (teria mais de cem anos) e há 28 pessoas tratadas como possivelmente vivas.
+- Fotos de grupos com pessoas possivelmente vivas (42) ficam ocultas por padrão e têm legenda neutra.
+- Correções de conteúdo (`src/corrige.py`): homenagem de Tibúrcio (menino), Carlota fora de `conjuges` (o livro descreve concubinato, não casamento), datas inferidas marcadas, legenda do registro de família (padrinhos), mapa sem a afirmação de rota familiar contínua, aviso explícito nos quatro cartões Portella.
+- D21 (Joaquim Esteves, 82 anos) fica "a conferir". As fontes tipográficas vêm do Google Fonts.

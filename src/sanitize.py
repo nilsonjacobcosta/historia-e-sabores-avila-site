@@ -22,10 +22,14 @@ for p in P:
     else:
         parts=re.split(r'(?<=[.;])\s+',p.get('resumo') or '')
         p['resumo']=' '.join(x for x in parts if not any(k in x for k in KEY)) or 'Citado(a) no livro.'
+        r_=p['resumo'].strip().rstrip(';, ').strip()
+        if r_ and r_[-1] not in '.!?': r_+='.'
+        r_=re.sub(r'(\. )([a-zà-ú])',lambda m:m.group(1)+m.group(2).upper(),r_)
+        p['resumo']=r_[:1].upper()+r_[1:]
         if p.get('conjuge') in vivos: p['conjuge']=None
         p['conjuges']=[c for c in p.get('conjuges',[]) if c not in vivos]
         if p.get('nota_confirmar') and any(k in p['nota_confirmar'] for k in KEY): p['nota_confirmar']=None
-EXTRA=('vid-lanc-30','ig-20201117-132529-f1','ig-20201117-132529-f3','livro-p125-106','ig-20210125-132044-f2')
+EXTRA=('vid-lanc-30','ig-20201117-132529-f3','livro-p125-106','ig-20210125-132044-f2')
 fl={f['id'] for f in REL['fotos'] if f.get('contem_possivelmente_vivos')}
 fl={x for x in fl if not x.startswith('livro-p085-064')}
 for i in I:
@@ -34,7 +38,7 @@ n=0
 for i in I:
     i['possivelmente_vivos']=i['id'] in fl
     if i['possivelmente_vivos']:
-        n+=1;i['legenda_curta']='Foto de família'+(' ('+str(i['data'])[:4]+')' if i.get('data') else '')
+        n+=1;i['legenda_curta']='Foto de família'+(' ('+str(i['data'])[:4]+')' if i.get('data') and i.get('origem')=='livro' else '')
         i['alt']='Foto de família; identificação das pessoas reservada.';i['pessoas_citadas']=[];i.pop('nota',None)
 for f in REL['fotos']:
     if f['id'] in fl: f['pessoas_ids']=[];f['contem_possivelmente_vivos']=True
