@@ -337,6 +337,35 @@ button, .botao, [role="button"] { min-height: 44px; min-width: 44px; }
 .rec .cat{font-family:var(--f-mao);font-size:1.25rem;color:var(--barro);margin:0}
 .rec ul{margin:0;padding-left:1.1rem;font-size:.95rem}
 .nota-ig{font-size:var(--t-p);color:var(--tinta-2);margin:0}
+.rec{position:relative;text-decoration:none;color:inherit}
+.rec .resumo{margin:0;font-size:.98rem}
+.rec .ver{font-weight:600;color:var(--mar);margin:.2rem 0 0;font-size:.95rem}
+.rec:hover,.rec:focus-visible{border-color:var(--barro)}
+.rec:hover .ver{text-decoration:underline}
+main.em-receita>:not(#rec-pag){display:none}
+.rec-pag{padding-block:var(--s5)}
+.rec-pag h1{font-size:var(--t-3);margin:.3rem 0}
+.rec-pag h2{font-size:var(--t-2);margin:var(--s5) 0 var(--s2)}
+.rec-pag h3{font-size:var(--t-1);margin:var(--s3) 0 var(--s2)}
+.rec-pag .lead{font-size:var(--t-1);margin:var(--s2) 0}
+.rec-pag .voltar{display:inline-block;margin-bottom:var(--s3);font-weight:600}
+.rec-pag .corpo-rec{display:grid;gap:var(--s3);max-width:46rem}
+.rec-pag .corpo-rec ul{margin:0;padding-left:1.2rem}
+.rec-pag .corpo-rec li{margin:.15rem 0}
+.rec-pag .texto p,.rec-pag .texto ul{max-width:46rem;margin:.6rem 0}
+.rec-pag .texto ul{padding-left:1.2rem}
+.rec-pag .cartao-rec{background:var(--papel);border:1px solid var(--linha);border-radius:var(--raio);padding:var(--s3);box-shadow:var(--sombra);max-width:46rem;margin:var(--s2) 0}
+.rec-pag .cartao-rec p{margin:.3rem 0}
+.rec-pag .similares{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0}
+.rec-pag .similares a{display:inline-block;padding:.5rem .8rem;min-height:44px;border:1px solid var(--linha);border-radius:var(--raio);background:var(--papel)}
+.rec-pag .fontes{max-width:46rem;padding-left:1.4rem;overflow-wrap:anywhere}
+.rec-pag .fontes li{margin:.5rem 0;font-size:.95rem}
+.rec-pag .aguarde{color:var(--tinta-2)}
+.rec-pag a{overflow-wrap:anywhere}
+.rec-pag h1:focus:not(:focus-visible){outline:none}
+.cit{font-size:.7em;color:var(--tinta-2);white-space:nowrap}
+.rec-pag .navrec{display:flex;justify-content:space-between;gap:var(--s3);flex-wrap:wrap;margin-top:var(--s5)}
+
 .legenda-niveis{display:grid;gap:var(--s2);list-style:none;padding:0;margin:var(--s3) 0}
 .legenda-niveis li{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
 .rodape{padding-block:var(--s6);border-top:1px solid var(--linha);display:grid;gap:var(--s3)}
@@ -538,6 +567,7 @@ dialog.lightbox[open]{display:block;margin:auto}
   </div>
 </header>
 <main id="main">
+<article class="conteudo rec-pag" id="rec-pag" hidden aria-live="polite"></article>
 <section class="heroi" id="topo" aria-labelledby="t-heroi">
   <div class="heroi__grade">
     <div>
@@ -724,7 +754,7 @@ dialog.lightbox[open]{display:block;margin:auto}
 <svg class="divisor" aria-hidden="true" viewBox="0 0 600 24" preserveAspectRatio="none"><use href="#orn-divisor-ondas"/></svg>
 <section class="secao" id="receitas" aria-labelledby="t-rec">
   <h2 id="t-rec">Livro de receitas</h2>
-  <p>As 76 receitas do livro, com quem as guarda e os ingredientes citados. As quantidades e o modo de fazer ficam no livro impresso.</p>
+  <p>As 76 receitas do livro, cada uma com um resumo. Toque numa receita para abrir a página completa: ingredientes, modo de fazer, quem a guardava na família, origem e história, e as fontes consultadas.</p>
   <div class="filtros" id="f-rec" role="group" aria-label="Filtrar receitas por tipo"></div>
   <div class="receitas" id="rec-lista"></div>
 </section>
@@ -802,7 +832,7 @@ function init(){
  D.vivoFoto={};D.rel.fotos.forEach(function(f){D.vivoFoto[f.id]=f});
  D.imgs=D.img.map(function(f){var r=D.vivoFoto[f.id]||{};f.mini=f.arquivo;f.possivelmente_vivos=!!f.possivelmente_vivos;f.lugar_id=r.lugar_id;return f});
  D.iById={};D.imgs.forEach(function(f){D.iById[f.id]=f});
- lugaresLista();tempo();arvore();cartoes();galeria();receitas();divergencias();painelLugar('pico',true);
+ lugaresLista();tempo();arvore();cartoes();galeria();receitas();divergencias();painelLugar('pico',true);rota();
 }
 function tempo(){
  var cur='todos';
@@ -888,8 +918,60 @@ function receitas(){
  function draw(){$('#rec-lista').innerHTML=D.rec.filter(function(r){return cur==='todos'||r.categoria===cur}).map(function(r){
   var q=r.quem_cita||{};var pp=q.pessoa_id&&D.pById[q.pessoa_id];var quem=q.nome_no_livro||(pp&&!pp.possivelmente_vivo?pp.nome:null);
   var ig=(r.instagram||[]).filter(function(i){return i.vinculo==='Confirmado'||i.vinculo==='Provável'});
-  return '<article class="rec"><svg aria-hidden="true" style="width:36px;height:36px;color:var(--barro)"><use href="#orn-'+(r.categoria==='rosca'?'rosca':r.categoria==='bolo'||r.categoria==='doce'?'colher':'panela')+'"/></svg><h3>'+esc(r.numero+'. '+r.nome)+'</h3><p class="cat">'+esc(r.categoria)+(quem?' · de '+esc(quem):'')+'</p><ul>'+(r.ingredientes_resumo||[]).map(function(i){return '<li>'+esc(i)+'</li>'}).join('')+'</ul><p class="nota-ig">Livro, p. '+esc(r.pagina_impressa||'?')+'</p>'+(ig.length?'<p class="nota-ig">Há postagem do autor ligada a esta receita (indício, nível D).</p>':'')+selo(r.nivel_evidencia)+'</article>'}).join('')}
+  return '<a class="rec" href="#receita/'+esc(r.id)+'"><svg aria-hidden="true" style="width:36px;height:36px;color:var(--barro)"><use href="#orn-'+(r.categoria==='rosca'?'rosca':r.categoria==='bolo'||r.categoria==='doce'?'colher':'panela')+'"/></svg><h3>'+esc(r.numero+'. '+r.nome)+'</h3><p class="cat">'+esc(r.categoria)+(quem?' · de '+esc(quem)+(q.tem_etiqueta_no_livro===false?' (pelo título, a confirmar)':''):'')+'</p><p class="resumo">'+esc(r.resumo_curto||'')+'</p><p class="nota-ig">Livro, p. '+esc(r.pagina_impressa||'?')+'</p>'+selo(r.nivel_evidencia)+'<p class="ver">Ver receita completa →</p></a>'}).join('')}
  filtros($('#f-rec'),cats.map(function(c){return [c,c==='todos'?'Todas':c]}),cur,function(v){cur=v;draw()});draw()}
+
+// página de cada receita
+var RD=null,rYBack=null,rAtual=null;
+function carregaDet(){return RD||(RD=fetch('dados/receitas_detalhe.json').then(function(r){if(!r.ok)throw new Error('detalhe');return r.json()}).catch(function(e){RD=null;throw e}))}
+function trimUrl(u){var t='';while(/[.,;:]$/.test(u)||(/\)$/.test(u)&&(u.match(/\(/g)||[]).length<(u.match(/\)/g)||[]).length)){t=u.slice(-1)+t;u=u.slice(0,-1)}return [u,t]}
+function inl(t){var x=esc(t||'');
+ x=x.replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/(^|[^*\w])\*([^*\n]+)\*(?!\w)/g,'$1<em>$2</em>');
+ x=x.replace(/\[(\d+(?:\s*[,;]\s*\d+)*)(?:\s*,\s*([A-DP]))?\]/g,function(m,n,l){return '<sup class="cit">['+n.replace(/\s+/g,'')+(l?' · '+l:'')+']</sup>'});
+ x=x.replace(/(https?:\/\/[^\s<"]+)/g,function(m){var r=trimUrl(m);return '<a href="'+r[0]+'" target="_blank" rel="noopener noreferrer">'+r[0].replace(/^https?:\/\/(www\.)?/,'').slice(0,60)+(r[0].length>70?'…':'')+'</a>'+r[1]});
+ return x}
+function md(t){if(!t)return '';var out=[],ul=[];
+ function fl(){if(ul.length){out.push('<ul>'+ul.map(function(l){return '<li>'+inl(l)+'</li>'}).join('')+'</ul>');ul=[]}}
+ t.split(/\n/).forEach(function(l){if(/^\s*[-*] /.test(l)){ul.push(l.replace(/^\s*[-*] /,''));return}fl();if(l.trim())out.push('<p>'+inl(l.trim())+'</p>')});fl();return out.join('')}
+function sec(tit,corpo,cls){return corpo?'<h2>'+esc(tit)+'</h2><div class="texto'+(cls?' '+cls:'')+'">'+corpo+'</div>':''}
+function fonteNivel(r){var m=/N[íi]vel[:\s*]*([A-DP])\b/.exec(r||'');return m?m[1]:null}
+function recPagina(id,det){
+ var r=D.rec.filter(function(x){return x.id===id})[0],el=$('#rec-pag');
+ if(!r){el.innerHTML='<a class="voltar" href="#receitas">← Voltar ao livro de receitas</a><h1>Receita não encontrada</h1>';return}
+ var q=r.quem_cita||{},pp=q.pessoa_id&&D.pById[q.pessoa_id],vivo=pp&&pp.possivelmente_vivo;
+ var h='<a class="voltar" href="#receitas">← Voltar ao livro de receitas</a><p class="etiqueta">Receita '+esc(r.numero)+' · '+esc(r.categoria)+' · Livro, p. '+esc(r.pagina_impressa||'?')+'</p><h1>'+esc(r.nome)+'</h1><p class="lead">'+esc(r.resumo_curto||'')+'</p>'+selo(r.nivel_evidencia);
+ if(!det){h+='<p class="aguarde">Carregando a receita…</p>';el.innerHTML=h;return}
+ var d=det[id]||{};
+ h+='<h2>Ingredientes e modo de fazer</h2><div class="corpo-rec">'+(d.corpo||[]).map(function(b){return b.t==='ing'?'<ul class="ingredientes">'+b.itens.map(function(i){return '<li>'+esc(i)+'</li>'}).join('')+'</ul>':b.t==='sub'?'<h3>'+esc(b.texto||b.titulo||'')+'</h3>':'<p>'+inl(b.texto)+'</p>'}).join('')+'</div><p class="nota-ig">Transcrita do livro, com as medidas e as palavras da época, sem adaptação.</p>';
+ if((d.notas_leitura||[]).length)h+='<div class="cartao-rec"><p class="etiqueta">Dúvidas da transcrição</p>'+d.notas_leitura.map(function(n){return '<p class="mao">'+inl(n)+'</p>'}).join('')+'</div>';
+ var fam='';
+ if((d.etiqueta||[]).length)fam+='<div class="cartao-rec"><p class="etiqueta">Quem guarda a receita, segundo o livro</p>'+d.etiqueta.map(function(e){return '<p>'+inl(e)+'</p>'}).join('')+'</div>';
+ else if(q.nome_no_livro||q.nota||pp)fam+='<div class="cartao-rec"><p class="etiqueta">Quem guarda a receita</p><p>'+esc(q.nome_no_livro||(pp&&!vivo?pp.nome:'Pessoa da família'))+'</p>'+(q.nota?'<p>'+inl(q.nota)+'</p>':'')+'</div>';
+ else fam+='<div class="cartao-rec"><p class="etiqueta">Quem guarda a receita</p><p>O livro não atribui esta receita a uma pessoa.</p></div>';
+ if(pp&&!vivo){fam+='<div class="cartao-rec"><p class="etiqueta">Na árvore da família</p><p><strong>'+esc(pp.nome)+'</strong>'+(pp.nascimento||pp.morte?' ('+esc((pp.nascimento||'?').slice(0,4)+'–'+(pp.morte||'').slice(0,4))+')':'')+(pp.lugar&&D.lById[pp.lugar]?' · '+esc(D.lById[pp.lugar].nome):'')+'</p>'+(pp.resumo?'<p>'+inl(pp.resumo)+'</p>':'')+'<p><a href="#pessoas">Ver na seção Pessoas</a> '+selo(pp.evidencia)+'</p></div>'}
+ var lg=r.lugar_id&&D.lById[r.lugar_id];if(lg)fam+='<p class="nota-ig">Lugar ligado à receita: '+esc(lg.nome)+'.</p>';
+ h+='<h2>Quem a guardava na família</h2>'+fam;
+ h+='<p class="nota-ig">As seções abaixo são notas da pesquisa feita pelo estudo (não são do livro); cada afirmação traz o nível da fonte.</p>'+sec('O que a receita é',md(d.oque))+sec('Origem e história',md(d.origem))+sec('Variações regionais',md(d.variacoes))+sec('Na história da família',md(d.familia))+sec('Divergências e dúvidas',md(d.diverg))+sec('Perguntas abertas',md(d.perguntas))+sec('Cruzamento com o Instagram do autor',md(d.instagram_nota));
+ var ig=(r.instagram||[]);if(ig.length)h+='<h2>Postagens do autor ligadas a esta receita</h2><div class="texto">'+ig.map(function(i){return '<p>'+esc(i.data||'')+' · vínculo: '+esc(i.vinculo)+'. '+esc(i.nota||'')+' '+selo(i.nivel_evidencia)+'</p>'}).join('')+'</div>';
+ var par=(d.parecidas||[]).map(function(n){return D.rec.filter(function(x){return +x.numero===n})[0]}).filter(Boolean);
+ if(par.length)h+='<h2>Receitas parecidas no livro</h2><ul class="similares">'+par.map(function(x){return '<li><a href="#receita/'+esc(x.id)+'">'+esc(x.numero+'. '+x.nome)+'</a></li>'}).join('')+'</ul>';
+ if((d.fontes||[]).length)h+='<h2>Fontes consultadas</h2><ol class="fontes">'+d.fontes.map(function(f){var tem=/https?:\/\//.test(f.ref||'');var ex='';if(f.url&&!tem)ex+=' '+inl(f.url);if(f.nivel&&!fonteNivel(f.ref))ex+=' <strong>Nível '+esc(f.nivel)+'.</strong>';if(f.nota&&!/N[íi]vel/.test(f.ref||''))ex+=' '+inl(f.nota);if(f.consulta)ex+=' <span class="nota-ig">Consulta: '+inl(f.consulta)+'</span>';return '<li id="rf-'+f.n+'">'+inl(f.ref)+ex+'</li>'}).join('')+'</ol>'+((d.fontes_extra||[]).length?d.fontes_extra.map(function(x){return '<p class="nota-ig">'+inl(x)+'</p>'}).join(''):'')+'<p class="nota-ig">Níveis de evidência: A revisão sistemática; B estudo revisado por pares ou documento oficial; C especialista sem dados; D imprensa, enciclopédia ou rede social; P memória pessoal ou do livro. “[referência não verificada]” marca o que ainda precisa ser conferido.</p>';
+ var i=D.rec.indexOf(r),a=D.rec[i-1],b=D.rec[i+1];
+ h+='<nav class="navrec" aria-label="Outras receitas">'+(a?'<a href="#receita/'+esc(a.id)+'">← '+esc(a.numero+'. '+a.nome)+'</a>':'<span></span>')+(b?'<a href="#receita/'+esc(b.id)+'">'+esc(b.numero+'. '+b.nome)+' →</a>':'')+'</nav>';
+ el.innerHTML=h}
+function rota(){
+ var m=/^#receita\/(rec-\d+)$/.exec(location.hash),main=$('#main'),el=$('#rec-pag');
+ if(m){
+  if(!main.classList.contains('em-receita'))rYBack=window.scrollY;
+  main.classList.add('em-receita');el.hidden=false;rAtual=m[1];recPagina(m[1],null);window.scrollTo(0,0);document.title=(D.rec.filter(function(x){return x.id===m[1]})[0]||{nome:'Receita'}).nome+' · Ávila';
+  carregaDet().then(function(det){if(rAtual===m[1]){recPagina(m[1],det);var h=el.querySelector('h1');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}}}).catch(function(){if(rAtual===m[1])el.insertAdjacentHTML('beforeend','<p>Não foi possível carregar o detalhe da receita. Recarregue a página.</p>')});
+ }else if(main.classList.contains('em-receita')){
+  main.classList.remove('em-receita');el.hidden=true;rAtual=null;document.title=DT;
+  var alvo=location.hash.length>1&&document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if(alvo&&!(alvo.id==='receitas'&&rYBack!=null))alvo.scrollIntoView();else window.scrollTo(0,rYBack||0);
+ }}
+var DT=document.title;
+addEventListener('hashchange',rota);
 function divergencias(){
  var d=[['Foto da família de Zico e Adélia','1927 (livro e vídeo) ou 1928 (comentário do autor).'],['Lourival','“Lorico” no livro, “Lourico” nas postagens.'],['Antonio Luiz Leite','Com ou sem “da Silva” no nome.'],['Maria Célia e Malvina','Aparecem só numa legenda de foto, sem filiação.'],['Francisco Antônio','Mais de um homônimo; o vídeo não distingue.'],['Rua das Flores e Rua Capitão José Porfírio','Provavelmente a mesma casa, não confirmado.'],['Lico','“Manoel Antonio” na galeria e no inventário; “Manoel Joaquim” nas etiquetas de receita.'],['Marido de Iracema','O texto diz o primo “Zico”; a etiqueta de receita diz José Antonio Ferreira Junior.'],['Várias Candinhas','Candinha (filha de Tibúrcio), Donana e Anna Candida de Oliveira são pessoas diferentes.'],['Vila de Araxá','1831 numa postagem; posse da primeira Câmara em 1833 no livro.'],['Casamento de Carico e Irinéa','31/07/1910 na narrativa; 30/07/1910 no cartão das bodas de ouro.'],['Marianno no inventário','Consta “solteiro, 36 anos” embora casado com Escolástica; cronologia dos casamentos a conferir.'],['Thereza Thomázia','“Teixeira” ou “de Jesus”.'],['Joaquim Esteves','Nascido em 1857 e morto em 1940 “com 82 anos”: a conferir.'],['Nica','“Maria Cândida da Conceição” ou “Maria Cândida de Avila”; marido Hilmovir ou Ilmovir.'],['Os Portella','Nicolao Alves Portella, Ana Rosa de Jesus, Maria do Carmo e Anna Candida de Oliveira constam no livro como ascendência direta de Tibúrcio Joaquim. Ana Rosa de Jesus também aparece na árvore do Nilson como pentavó (esposa de Francisco Antonio de Avila). Para os demais, a família ainda não confirmou se a linha chega ao Nilson; por isso aparecem com aviso.'],['João de Avila da Silveira','Nascido em 1709 (livro) ou por volta de 1722 (cadastro GeneaMinas, citado numa postagem de Idelma). O Projeto Compartilhar mostra filhos dele nascidos por volta de 1728–1731, o que torna 1722 difícil de sustentar.'],['Casamentos de João de Ávila da Silveira','O Jornal Interação diz que ele enviuvou e casou de novo em 1756; o Projeto Compartilhar dá a morte de Francisca em julho de 1756 e o novo casamento em 12/09/1757.'],['Naturalidade dos filhos do 1º casamento','O Jornal diz que Gertrudes, Joana e João nasceram «em Portugal»; o Projeto Compartilhar dá Gertrudes nascida em Angra (Ilha Terceira) e João como natural de São Pedro, Ilha Terceira.'],['Morte de João de Ávila da Silveira','03/03/1788 no inventário; 23/03/1788 no registro de óbito e no GeneaMinas (Projeto Compartilhar, via bio da Idelma). Falta conferir o original.'],['Brasão de 1665','O livro o atribui ao Capitão João de Avila Raposo, que nasceu em 1691 segundo o GeneaMinas: o brasão seria anterior ao nascimento.'],['Folheto das bodas de ouro','A lista de filhos do folheto foi lida numa foto de resolução limitada; conferir no original.']];
  $('#diverg').innerHTML=d.map(function(x){return '<li><strong>'+esc(x[0])+'.</strong> '+esc(x[1])+'</li>'}).join('')}
