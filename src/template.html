@@ -245,7 +245,7 @@ var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){re
 var NIVEIS={A:'A',B:'B',C:'C',D:'D',P:'P',controverso:'controverso'};
 var selo=function(n){n=NIVEIS[n]?n:'D';return '<span class="selo-evidencia" data-nivel="'+n+'">'+(n==='controverso'?'controverso':'nível '+n)+'</span>'};
 var aviso=function(t){return '<div class="aviso-confirmar"><svg aria-hidden="true"><use href="#orn-confirmar"/></svg><div><strong>a confirmar pela família</strong><p>'+esc(t||'Informação ainda sem confirmação.')+'</p></div></div>'};
-var regiao=function(l){return (l==='pico'||l==='faial'||l==='angra')?'acores':(l==='goias'||l==='brasilia')?'goias':'minas'};
+var regiao=function(l){return (l==='pico'||l==='faial'||l==='angra'||l==='amora')?'acores':(l==='goias'||l==='brasilia')?'goias':'minas'};
 var RAMO={acores:'Açores',minas:'Minas Gerais',goias:'Goiás'};
 var D={};
 // tema e menu
@@ -286,7 +286,7 @@ function tempo(){
  var cur='todos';
  function draw(){var ev=D.tempo.map(function(e,i){return [e,i]}).filter(function(x){return cur==='todos'||regiao(x[0].lugar_id)===cur}).sort(function(a,b){return (a[0].ano-b[0].ano)||String(a[0].data||'').localeCompare(String(b[0].data||''))||(a[1]-b[1])}).map(function(x){return x[0]});
   $('#tempo-lista').innerHTML=ev.map(function(e){return '<li class="marco" data-regiao="'+regiao(e.lugar_id)+'"><p class="marco__ano">'+esc(e.ano)+'</p><p class="marco__titulo">'+esc(e.titulo)+'</p><p class="marco__texto">'+esc(e.texto)+'</p>'+selo(e.nivel)+(e.nota?'<p class="marco__nota">'+esc(String(e.nota).replace(/\[referência não verificada\]/g,'(referência ainda por verificar)'))+'</p>':'')+'</li>'}).join('')}
- filtros($('#f-tempo'),[['todos','Tudo'],['acores','Açores'],['minas','Minas Gerais'],['goias','Goiás e Brasília']],cur,function(v){cur=v;draw()});draw()}
+ filtros($('#f-tempo'),[['todos','Tudo'],['acores','Açores e Portugal'],['minas','Minas Gerais'],['goias','Goiás e Brasília']],cur,function(v){cur=v;draw()});draw()}
 function lugaresLista(){var ids=['pico','borda-do-campo','morro-alto','araxa','goias','brasilia'];$('#lugares-lista').innerHTML=ids.filter(function(i){return D.lById[i]}).map(function(i){return '<li><button type="button" data-lg="'+i+'" aria-pressed="false">'+esc(D.lById[i].nome.split(' (')[0])+'</button></li>'}).join('');$('#lugares-lista').addEventListener('click',function(e){var b=e.target.closest('[data-lg]');if(b)painelLugar(b.getAttribute('data-lg'))})}
 function marcaLugar(id){[].forEach.call(document.querySelectorAll('#lugares-lista button'),function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-lg')===id))});[].forEach.call(document.querySelectorAll('#mapa-rota [data-lugar]'),function(g){g.setAttribute('aria-pressed',String(g.getAttribute('data-lugar')===id))})}
 function painelLugar(id,silencioso){

@@ -1009,6 +1009,44 @@
   "id": "ev-idelma-01"
  },
  {
+  "nivel": "P",
+  "fonte": [
+   {
+    "arquivo": "pesquisa/arvore-genealogica-nilson.md"
+   }
+  ],
+  "nota": "Informação do próprio Nilson.",
+  "pessoas_ids": [
+   "maria-eduarda-duda",
+   "nilson-jacob-da-costa"
+  ],
+  "id": "ev-duda-00",
+  "ano": 2010,
+  "data": "2010-10-28",
+  "titulo": "Nasce Maria Eduarda (Duda), filha de Nilson",
+  "texto": "Maria Eduarda Camilo Costa nasce em Nova Lima, Minas Gerais, em 28/10/2010.",
+  "lugar_id": "nova-lima"
+ },
+ {
+  "nivel": "P",
+  "fonte": [
+   {
+    "arquivo": "pesquisa/arvore-genealogica-nilson.md"
+   }
+  ],
+  "nota": "Informação do próprio Nilson.",
+  "pessoas_ids": [
+   "maria-eduarda-duda",
+   "nilson-jacob-da-costa"
+  ],
+  "id": "ev-duda-02",
+  "ano": 2023,
+  "data": "2023-12-21",
+  "titulo": "Duda parte para Portugal",
+  "texto": "Em 21/12/2023 a Duda embarca em Belo Horizonte, no voo TP104 da TAP, rumo a Lisboa, e passa a morar em Portugal, em Amora. Uma descendente dos Avila do Pico volta a viver em Portugal.",
+  "lugar_id": "amora"
+ },
+ {
   "id": "ev-duda-01",
   "ano": 2026,
   "data": "2026-11",

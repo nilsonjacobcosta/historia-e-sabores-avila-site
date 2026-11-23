@@ -487,5 +487,29 @@
   "coordenadas_nota": "Sem ponto: contexto.",
   "fontes": [],
   "nivel_evidencia": "P"
+ },
+ {
+  "id": "nova-lima",
+  "nome": "Nova Lima (MG)",
+  "tipo": "cidade",
+  "descricao": "Cidade onde nasceu a Duda (contexto); não é local de eventos dos Avila do livro.",
+  "municipio_atual": "Nova Lima",
+  "lat": null,
+  "lon": null,
+  "coordenadas_nota": "Sem ponto: contexto.",
+  "fontes": [],
+  "nivel_evidencia": "P"
+ },
+ {
+  "id": "amora",
+  "nome": "Amora (Seixal, Portugal)",
+  "tipo": "cidade",
+  "descricao": "Onde a Duda mora desde dezembro de 2023 (contexto, nível da cidade).",
+  "municipio_atual": "Seixal",
+  "lat": null,
+  "lon": null,
+  "coordenadas_nota": "Sem ponto: contexto.",
+  "fontes": [],
+  "nivel_evidencia": "P"
  }
 ]
