@@ -503,18 +503,18 @@ function recPagina(id,det){
  var i=D.rec.indexOf(r),a=D.rec[i-1],b=D.rec[i+1];
  h+='<nav class="navrec" aria-label="Outras receitas">'+(a?'<a href="#receita/'+esc(a.id)+'"><small>← Anterior</small><span>'+esc(a.numero+'. '+a.nome)+'</span></a>':'<span></span>')+(b?'<a href="#receita/'+esc(b.id)+'"><small>Próxima →</small><span>'+esc(b.numero+'. '+b.nome)+'</span></a>':'')+'</nav>';
  el.innerHTML=h;posRender(el)}
-function vt(fn){if(document.startViewTransition&&!matchMedia('(prefers-reduced-motion: reduce)').matches){try{document.startViewTransition(fn);return}catch(e){}}fn()}
+function vt(fn){if(document.startViewTransition&&!matchMedia('(prefers-reduced-motion: reduce)').matches){try{return document.startViewTransition(fn).updateCallbackDone.catch(function(){})}catch(e){}}fn();return Promise.resolve()}
 function rota(){
  var m=/^#receita\/(rec-\d+)$/.exec(location.hash),main=$('#main'),el=$('#rec-pag');
  if(m){
   if(!main.classList.contains('em-receita'))rYBack=window.scrollY;
-  vt(function(){main.classList.add('em-receita');el.hidden=false;rAtual=m[1];recPagina(m[1],null);window.scrollTo(0,0)});document.title=(D.rec.filter(function(x){return x.id===m[1]})[0]||{nome:'Receita'}).nome+' · Ávila';
-  carregaDet().then(function(det){if(rAtual===m[1]){recPagina(m[1],det);var h=el.querySelector('h1');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}}}).catch(function(){if(rAtual===m[1])el.insertAdjacentHTML('beforeend','<p>Não foi possível carregar o detalhe da receita. Recarregue a página.</p>')});
+  rAtual=m[1];var pr=vt(function(){main.classList.add('em-receita');el.hidden=false;recPagina(m[1],null);window.scrollTo({top:0,behavior:'instant'})});document.title=(D.rec.filter(function(x){return x.id===m[1]})[0]||{nome:'Receita'}).nome+' · Ávila';
+  Promise.all([carregaDet(),pr]).then(function(x){var det=x[0];if(rAtual===m[1]){recPagina(m[1],det);var h=el.querySelector('h1');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}}}).catch(function(){if(rAtual===m[1])el.insertAdjacentHTML('beforeend','<p>Não foi possível carregar o detalhe da receita. Recarregue a página.</p>')});
  }else if(main.classList.contains('em-receita')){
   document.title=DT;
   vt(function(){main.classList.remove('em-receita');el.hidden=true;rAtual=null;
    var alvo=location.hash.length>1&&document.getElementById(decodeURIComponent(location.hash.slice(1)));
-   if(alvo&&!(alvo.id==='receitas'&&rYBack!=null))alvo.scrollIntoView();else window.scrollTo(0,rYBack||0)});
+   if(alvo&&!(alvo.id==='receitas'&&rYBack!=null))alvo.scrollIntoView({behavior:'instant'});else window.scrollTo({top:rYBack||0,behavior:'instant'})});
  }}
 var DT=document.title;
 // ações da página de receita (delegadas)
