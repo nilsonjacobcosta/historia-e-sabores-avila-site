@@ -84,7 +84,94 @@ main.em-receita>:not(#rec-pag){display:none}
 .rec-pag .fontes li{margin:.5rem 0;font-size:.95rem}
 .rec-pag .aguarde{color:var(--tinta-2)}
 .rec-pag a{overflow-wrap:anywhere}
-.rec-pag h1:focus:not(:focus-visible){outline:none}
+
+/* efeitos (revisão gráfica) */
+.js .revela{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease);transition-delay:calc(var(--i,0)*45ms)}
+.js .revela.visivel{opacity:1;transform:none}
+.nav a{transition:border-color .25s,color .25s}
+.nav a[aria-current="true"]{color:var(--mar);border-bottom-color:var(--barro)}
+.heroi__ilha svg.pico{translate:0 calc(var(--py,0)*-1px)}
+.heroi__ilha svg.ondas{translate:0 calc(var(--py,0)*-.45px)}
+.heroi__ilha svg.selo{translate:0 calc(var(--py,0)*-.2px)}
+.marco::before{transition:background .4s,box-shadow .4s}
+.marco.passou::before{background:var(--ramo-no,var(--mar));box-shadow:0 0 0 4px color-mix(in srgb,var(--ramo-no,var(--mar)) 18%,transparent)}
+.marco[data-regiao="minas"]{--ramo-no:var(--barro)}.marco[data-regiao="goias"]{--ramo-no:var(--cerrado)}
+.linha-tempo--h::before{right:auto;width:var(--sw,100%)}
+.pessoa,.painel{transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .3s}
+.botao,.filtros button,.lugares-lista button,#tema{transition:transform .15s var(--ease),filter .2s,background .25s,color .25s,border-color .25s}
+.botao:active,.filtros button:active,.lugares-lista button:active,#tema:active{transform:scale(.96)}
+@media (hover:hover){.pessoa:hover,.pessoa:focus-within{transform:translateY(-3px);box-shadow:0 1px 0 var(--linha),0 18px 30px -16px color-mix(in srgb,var(--tinta) 45%,transparent)}}
+.pessoa__retrato{transition:transform .5s var(--ease)}
+@media (hover:hover){.pessoa:hover .pessoa__retrato{transform:scale(1.04)}}
+@keyframes brilho{from{background-position:-120% 0}to{background-position:220% 0}}
+.selo-evidencia{background-image:linear-gradient(105deg,transparent 40%,color-mix(in srgb,#fff 35%,transparent) 50%,transparent 60%);background-size:250% 100%;background-position:-120% 0;background-repeat:no-repeat}
+.selo-evidencia:hover{animation:brilho 1.1s var(--ease) 1 both}
+#painel-lugar.troca>*{animation:folha .4s var(--ease) both}
+@keyframes folha{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.moldura{overflow:hidden}
+.moldura img{transition:transform .8s var(--ease),filter .6s}
+.js .foto.revela:not(.visivel) .moldura img{filter:grayscale(1) contrast(.9);transform:scale(1.04)}
+@media (hover:hover){.foto__botao:hover .moldura img{transform:scale(1.03)}}
+.rodape svg.rosa{transition:transform 1.4s var(--ease)}
+.rodape.visivel svg.rosa{transform:rotate(360deg)}
+.tema-troca,.tema-troca *{transition:background-color .35s,color .35s,border-color .35s,fill .35s,stroke .35s!important}
+@media (prefers-reduced-motion:reduce){.js .revela{opacity:1;transform:none;transition:none}.heroi__ilha svg{translate:none!important}.marco::before,.pessoa,.painel,.moldura img,.rodape svg.rosa{transition:none!important}.selo-evidencia{background-image:none;animation:none!important}#painel-lugar.troca>*{animation:none}.tema-troca,.tema-troca *{transition:none!important}.pessoa:hover,.pessoa:focus-within{transform:none}.js .foto.revela:not(.visivel) .moldura img{filter:none;transform:none}}
+@media print{.js .revela{opacity:1!important;transform:none!important}}
+.rec-pag h1:focus{outline:none}
+.rec-prog{display:none}
+main.em-receita>.rec-prog{display:block;position:fixed;left:0;top:0;height:3px;width:100%;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,var(--mar),var(--barro));z-index:60;pointer-events:none}
+main.em-receita>:not(#rec-pag):not(.rec-prog){display:none}
+.rec-cab{position:relative;isolation:isolate;padding:var(--s4) var(--s3);margin:0 0 var(--s4);border-radius:var(--raio);border:1px solid var(--linha);background:linear-gradient(135deg,color-mix(in srgb,var(--mar) 7%,var(--papel)),var(--barro-suave))}
+.rec-cab::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;opacity:.55;background-image:linear-gradient(var(--linha) 1px,transparent 1px),linear-gradient(90deg,var(--linha) 1px,transparent 1px);background-size:28px 28px;-webkit-mask-image:linear-gradient(180deg,#000,transparent 85%);mask-image:linear-gradient(180deg,#000,transparent 85%)}
+.rec-cab .voltar{margin-bottom:var(--s2)}
+.rec-acoes{display:flex;flex-wrap:wrap;gap:.5rem;margin:var(--s3) 0 0}
+.rec-acoes .chip,.limpa .chip{min-height:44px}
+.ingredientes input{accent-color:var(--mar)}
+.rec-pag .corpo-rec>p{font-size:1.05rem;line-height:1.7;max-width:42rem;text-wrap:pretty}
+.rec-pag.coz .corpo-rec{font-size:1.3rem;line-height:1.65}
+.rec-pag.coz .corpo-rec>p{font-size:1.3rem}
+.rec-pag.coz .ingredientes label{min-height:56px}
+.rec-pag.coz .ingredientes input{width:1.7rem;height:1.7rem}
+.limpa{margin:.5rem 0 0}
+@media (min-width:60rem){.rec-pag .corpo-rec.col2{max-width:none;grid-template-columns:minmax(16rem,22rem) minmax(0,40rem);column-gap:var(--s5);align-items:start}.rec-pag .corpo-rec.col2 .ingredientes{grid-column:1;position:sticky;top:5rem}.rec-pag .corpo-rec.col2>:not(.ingredientes){grid-column:2}}
+.faixa-pesquisa{margin-top:var(--s5);padding:.6rem var(--s3);background:var(--mar-suave);border-left:4px solid var(--mar);border-radius:var(--raio);font-size:var(--t-1)}
+.pesq{border-top:1px solid var(--linha);max-width:46rem}
+.pesq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;min-height:48px;cursor:pointer;padding:.25rem 0}
+.pesq summary::-webkit-details-marker{display:none}
+.pesq summary h2{margin:0;font-size:var(--t-1)}
+.pesq summary::after{content:"+";font:700 1.4rem/1 var(--f-texto);color:var(--mar)}
+.pesq[open] summary::after{content:"\2212"}
+.pesq summary:focus-visible{outline:3px solid var(--mar);outline-offset:2px}
+.pesq .texto{padding-bottom:var(--s3)}
+.rec-pag .navrec{display:grid;grid-template-columns:1fr 1fr;gap:var(--s2)}
+.rec-pag .navrec a{display:flex;flex-direction:column;gap:.15rem;min-height:64px;padding:.7rem .9rem;border:1px solid var(--linha);border-radius:var(--raio);background:var(--papel);text-decoration:none;color:var(--tinta);box-shadow:var(--sombra)}
+.rec-pag .navrec a small{color:var(--barro);font-weight:700}
+.rec-pag .navrec a:last-child{text-align:right;align-items:flex-end}
+.rec-pag .navrec a:hover,.rec-pag .navrec a:focus-visible{border-color:var(--barro)}
+@media (max-width:30rem){.rec-pag .navrec{grid-template-columns:1fr}}
+.rec:focus-visible{outline:3px solid var(--mar);outline-offset:3px}
+@media (max-width:40rem){#f-rec{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;padding:.1rem 0 .6rem;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent)}#f-rec::-webkit-scrollbar{display:none}#f-rec button{flex:none;scroll-snap-align:start;white-space:nowrap}}
+#f-rec button{min-height:44px}
+@media (prefers-reduced-motion:no-preference){
+.rec{transition:transform .18s ease,box-shadow .18s ease,border-color .18s}
+.rec:active{transform:scale(.99)}
+@media (hover:hover){.rec:hover,.rec:focus-visible{transform:translateY(-3px);box-shadow:0 10px 24px -12px color-mix(in srgb,var(--tinta) 45%,transparent)}}
+@supports (animation-timeline:view()){.rec{animation:rec-in linear both;animation-timeline:view();animation-range:entry 0% entry 40%}@keyframes rec-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}}
+.ingredientes span{transition:color .15s}
+.rec-pag .navrec a{transition:transform .15s}.rec-pag .navrec a:hover{transform:translateY(-2px)}
+::view-transition-old(root){animation:vt-out .18s ease both}
+::view-transition-new(root){animation:vt-in .22s ease both}
+@keyframes vt-out{to{opacity:0}}
+@keyframes vt-in{from{opacity:0;transform:translateY(8px)}}}
+@media print{
+@page{margin:16mm}
+body{background:#fff;color:#000;font-size:11.5pt}
+header.cabecalho,.cabecalho,.rodape,.pular,.rec-prog,.rec-pag .voltar,.rec-acoes,.limpa,.navrec,.similares,.faixa-pesquisa,.pesq,.nota-ig,#menu-painel{display:none!important}
+.rec-cab{border:0;background:none;padding:0 0 6mm;border-bottom:2px solid #000;margin:0}.rec-cab::before{display:none}
+.rec-pag{padding:0}.rec-pag h1{font-size:22pt}
+.rec-pag .corpo-rec,.rec-pag .corpo-rec.col2{display:block;max-width:none}
+.ingredientes li,.cartao-rec{break-inside:avoid}.cartao-rec{box-shadow:none;border:1px solid #999}
+a{color:#000;text-decoration:none}}
 .cit{font-size:.7em;color:var(--tinta-2);white-space:nowrap}
 .rec-pag .navrec{display:flex;justify-content:space-between;gap:var(--s3);flex-wrap:wrap;margin-top:var(--s5)}
 
@@ -137,6 +224,7 @@ dialog.lightbox[open]{display:block;margin:auto}
   </div>
 </header>
 <main id="main">
+<div class="rec-prog" id="rec-prog" aria-hidden="true"></div>
 <article class="conteudo rec-pag" id="rec-pag" hidden aria-live="polite"></article>
 <section class="heroi" id="topo" aria-labelledby="t-heroi">
   <div class="heroi__grade">
@@ -367,7 +455,7 @@ function receitas(){
   var q=r.quem_cita||{};var pp=q.pessoa_id&&D.pById[q.pessoa_id];var quem=q.nome_no_livro||(pp&&!pp.possivelmente_vivo?pp.nome:null);
   var ig=(r.instagram||[]).filter(function(i){return i.vinculo==='Confirmado'||i.vinculo==='Provável'});
   return '<a class="rec" href="#receita/'+esc(r.id)+'"><svg aria-hidden="true" style="width:36px;height:36px;color:var(--barro)"><use href="#orn-'+(r.categoria==='rosca'?'rosca':r.categoria==='bolo'||r.categoria==='doce'?'colher':'panela')+'"/></svg><h3>'+esc(r.numero+'. '+r.nome)+'</h3><p class="cat">'+esc(r.categoria)+(quem?' · de '+esc(quem)+(q.tem_etiqueta_no_livro===false?' (pelo título, a confirmar)':''):'')+'</p><p class="resumo">'+esc(r.resumo_curto||'')+'</p><p class="nota-ig">Livro, p. '+esc(r.pagina_impressa||'?')+'</p>'+selo(r.nivel_evidencia)+'<p class="ver">Ver receita completa →</p></a>'}).join('')}
- filtros($('#f-rec'),cats.map(function(c){return [c,c==='todos'?'Todas':c]}),cur,function(v){cur=v;draw()});draw()}
+ filtros($('#f-rec'),cats.map(function(c){var n=c==='todos'?D.rec.length:D.rec.filter(function(r){return r.categoria===c}).length;return [c,(c==='todos'?'Todas':c)+' ('+n+')']}),cur,function(v){cur=v;draw()});draw()}
 
 // página de cada receita
 var RD=null,rYBack=null,rAtual=null;
@@ -381,16 +469,24 @@ function inl(t){var x=esc(t||'');
 function md(t){if(!t)return '';var out=[],ul=[];
  function fl(){if(ul.length){out.push('<ul>'+ul.map(function(l){return '<li>'+inl(l)+'</li>'}).join('')+'</ul>');ul=[]}}
  t.split(/\n/).forEach(function(l){if(/^\s*[-*] /.test(l)){ul.push(l.replace(/^\s*[-*] /,''));return}fl();if(l.trim())out.push('<p>'+inl(l.trim())+'</p>')});fl();return out.join('')}
+function secd(tit,corpo,aberto){return corpo?'<details class="pesq"'+(aberto?' open':'')+'><summary><h2>'+esc(tit)+'</h2></summary><div class="texto">'+corpo+'</div></details>':''}
 function sec(tit,corpo,cls){return corpo?'<h2>'+esc(tit)+'</h2><div class="texto'+(cls?' '+cls:'')+'">'+corpo+'</div>':''}
 function fonteNivel(r){var m=/N[íi]vel[:\s*]*([A-DP])\b/.exec(r||'');return m?m[1]:null}
+var KEYI='avila-ing',KEYC='avila-coz';
+function posRender(el){
+ var salvo={};try{salvo=JSON.parse(localStorage.getItem(KEYI)||'{}')}catch(e){}
+ [].forEach.call(el.querySelectorAll('.ingredientes input'),function(c){c.checked=!!salvo[c.getAttribute('data-k')]});
+ var bt=el.querySelector('#modo-coz');if(bt)bt.setAttribute('aria-pressed',String(el.classList.contains('coz')));
+ if(el.querySelector('.ingredientes')&&!el.querySelector('.limpa')){var u=el.querySelector('.corpo-rec');if(u)u.insertAdjacentHTML('afterend','<p class="limpa"><button type="button" class="chip" id="rec-limpa">Limpar marcações</button></p>')}}
 function recPagina(id,det){
  var r=D.rec.filter(function(x){return x.id===id})[0],el=$('#rec-pag');
  if(!r){el.innerHTML='<a class="voltar" href="#receitas">← Voltar ao livro de receitas</a><h1>Receita não encontrada</h1>';return}
  var q=r.quem_cita||{},pp=q.pessoa_id&&D.pById[q.pessoa_id],vivo=pp&&pp.possivelmente_vivo;
- var h='<a class="voltar" href="#receitas">← Voltar ao livro de receitas</a><p class="etiqueta">Receita '+esc(r.numero)+' · '+esc(r.categoria)+' · Livro, p. '+esc(r.pagina_impressa||'?')+'</p><h1>'+esc(r.nome)+'</h1><p class="lead">'+esc(r.resumo_curto||'')+'</p>'+selo(r.nivel_evidencia);
+ var h='<header class="rec-cab"><a class="voltar" href="#receitas">← Voltar ao livro de receitas</a><p class="etiqueta">Receita '+esc(r.numero)+' · '+esc(r.categoria)+' · Livro, p. '+esc(r.pagina_impressa||'?')+'</p><h1>'+esc(r.nome)+'</h1><p class="lead">'+esc(r.resumo_curto||'')+'</p>'+selo(r.nivel_evidencia)+'<p class="rec-acoes"><button type="button" class="chip" id="modo-coz" aria-pressed="false">Modo cozinha</button><button type="button" class="chip" id="rec-imp">Imprimir receita</button></p></header>';
  if(!det){h+='<p class="aguarde">Carregando a receita…</p>';el.innerHTML=h;return}
  var d=det[id]||{};
- h+='<h2>Ingredientes e modo de fazer</h2><div class="corpo-rec">'+(d.corpo||[]).map(function(b){return b.t==='ing'?'<ul class="ingredientes">'+b.itens.map(function(i){return '<li>'+esc(i)+'</li>'}).join('')+'</ul>':b.t==='sub'?'<h3>'+esc(b.texto||b.titulo||'')+'</h3>':'<p>'+inl(b.texto)+'</p>'}).join('')+'</div><p class="nota-ig">Transcrita do livro, com as medidas e as palavras da época, sem adaptação.</p>';
+ var ni=0,col2=(d.corpo||[]).filter(function(b){return b.t==='ing'}).length===1&&!(d.corpo||[]).some(function(b){return b.t==='sub'});
+ h+='<h2>Ingredientes e modo de fazer</h2><div class="corpo-rec'+(col2?' col2':'')+'">'+(d.corpo||[]).map(function(b){return b.t==='ing'?(function(bi){return '<ul class="ingredientes">'+b.itens.map(function(i,k){return '<li><label><input type="checkbox" data-k="'+esc(id)+'-'+bi+'-'+k+'"><span>'+esc(i)+'</span></label></li>'}).join('')+'</ul>'})(ni++):b.t==='sub'?'<h3>'+esc(b.texto||b.titulo||'')+'</h3>':'<p>'+inl(b.texto)+'</p>'}).join('')+'</div><p class="nota-ig">Transcrita do livro, com as medidas e as palavras da época, sem adaptação.</p>';
  if((d.notas_leitura||[]).length)h+='<div class="cartao-rec"><p class="etiqueta">Dúvidas da transcrição</p>'+d.notas_leitura.map(function(n){return '<p class="mao">'+inl(n)+'</p>'}).join('')+'</div>';
  var fam='';
  if((d.etiqueta||[]).length)fam+='<div class="cartao-rec"><p class="etiqueta">Quem guarda a receita, segundo o livro</p>'+d.etiqueta.map(function(e){return '<p>'+inl(e)+'</p>'}).join('')+'</div>';
@@ -399,31 +495,85 @@ function recPagina(id,det){
  if(pp&&!vivo){fam+='<div class="cartao-rec"><p class="etiqueta">Na árvore da família</p><p><strong>'+esc(pp.nome)+'</strong>'+(pp.nascimento||pp.morte?' ('+esc((pp.nascimento||'?').slice(0,4)+'–'+(pp.morte||'').slice(0,4))+')':'')+(pp.lugar&&D.lById[pp.lugar]?' · '+esc(D.lById[pp.lugar].nome):'')+'</p>'+(pp.resumo?'<p>'+inl(pp.resumo)+'</p>':'')+'<p><a href="#pessoas">Ver na seção Pessoas</a> '+selo(pp.evidencia)+'</p></div>'}
  var lg=r.lugar_id&&D.lById[r.lugar_id];if(lg)fam+='<p class="nota-ig">Lugar ligado à receita: '+esc(lg.nome)+'.</p>';
  h+='<h2>Quem a guardava na família</h2>'+fam;
- h+='<p class="nota-ig">As seções abaixo são notas da pesquisa feita pelo estudo (não são do livro); cada afirmação traz o nível da fonte.</p>'+sec('O que a receita é',md(d.oque))+sec('Origem e história',md(d.origem))+sec('Variações regionais',md(d.variacoes))+sec('Na história da família',md(d.familia))+sec('Divergências e dúvidas',md(d.diverg))+sec('Perguntas abertas',md(d.perguntas))+sec('Cruzamento com o Instagram do autor',md(d.instagram_nota));
+ h+='<h2 class="faixa-pesquisa">Notas da pesquisa</h2><p class="nota-ig">As seções abaixo são notas da pesquisa feita pelo estudo (não são do livro); cada afirmação traz o nível da fonte.</p>'+secd('O que a receita é',md(d.oque),1)+secd('Origem e história',md(d.origem))+secd('Variações regionais',md(d.variacoes))+secd('Na história da família',md(d.familia),1)+secd('Divergências e dúvidas',md(d.diverg))+secd('Perguntas abertas',md(d.perguntas))+secd('Cruzamento com o Instagram do autor',md(d.instagram_nota));
  var ig=(r.instagram||[]);if(ig.length)h+='<h2>Postagens do autor ligadas a esta receita</h2><div class="texto">'+ig.map(function(i){return '<p>'+esc(i.data||'')+' · vínculo: '+esc(i.vinculo)+'. '+esc(i.nota||'')+' '+selo(i.nivel_evidencia)+'</p>'}).join('')+'</div>';
  var par=(d.parecidas||[]).map(function(n){return D.rec.filter(function(x){return +x.numero===n})[0]}).filter(Boolean);
  if(par.length)h+='<h2>Receitas parecidas no livro</h2><ul class="similares">'+par.map(function(x){return '<li><a href="#receita/'+esc(x.id)+'">'+esc(x.numero+'. '+x.nome)+'</a></li>'}).join('')+'</ul>';
- if((d.fontes||[]).length)h+='<h2>Fontes consultadas</h2><ol class="fontes">'+d.fontes.map(function(f){var tem=/https?:\/\//.test(f.ref||'');var ex='';if(f.url&&!tem)ex+=' '+inl(f.url);if(f.nivel&&!fonteNivel(f.ref))ex+=' <strong>Nível '+esc(f.nivel)+'.</strong>';if(f.nota&&!/N[íi]vel/.test(f.ref||''))ex+=' '+inl(f.nota);if(f.consulta)ex+=' <span class="nota-ig">Consulta: '+inl(f.consulta)+'</span>';return '<li id="rf-'+f.n+'">'+inl(f.ref)+ex+'</li>'}).join('')+'</ol>'+((d.fontes_extra||[]).length?d.fontes_extra.map(function(x){return '<p class="nota-ig">'+inl(x)+'</p>'}).join(''):'')+'<p class="nota-ig">Níveis de evidência: A revisão sistemática; B estudo revisado por pares ou documento oficial; C especialista sem dados; D imprensa, enciclopédia ou rede social; P memória pessoal ou do livro. “[referência não verificada]” marca o que ainda precisa ser conferido.</p>';
+ if((d.fontes||[]).length)h+='<details class="pesq"><summary><h2>Fontes consultadas</h2></summary><div class="texto"><ol class="fontes">'+d.fontes.map(function(f){var tem=/https?:\/\//.test(f.ref||'');var ex='';if(f.url&&!tem)ex+=' '+inl(f.url);if(f.nivel&&!fonteNivel(f.ref))ex+=' <strong>Nível '+esc(f.nivel)+'.</strong>';if(f.nota&&!/N[íi]vel/.test(f.ref||''))ex+=' '+inl(f.nota);if(f.consulta)ex+=' <span class="nota-ig">Consulta: '+inl(f.consulta)+'</span>';return '<li id="rf-'+f.n+'">'+inl(f.ref)+ex+'</li>'}).join('')+'</ol>'+((d.fontes_extra||[]).length?d.fontes_extra.map(function(x){return '<p class="nota-ig">'+inl(x)+'</p>'}).join(''):'')+'<p class="nota-ig">Níveis de evidência: A revisão sistemática; B estudo revisado por pares ou documento oficial; C especialista sem dados; D imprensa, enciclopédia ou rede social; P memória pessoal ou do livro. “[referência não verificada]” marca o que ainda precisa ser conferido.</p></div></details>';
  var i=D.rec.indexOf(r),a=D.rec[i-1],b=D.rec[i+1];
- h+='<nav class="navrec" aria-label="Outras receitas">'+(a?'<a href="#receita/'+esc(a.id)+'">← '+esc(a.numero+'. '+a.nome)+'</a>':'<span></span>')+(b?'<a href="#receita/'+esc(b.id)+'">'+esc(b.numero+'. '+b.nome)+' →</a>':'')+'</nav>';
- el.innerHTML=h}
+ h+='<nav class="navrec" aria-label="Outras receitas">'+(a?'<a href="#receita/'+esc(a.id)+'"><small>← Anterior</small><span>'+esc(a.numero+'. '+a.nome)+'</span></a>':'<span></span>')+(b?'<a href="#receita/'+esc(b.id)+'"><small>Próxima →</small><span>'+esc(b.numero+'. '+b.nome)+'</span></a>':'')+'</nav>';
+ el.innerHTML=h;posRender(el)}
+function vt(fn){if(document.startViewTransition&&!matchMedia('(prefers-reduced-motion: reduce)').matches){try{document.startViewTransition(fn);return}catch(e){}}fn()}
 function rota(){
  var m=/^#receita\/(rec-\d+)$/.exec(location.hash),main=$('#main'),el=$('#rec-pag');
  if(m){
   if(!main.classList.contains('em-receita'))rYBack=window.scrollY;
-  main.classList.add('em-receita');el.hidden=false;rAtual=m[1];recPagina(m[1],null);window.scrollTo(0,0);document.title=(D.rec.filter(function(x){return x.id===m[1]})[0]||{nome:'Receita'}).nome+' · Ávila';
+  vt(function(){main.classList.add('em-receita');el.hidden=false;rAtual=m[1];recPagina(m[1],null);window.scrollTo(0,0)});document.title=(D.rec.filter(function(x){return x.id===m[1]})[0]||{nome:'Receita'}).nome+' · Ávila';
   carregaDet().then(function(det){if(rAtual===m[1]){recPagina(m[1],det);var h=el.querySelector('h1');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}}}).catch(function(){if(rAtual===m[1])el.insertAdjacentHTML('beforeend','<p>Não foi possível carregar o detalhe da receita. Recarregue a página.</p>')});
  }else if(main.classList.contains('em-receita')){
-  main.classList.remove('em-receita');el.hidden=true;rAtual=null;document.title=DT;
-  var alvo=location.hash.length>1&&document.getElementById(decodeURIComponent(location.hash.slice(1)));
-  if(alvo&&!(alvo.id==='receitas'&&rYBack!=null))alvo.scrollIntoView();else window.scrollTo(0,rYBack||0);
+  document.title=DT;
+  vt(function(){main.classList.remove('em-receita');el.hidden=true;rAtual=null;
+   var alvo=location.hash.length>1&&document.getElementById(decodeURIComponent(location.hash.slice(1)));
+   if(alvo&&!(alvo.id==='receitas'&&rYBack!=null))alvo.scrollIntoView();else window.scrollTo(0,rYBack||0)});
  }}
 var DT=document.title;
+// ações da página de receita (delegadas)
+$('#rec-pag').addEventListener('click',function(e){var t=e.target;
+ if(t.closest('#modo-coz')){var on=this.classList.toggle('coz');t.closest('#modo-coz').setAttribute('aria-pressed',String(on));try{localStorage.setItem(KEYC,on?'1':'0')}catch(x){}if(on&&navigator.wakeLock)navigator.wakeLock.request('screen').catch(function(){})}
+ else if(t.closest('#rec-imp')){window.print()}
+ else if(t.closest('#rec-limpa')){var s={};try{s=JSON.parse(localStorage.getItem(KEYI)||'{}')}catch(x){}[].forEach.call(this.querySelectorAll('.ingredientes input'),function(c){c.checked=false;delete s[c.getAttribute('data-k')]});try{localStorage.setItem(KEYI,JSON.stringify(s))}catch(x){}}});
+$('#rec-pag').addEventListener('change',function(e){var c=e.target;if(c.matches&&c.matches('.ingredientes input')){var s={};try{s=JSON.parse(localStorage.getItem(KEYI)||'{}')}catch(x){}if(c.checked)s[c.getAttribute('data-k')]=1;else delete s[c.getAttribute('data-k')];try{localStorage.setItem(KEYI,JSON.stringify(s))}catch(x){}}});
+try{if(localStorage.getItem(KEYC)==='1')$('#rec-pag').classList.add('coz')}catch(e){}
+// barra de progresso de leitura
+(function(){var pg=$('#rec-prog'),t=false;function up(){t=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;pg.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')'}
+ addEventListener('scroll',function(){if(!t){t=true;requestAnimationFrame(up)}},{passive:true})})();
 addEventListener('hashchange',rota);
 function divergencias(){
  var d=[['Foto da família de Zico e Adélia','1927 (livro e vídeo) ou 1928 (comentário do autor).'],['Lourival','“Lorico” no livro, “Lourico” nas postagens.'],['Antonio Luiz Leite','Com ou sem “da Silva” no nome.'],['Maria Célia e Malvina','Aparecem só numa legenda de foto, sem filiação.'],['Francisco Antônio','Mais de um homônimo; o vídeo não distingue.'],['Rua das Flores e Rua Capitão José Porfírio','Provavelmente a mesma casa, não confirmado.'],['Lico','“Manoel Antonio” na galeria e no inventário; “Manoel Joaquim” nas etiquetas de receita.'],['Marido de Iracema','O texto diz o primo “Zico”; a etiqueta de receita diz José Antonio Ferreira Junior.'],['Várias Candinhas','Candinha (filha de Tibúrcio), Donana e Anna Candida de Oliveira são pessoas diferentes.'],['Vila de Araxá','1831 numa postagem; posse da primeira Câmara em 1833 no livro.'],['Casamento de Carico e Irinéa','31/07/1910 na narrativa; 30/07/1910 no cartão das bodas de ouro.'],['Marianno no inventário','Consta “solteiro, 36 anos” embora casado com Escolástica; cronologia dos casamentos a conferir.'],['Thereza Thomázia','“Teixeira” ou “de Jesus”.'],['Joaquim Esteves','Nascido em 1857 e morto em 1940 “com 82 anos”: a conferir.'],['Nica','“Maria Cândida da Conceição” ou “Maria Cândida de Avila”; marido Hilmovir ou Ilmovir.'],['Os Portella','Nicolao Alves Portella, Ana Rosa de Jesus, Maria do Carmo e Anna Candida de Oliveira constam no livro como ascendência direta de Tibúrcio Joaquim. Ana Rosa de Jesus também aparece na árvore do Nilson como pentavó (esposa de Francisco Antonio de Avila). Para os demais, a família ainda não confirmou se a linha chega ao Nilson; por isso aparecem com aviso.'],['João de Avila da Silveira','Nascido em 1709 (livro) ou por volta de 1722 (cadastro GeneaMinas, citado numa postagem de Idelma). O Projeto Compartilhar mostra filhos dele nascidos por volta de 1728–1731, o que torna 1722 difícil de sustentar.'],['Casamentos de João de Ávila da Silveira','O Jornal Interação diz que ele enviuvou e casou de novo em 1756; o Projeto Compartilhar dá a morte de Francisca em julho de 1756 e o novo casamento em 12/09/1757.'],['Naturalidade dos filhos do 1º casamento','O Jornal diz que Gertrudes, Joana e João nasceram «em Portugal»; o Projeto Compartilhar dá Gertrudes nascida em Angra (Ilha Terceira) e João como natural de São Pedro, Ilha Terceira.'],['Morte de João de Ávila da Silveira','03/03/1788 no inventário; 23/03/1788 no registro de óbito e no GeneaMinas (Projeto Compartilhar, via bio da Idelma). Falta conferir o original.'],['Brasão de 1665','O livro o atribui ao Capitão João de Avila Raposo, que nasceu em 1691 segundo o GeneaMinas: o brasão seria anterior ao nascimento.'],['Folheto das bodas de ouro','A lista de filhos do folheto foi lida numa foto de resolução limitada; conferir no original.']];
  $('#diverg').innerHTML=d.map(function(x){return '<li><strong>'+esc(x[0])+'.</strong> '+esc(x[1])+'</li>'}).join('')}
 })();
 </script>
+<script>
+(function(){
+var RM=matchMedia('(prefers-reduced-motion: reduce)'),DE=document.documentElement;DE.classList.add('js');
+var $$=function(q,r){return [].slice.call((r||document).querySelectorAll(q))};
+// 1. revelação ao rolar
+(function(){if(RM.matches||!window.IntersectionObserver)return;
+ var alvos='.secao>h2,.secao>p,.pessoa,.foto,.painel,.divisor,.aviso-confirmar,.rodape',n=0;
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visivel');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.05});
+ function marca(raiz){$$(alvos,raiz).forEach(function(el,i){if(el.classList.contains('revela')||el.closest('#rec-pag'))return;var r=el.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)return;el.style.setProperty('--i',Math.min(i%6,5));el.classList.add('revela');io.observe(el)})}
+ marca(document);var t;
+ new MutationObserver(function(){clearTimeout(t);t=setTimeout(function(){marca(document)},60)}).observe(document.getElementById('main'),{childList:true,subtree:true});
+ setTimeout(function(){$$('.revela:not(.visivel)').forEach(function(e){var r=e.getBoundingClientRect();if(r.top<innerHeight)e.classList.add('visivel')})},2500);
+ addEventListener('beforeprint',function(){$$('.revela').forEach(function(e){e.classList.add('visivel')})});
+})();
+// 2. parallax no herói
+(function(){if(RM.matches)return;var h=document.querySelector('.heroi__ilha'),hero=document.querySelector('.heroi');if(!h||!hero||!window.IntersectionObserver)return;var vis=true,tick=false;
+ new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(hero);
+ addEventListener('scroll',function(){if(!vis||tick)return;tick=true;requestAnimationFrame(function(){h.style.setProperty('--py',Math.min(scrollY,500)*.12);tick=false})},{passive:true})})();
+// 3. linha do tempo: trilho até o fim e marcos que acendem
+(function(){var ol=document.getElementById('tempo-lista');if(!ol)return;
+ function trilho(){ol.style.setProperty('--sw',ol.scrollWidth+'px')}
+ if(window.ResizeObserver)new ResizeObserver(trilho).observe(ol);trilho();
+ if(RM.matches||!window.IntersectionObserver){var all=function(){$$('.marco',ol).forEach(function(m){m.classList.add('passou')})};all();new MutationObserver(all).observe(ol,{childList:true});return}
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('passou')})},{root:null,rootMargin:'0px 0px -10% 0px',threshold:.1});
+ function liga(){$$('.marco',ol).forEach(function(m){io.observe(m)})}
+ new MutationObserver(function(){trilho();liga()}).observe(ol,{childList:true});liga()})();
+// 9. seção ativa no menu
+(function(){if(!window.IntersectionObserver)return;var links=$$('.nav a');
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;links.forEach(function(a){a.getAttribute('href')==='#'+e.target.id?a.setAttribute('aria-current','true'):a.removeAttribute('aria-current')})})},{rootMargin:'-40% 0px -55% 0px'});
+ $$('main section.secao').forEach(function(s){io.observe(s)})})();
+// 10. mapa abre mostrando o Pico (lado direito) no celular
+(function(){var c=document.querySelector('.mapa-rolagem');if(!c||!window.IntersectionObserver)return;
+ new IntersectionObserver(function(e,o){if(!e[0].isIntersecting)return;o.disconnect();var alvo=c.scrollWidth-c.clientWidth;if(alvo>0)c.scrollTo({left:alvo,behavior:RM.matches?'auto':'smooth'})},{threshold:.4}).observe(c)})();
+// 11. painel de lugar
+(function(){var p=document.getElementById('painel-lugar');if(!p||RM.matches)return;
+ new MutationObserver(function(){p.classList.remove('troca');void p.offsetWidth;p.classList.add('troca')}).observe(p,{childList:true})})();
+// 5. troca de tema suave
+(function(){var b=document.getElementById('tema');if(!b||RM.matches)return;
+ b.addEventListener('click',function(){DE.classList.add('tema-troca');setTimeout(function(){DE.classList.remove('tema-troca')},500)},true)})();
+})();
+</script>
+
 </body>
 </html>
