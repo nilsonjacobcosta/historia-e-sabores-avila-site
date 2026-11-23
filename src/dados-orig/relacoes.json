@@ -2890,6 +2890,11 @@
    "tipo": "pessoa_lugar",
    "de": "virgilina-rosa-de-jesus",
    "para": "araxa"
+  },
+  {
+   "tipo": "genitor_de",
+   "de": "nilson-jacob-da-costa",
+   "para": "maria-eduarda-duda"
   }
  ],
  "fotos": [

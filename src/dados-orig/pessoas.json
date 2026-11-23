@@ -1192,7 +1192,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-tiburcio-joaquim-de-avila.webp"
  },
  {
   "id": "thereza-thomazia-teixeira",
@@ -1251,7 +1252,8 @@
   "divergencias": [
    "D20-thereza-sobrenome"
   ],
-  "nota_confirmar": "Datas de nascimento e morte não constam no livro."
+  "nota_confirmar": "Datas de nascimento e morte não constam no livro.",
+  "retrato": "img/ret-thereza-thomazia-teixeira.webp"
  },
  {
   "id": "antonio-affonso-teixeira",
@@ -1383,7 +1385,8 @@
   "divergencias": [
    "D05-francisco-antonio"
   ],
-  "nota_confirmar": "Há dois \"Francisco Antonio de Avila\" (este e Chico do Muro) e um \"Francisco Antonio de Avilla\" em documento do APM (1819) sem parentesco demonstrado."
+  "nota_confirmar": "Há dois \"Francisco Antonio de Avila\" (este e Chico do Muro) e um \"Francisco Antonio de Avilla\" em documento do APM (1819) sem parentesco demonstrado.",
+  "retrato": "img/ret-francisco-antonio-de-avila-pentavo.webp"
  },
  {
   "id": "ana-rosa-de-jesus",
@@ -1480,7 +1483,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": "Data de nascimento e morte não constam."
+  "nota_confirmar": "Data de nascimento e morte não constam.",
+  "retrato": "img/ret-manoel-francisco-de-avila.webp"
  },
  {
   "id": "ana-sabina-dos-santos",
@@ -1563,7 +1567,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-cassiano-barbosa-de-affonseca-e-silva.webp"
  },
  {
   "id": "francisco-antonio-de-avila-chico-do-muro",
@@ -1685,7 +1690,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-manoel-esteves-de-avila.webp"
  },
  {
   "id": "hipolita-cassiana-lemos",
@@ -1719,7 +1725,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-hipolita-cassiana-lemos.webp"
  },
  {
   "id": "ana-apolinaria-dos-santos",
@@ -1834,7 +1841,8 @@
   "divergencias": [
    "D21-1857-82anos"
   ],
-  "nota_confirmar": "Nascido em 1857 e falecido em 1940 \"com 82 anos\": diferença de contagem a conferir. Postagem de 2024 (D) diz que o casal de tetravós morreu de gripe em 1919; refere-se aos pais de Joaquina, não a ele."
+  "nota_confirmar": "Nascido em 1857 e falecido em 1940 \"com 82 anos\": diferença de contagem a conferir. Postagem de 2024 (D) diz que o casal de tetravós morreu de gripe em 1919; refere-se aos pais de Joaquina, não a ele.",
+  "retrato": "img/ret-joaquim-esteves-de-avila.webp"
  },
  {
   "id": "joaquina-candida-da-conceicao",
@@ -1898,7 +1906,8 @@
   "divergencias": [
    "D03-leite"
   ],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-joaquina-candida-da-conceicao.webp"
  },
  {
   "id": "antonio-luiz-leite",
@@ -2036,7 +2045,8 @@
   "divergencias": [
    "D01-1927-1928"
   ],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-joaquim-antonio-de-avila-zico.webp"
  },
  {
   "id": "manoel-antonio-de-avila-lico",
@@ -2086,7 +2096,8 @@
   "divergencias": [
    "D07-lico"
   ],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-manoel-antonio-de-avila-lico.webp"
  },
  {
   "id": "jose-antonio-de-avila",
@@ -2126,7 +2137,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-jose-antonio-de-avila.webp"
  },
  {
   "id": "alcides-joaquim-de-avila",
@@ -2166,7 +2178,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-alcides-joaquim-de-avila.webp"
  },
  {
   "id": "maria-candida-da-conceicao-nica",
@@ -2218,7 +2231,8 @@
   "divergencias": [
    "D22-nica-nome"
   ],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-maria-candida-da-conceicao-nica.webp"
  },
  {
   "id": "ana-candida-de-avila-donana",
@@ -2264,7 +2278,8 @@
   "divergencias": [
    "D14-ana-candida"
   ],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-ana-candida-de-avila-donana.webp"
  },
  {
   "id": "antonio-joaquim-de-avila-tonico",
@@ -2306,7 +2321,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-antonio-joaquim-de-avila-tonico.webp"
  },
  {
   "id": "agenor-joaquim-de-avila",
@@ -2346,7 +2362,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-agenor-joaquim-de-avila.webp"
  },
  {
   "id": "adhemar-antonio-de-avila",
@@ -2386,7 +2403,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-adhemar-antonio-de-avila.webp"
  },
  {
   "id": "jose-de-avila-juca",
@@ -2428,7 +2446,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-jose-de-avila-juca.webp"
  },
  {
   "id": "adelia-benevides-jacob",
@@ -2488,7 +2507,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": "Nascimento e morte não constam."
+  "nota_confirmar": "Nascimento e morte não constam.",
+  "retrato": "img/ret-adelia-benevides-jacob.webp"
  },
  {
   "id": "joao-jacob",
@@ -3026,7 +3046,8 @@
   "divergencias": [
    "D01-1927-1928"
   ],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-renato-benevides-de-avila.webp"
  },
  {
   "id": "ana-candida-candinha",
@@ -3186,7 +3207,8 @@
   "divergencias": [
    "D17-bodas-carico"
   ],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-carlos-de-avila-netto-carico.webp"
  },
  {
   "id": "antonio-de-avila-sinho",
@@ -3395,7 +3417,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-mariana-de-avila-fiica.webp"
  },
  {
   "id": "tiburcia-de-avila-tiburcinha",
@@ -3507,7 +3530,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-irinea-de-aguiar-avila.webp"
  },
  {
   "id": "jose-porfirio-ferreira-juquinha",
@@ -3557,7 +3581,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": null
+  "nota_confirmar": null,
+  "retrato": "img/ret-jose-porfirio-ferreira-juquinha.webp"
  },
  {
   "id": "galdino-jose-ferreira",
@@ -3962,7 +3987,8 @@
   "divergencias": [
    "D11-dedicatoria-94"
   ],
-  "nota_confirmar": "Filiação a Carico provável; dedicatória \"14/8/94\" incompatível com a data da morte."
+  "nota_confirmar": "Filiação a Carico provável; dedicatória \"14/8/94\" incompatível com a data da morte.",
+  "retrato": "img/ret-joaquim-de-avila-aviador.webp"
  },
  {
   "id": "pedro-israel-de-avila",
@@ -4120,7 +4146,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": "Idade (120) é a declarada pelo livro; legendas das fotos de Sá Jerônima, Mariquinha e Juvenal possivelmente trocadas, a conferir no impresso."
+  "nota_confirmar": "Idade (120) é a declarada pelo livro; legendas das fotos de Sá Jerônima, Mariquinha e Juvenal possivelmente trocadas, a conferir no impresso.",
+  "retrato": "img/ret-sa-jeronima.webp"
  },
  {
   "id": "mariquinha",
@@ -4152,7 +4179,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": "Legendas possivelmente trocadas (Mariquinha/Juvenal), a conferir no impresso."
+  "nota_confirmar": "Legendas possivelmente trocadas (Mariquinha/Juvenal), a conferir no impresso.",
+  "retrato": "img/ret-mariquinha.webp"
  },
  {
   "id": "crioula-germana",
@@ -5316,6 +5344,37 @@
   "sugestao_exibicao": "apenas nome e papel; sem foto, datas ou parentes além dos ascendentes falecidos"
  },
  {
+  "id": "maria-eduarda-duda",
+  "nome": "Maria Eduarda (Duda)",
+  "nascimento": null,
+  "morte": null,
+  "lugar": null,
+  "ramo": "minas",
+  "evidencia": "P",
+  "aconfirmar": false,
+  "pais": [
+   "nilson-jacob-da-costa"
+  ],
+  "conjuge": null,
+  "filhos": [],
+  "foto": null,
+  "resumo": "Filha de Nilson Jacob da Costa. Este acervo foi feito para ela: guardar o que é da família e perguntar o que ainda não se sabe.",
+  "linha": "costa",
+  "apelidos": [
+   "Duda"
+  ],
+  "conjuges": [],
+  "nascimento_detalhe": null,
+  "morte_detalhe": null,
+  "receitas": [],
+  "fontes": [],
+  "evidencia_detalhe": "Informação do próprio Nilson.",
+  "encontrado_por_este_estudo": false,
+  "possivelmente_vivo": false,
+  "divergencias": [],
+  "nota_confirmar": null
+ },
+ {
   "id": "joaquim-manoel-da-costa",
   "nome": "Joaquim Manoel da Costa",
   "nascimento": null,
@@ -5529,7 +5588,8 @@
   "encontrado_por_este_estudo": false,
   "possivelmente_vivo": false,
   "divergencias": [],
-  "nota_confirmar": "Confirmado pelo Nilson em 22/11/2026: o avô paterno Manoel Amâncio da Costa «Sorriso» é filho de Francisco Amâncio da Costa e Virgilina Rosa de Jesus. Sem documento ainda; o livro (pp. 42–43) e e-mails de 2013 são coerentes."
+  "nota_confirmar": "Confirmado pelo Nilson em 22/11/2026: o avô paterno Manoel Amâncio da Costa «Sorriso» é filho de Francisco Amâncio da Costa e Virgilina Rosa de Jesus. Sem documento ainda; o livro (pp. 42–43) e e-mails de 2013 são coerentes.",
+  "retrato": "img/ret-francisco-amancio-da-costa.webp"
  },
  {
   "id": "manoel-amancio-da-costa",
@@ -5695,7 +5755,9 @@
    "ilmovir-jose-da-costa"
   ],
   "conjuge": null,
-  "filhos": [],
+  "filhos": [
+   "maria-eduarda-duda"
+  ],
   "foto": null,
   "resumo": "Neto de Zilda Jacob da Costa e Manoel Amâncio da Costa; bisneto de Maria Cândida (Nica). Autor deste acervo.",
   "linha": "costa",

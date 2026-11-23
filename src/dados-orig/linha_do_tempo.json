@@ -1007,5 +1007,26 @@
   ],
   "nota": "Leitura da imagem.",
   "id": "ev-idelma-01"
+ },
+ {
+  "id": "ev-duda-01",
+  "ano": 2026,
+  "data": "2026-11",
+  "titulo": "Este acervo chega à Duda",
+  "texto": "Nilson Jacob da Costa reúne o livro, as fotos, as pesquisas e esta página num acervo privado para a filha, Duda. Pelo que o estudo apurou, o caminho de volta até o Pico é: Duda → Nilson Jacob da Costa → Ilmovir José da Costa → Zilda Jacob da Costa → Maria Cândida da Conceição (Tia Nica) → Joaquim Esteves de Avila (Joaquim do Morro Alto) → Major Manoel Francisco de Avila → Francisco Antonio de Avila → Capitão Antonio Joaquim de Avila → João de Avila da Silveira → Capitão João de Avila Raposo, na Ilha do Pico. Do lado dos Costa, a linha passa por Manoel Amâncio da Costa (Sorriso) e Francisco Amâncio da Costa, de Araxá.",
+  "lugar_id": "brasilia",
+  "pessoas_ids": [
+   "maria-eduarda-duda",
+   "nilson-jacob-da-costa",
+   "ilmovir-jose-da-costa",
+   "zilda-jacob-da-costa"
+  ],
+  "nivel": "P",
+  "fonte": [
+   {
+    "arquivo": "pesquisa/arvore-genealogica-nilson.md"
+   }
+  ],
+  "nota": "Informação do próprio Nilson; alguns elos da linha ainda estão a confirmar pela família (veja a seção Pessoas)."
  }
 ]

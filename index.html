@@ -836,7 +836,7 @@ function init(){
 }
 function tempo(){
  var cur='todos';
- function draw(){var ev=D.tempo.filter(function(e){return cur==='todos'||regiao(e.lugar_id)===cur});
+ function draw(){var ev=D.tempo.map(function(e,i){return [e,i]}).filter(function(x){return cur==='todos'||regiao(x[0].lugar_id)===cur}).sort(function(a,b){return (a[0].ano-b[0].ano)||String(a[0].data||'').localeCompare(String(b[0].data||''))||(a[1]-b[1])}).map(function(x){return x[0]});
   $('#tempo-lista').innerHTML=ev.map(function(e){return '<li class="marco" data-regiao="'+regiao(e.lugar_id)+'"><p class="marco__ano">'+esc(e.ano)+'</p><p class="marco__titulo">'+esc(e.titulo)+'</p><p class="marco__texto">'+esc(e.texto)+'</p>'+selo(e.nivel)+(e.nota?'<p class="marco__nota">'+esc(String(e.nota).replace(/\[referência não verificada\]/g,'(referência ainda por verificar)'))+'</p>':'')+'</li>'}).join('')}
  filtros($('#f-tempo'),[['todos','Tudo'],['acores','Açores'],['minas','Minas Gerais'],['goias','Goiás e Brasília']],cur,function(v){cur=v;draw()});draw()}
 function lugaresLista(){var ids=['pico','borda-do-campo','morro-alto','araxa','goias','brasilia'];$('#lugares-lista').innerHTML=ids.filter(function(i){return D.lById[i]}).map(function(i){return '<li><button type="button" data-lg="'+i+'" aria-pressed="false">'+esc(D.lById[i].nome.split(' (')[0])+'</button></li>'}).join('');$('#lugares-lista').addEventListener('click',function(e){var b=e.target.closest('[data-lg]');if(b)painelLugar(b.getAttribute('data-lg'))})}
@@ -897,7 +897,7 @@ var cardRamo='todos',cardN=24;
 function cartoes(){
  var ps=D.pessoas.filter(function(p){return cardRamo==='todos'||p.ramo===cardRamo});
  var vis=ps.slice(0,cardN);
- $('#cartoes').innerHTML=vis.map(function(p){var viva=p.possivelmente_vivo;var f=!viva&&p.foto&&D.iById[p.foto];if(f&&f.possivelmente_vivos)f=null;
+ $('#cartoes').innerHTML=vis.map(function(p){var viva=p.possivelmente_vivo;var f=!viva&&p.retrato?{mini:p.retrato,alt:'Retrato de '+p.nome+' (recorte da foto do livro)'}:null;
   return '<li class="pessoa" data-ramo="'+p.ramo+'">'+(f?'<img class="pessoa__retrato" loading="lazy" src="'+esc(f.mini)+'" alt="'+esc(f.alt||f.legenda_curta)+'">':'')+(!f?'<div class="monograma" aria-hidden="true"><span>'+esc(p.nome.replace(/^(Tia|Tio|Vó|Vô|Dona|Capitão|Major|Padre)\s+/,'').charAt(0))+'</span></div>':'')+'<h4 class="pessoa__nome">'+esc(p.nome)+'</h4>'+(!viva&&(p.nascimento||p.morte)?'<p class="pessoa__datas">'+esc([p.nascimento,p.morte].filter(Boolean).join(' – '))+'</p>':'')+(!viva&&p.lugar&&D.lById[p.lugar]?'<p class="pessoa__lugar">'+esc(D.lById[p.lugar].nome)+'</p>':'')+'<p class="pessoa__resumo">'+esc(viva?(p.resumo||''):(p.resumo||'').slice(0,220)+((p.resumo||'').length>220?'…':''))+'</p>'+selo(p.evidencia)+(p.aconfirmar?'<span class="mao">a confirmar pela família</span>':'')+'<button class="pessoa__link botao--vazado" type="button" data-p="'+esc(p.id)+'" style="background:none;border:0;color:var(--mar);text-align:left;cursor:pointer;padding:0">Ver mais</button></li>'}).join('');
  $('#mais-pessoas').hidden=cardN>=ps.length}
 $('#cartoes').addEventListener('click',function(e){var b=e.target.closest('[data-p]');if(b)detalhe(b.getAttribute('data-p'))});
